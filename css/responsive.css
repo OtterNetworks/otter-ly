@@ -33,6 +33,7 @@ nav#nav-mobile ul {
   margin-right: auto;
   background-color: #fff;
   padding-left: 0; 
+  width: 100%;
 }
 
 nav#nav-mobile li {

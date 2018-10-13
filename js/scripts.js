@@ -103,7 +103,7 @@ $('a[href*="#"]')
     
     //send to formspree
     $.ajax({
-      url:'https://formspree.io/mabwrjnx',
+      url:'https://formspree.io/xqlqylgm',
       method:'POST',
       data:{
         name:name,

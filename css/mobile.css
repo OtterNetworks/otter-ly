@@ -1,4 +1,4 @@
-@media (max-width: 4000px) and (min-width: 3001px) {
+@media (min-width: 3001px) {
 
 	#start .section-container {
 	    top: 50%;
@@ -34,14 +34,14 @@
 	    margin-left: -700px;
 	}
 
-	#team .section-container {
+	#case_study .section-container {
 	    top: 50%;
 	    height: 500px;
 	    margin-top: -250px; 
 	    margin-bottom: 0;
-	    width: 598px;
+	    width: 900px;
 	    left: 50%;
-	    margin-left: -299px;
+	    margin-left: -450px;
 	}
 
 	#contact .section-container {
@@ -52,6 +52,10 @@
 	    width: 1400px;
 	    left: 50%;
 	    margin-left: -700px;
+	}
+
+	section#article {
+		width: 1400px;
 	}
 
 	#nav-main {
@@ -85,6 +89,11 @@
 	h3 {
 		font-size: 45px;
 		line-height: 85px;
+	}
+
+	section#article h3 {
+		font-size: 45px;
+		line-height: 65px;
 	}
 
 	p {
@@ -184,14 +193,14 @@
 	    margin-left: -700px;
 	}
 
-	#team .section-container {
+	#case_study .section-container {
 	    top: 50%;
 	    height: 500px;
 	    margin-top: -250px; 
 	    margin-bottom: 0;
-	    width: 598px;
+	    width: 900px;
 	    left: 50%;
-	    margin-left: -299px;
+	    margin-left: -450px;
 	}
 
 	#contact .section-container {
@@ -202,6 +211,10 @@
 	    width: 1400px;
 	    left: 50%;
 	    margin-left: -700px;
+	}
+
+	section#article {
+		width: 1400px;
 	}
 
 	#nav-main {
@@ -235,6 +248,11 @@
 	h3 {
 		font-size: 45px;
 		line-height: 85px;
+	}
+
+	section#article h3 {
+		font-size: 45px;
+		line-height: 65px;
 	}
 
 	p {
@@ -334,14 +352,14 @@
 	    margin-left: -700px;
 	}
 
-	#team .section-container {
+	#case_study .section-container {
 	    top: 50%;
 	    height: 500px;
 	    margin-top: -250px; 
 	    margin-bottom: 0;
-	    width: 598px;
+	    width: 900px;
 	    left: 50%;
-	    margin-left: -299px;
+	    margin-left: -450px;
 	}
 
 	#contact .section-container {
@@ -352,6 +370,10 @@
 	    width: 1400px;
 	    left: 50%;
 	    margin-left: -700px;
+	}
+
+	section#article {
+		width: 1400px;
 	}
 
 	#nav-main {
@@ -385,6 +407,11 @@
 	h3 {
 		font-size: 45px;
 		line-height: 85px;
+	}
+
+	section#article h3 {
+		font-size: 45px;
+		line-height: 65px;
 	}
 
 	p {
@@ -484,14 +511,14 @@
 	    margin-left: -450px;
 	}
 
-	#team .section-container {
+	#case_study .section-container {
 	    top: 50%;
 	    height: 500px;
 	    margin-top: -250px; 
 	    margin-bottom: 0;
-	    width: 598px;
+	    width: 730px;
 	    left: 50%;
-	    margin-left: -299px;
+	    margin-left: -365px;
 	}
 
 	#contact .section-container {
@@ -502,6 +529,10 @@
 	    width: 860px;
 	    left: 50%;
 	    margin-left: -430px;
+	}
+
+	section#article {
+		width: 900px;
 	}
 
 	#nav-main {
@@ -534,6 +565,16 @@
 	p {
 		font-size: 26px;
 		line-height: 47px;
+	}
+
+	section#article h3 {
+		margin-bottom: 30px;
+		font-size: 33px;
+		line-height: 48px;
+	}
+
+	section#article h2 {
+		font-size: 55px;
 	}
 
 	#contact #formBlock {
@@ -616,7 +657,7 @@
 	    margin-left: -325px;
 	}
 
-	#team .section-container {
+	#case_study .section-container {
 	    top: 50%;
 	    height: 500px;
 	    margin-top: -250px; 
@@ -634,6 +675,10 @@
 	    width: 586px;
 	    left: 50%;
 	    margin-left: -293px;
+	}
+
+	section#article {
+		width: 700px;
 	}
 
 	#nav-main {
@@ -675,7 +720,7 @@
 	    margin-left: -325px;
 	}
 
-	#team .section-container {
+	#case_study .section-container {
 	    top: 50%;
 	    height: 500px;
 	    margin-top: -250px; 
@@ -693,6 +738,10 @@
 	    width: 586px;
 	    left: 50%;
 	    margin-left: -293px;
+	}
+
+	section#article {
+		width: 600px;
 	}
 
 	#nav-main {
@@ -756,7 +805,7 @@
 	    margin-left: -200px;
 	}
 
-	#team .section-container {
+	#case_study .section-container {
 	    top: 50%;
 	    height: 500px;
 	    margin-top: -250px; 
@@ -774,6 +823,10 @@
 	    width: 400px;
 	    left: 50%;
 	    margin-left: -200px;
+	}
+
+	section#article {
+		width: 90%;
 	}
 
 	#contact button {
@@ -832,7 +885,7 @@
 
 	section#start,
 	section#technologies,
-	section#team,
+	section#case_study,
 	section#contact {
 		min-height: 730px;
 	}
@@ -846,6 +899,19 @@
 	    left: 50%;
 	    margin-left: -131px;
 		margin-bottom: 0;
+	}
+
+	#case_study img {
+		width: 100px;
+		margin-bottom: 40px;
+	}
+
+	#case_study .section-container {
+		margin-top: 80px;
+	}
+
+	#case_study h3 {
+		margin-bottom: 40px;
 	}
 
 	#start .section-container {
@@ -864,6 +930,16 @@
 	    top: 50%;
 	    height: 610px;
 	    margin-top: -305px; 
+	}
+
+	section#article {
+		width: 92%;
+	}
+
+	section#article .section-container {
+		width: 100%;
+		left: 0;
+		margin-left: 0;
 	}
 
 	ul.navigation {
@@ -1012,7 +1088,7 @@
 
 	section#start,
 	section#technologies,
-	section#team,
+	section#case_study,
 	section#contact {
 		min-height: 720px;
 	}

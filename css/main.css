@@ -121,8 +121,7 @@ section {
 
 section#start,
 section#technologies,
-section#team,
-section#contact {
+section#team {
 	min-height: 634px;
 }
 
@@ -221,21 +220,22 @@ section#start {
 	width: 70%;
 }
 
-/* SECTION 04 -- TEAM
+/* SECTION 04 -- case_study
 ============================================================ */
 
-#team {
+#case_study {
 	height: 100vh;
 	/*background-image: 		url(/img/Illustrationsandgraphics-01.svg);
 	background-size: 		100% auto;
 	background-position: 	top center;*/
 }
 
-#team img {
+#case_study img {
 	width: 15%;
+	margin-bottom: 60px;
 }
 
-#team h3 {
+#case_study h3 {
 	margin-bottom: 60px;
 }
 
@@ -243,10 +243,15 @@ section#start {
 ============================================================ */
 
 #contact {
+	min-height: 850px;
 	height: 100vh;
 	/*background-image: 		url(/img/Illustrationsandgraphics-05.svg),
 							url(/img/Illustrationsandgraphics-01.svg);*/
 	background-image: 		url(/img/hintergrund-kontakt.svg);
+}
+
+section#contact {
+	min-height: 800px;
 }
 
 p.contact-blurb {
@@ -332,6 +337,33 @@ p.back-to-top {
 	color: #13BA7A;
 }
 
+/* ARTICLE SECTIONS
+============================================================ */
+
+section#article .section-container {
+	position: relative;
+}
+
+section#article img {
+	width: 100%;
+	margin-bottom: 30px;
+}
+
+body section#article {
+	margin: 0 auto;
+	text-align: left;
+	margin-bottom: 120px;
+	margin-top: 120px;
+	border-bottom: 0;
+}
+
+section#article h3 {
+	font-weight: 700;
+	margin-bottom: 30px;
+	font-size: 25px;
+	line-height: 35px;
+}
+
 /* HEADER
 ============================================================ */
 
@@ -345,6 +377,7 @@ header {
 	margin-right:0;
 	position:fixed;
 	z-index: 100;
+	top: 0;
 }
 
 .header-container {
