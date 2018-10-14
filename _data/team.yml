@@ -1,0 +1,21 @@
+andrew_holway:
+  item_id: andrew_holway
+  linkedin_url: https://www.linkedin.com/in/andrewholway/
+  name: Andrew Holway
+  img_url: /img/test-otter-1.jpg
+  headline: CEO
+  bio: Andrew is british and is obsessed with tea and cricket. He lives in Germany and drives like a maniac.
+svetlana_vaganova:
+  item_id: svetlana_vaganova
+  linkedin_url: https://www.linkedin.com/in/svetlana-vaganova-b93a9943/
+  name: Svetlana Vaganova
+  img_url: /img/test-otter-2.jpg
+  headline: Sales Director
+  bio: Svetlana is Russan and likes the water. She recently relocated to berlin and bought a bicycle
+emily_meads:
+  item_id: emily_meads
+  linkedin_url: https://www.linkedin.com/in/emily-meads-b2793bb4/
+  name: Emily Meads
+  img_url: /img/test-otter-3.jpg
+  headline: Associate Engineer
+  bio: Emily is French, or American or something. She studied physics and has a west country accent. 
