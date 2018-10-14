@@ -16,7 +16,7 @@ variables:
   # The 'latest' image. Used as a base to cache from
   # when building the $BUILD_IMAGE.
 
-  SERVICE_NAME: otter-ly
+  SERVICE_NAME: oleh-otter-ly
   TLD: otterly.cc
 
 stages:
