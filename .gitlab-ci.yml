@@ -1,0 +1,151 @@
+cache:
+  untracked: true
+  key: $CI_COMMIT_REF_NAME
+  paths:
+    - .yarn-cache/
+
+variables:
+  # From the docs: https://docs.gitlab.com/ee/ci/yaml/#git-strategy
+  #   „fetch is faster as it re-uses the project workspace (falling back
+  #   to clone if it doesn't exist). git clean is used to undo any changes
+  #   made by the last job, and git fetch is used to retrieve commits
+  #   made since the last job ran.“
+  GIT_STRATEGY: fetch
+
+  # https://medium.com/@gajus/making-docker-in-docker-builds-x2-faster-using-docker-cache-from-option-c01febd8ef84
+  # The 'latest' image. Used as a base to cache from
+  # when building the $BUILD_IMAGE.
+
+  SERVICE_NAME: test-app
+  SERVER_HOSTNAME: borderless-ltd.net
+
+stages:
+  - setup
+  - test
+  - review
+  - staging
+  - production
+
+before_script:
+  - eval export REGISTRY_URL="eu.gcr.io/wise-philosophy-218008/$SERVICE_NAME"
+  - eval export SHORT_GIT_SHA=$(git rev-parse --short HEAD)
+  - eval export SANITIZED_BRANCH_NAME=$(echo $CI_COMMIT_REF_NAME | sed -e "s/\//-/g")
+  # The image tag of this build
+  - eval export BUILD_IMAGE=${REGISTRY_URL}:${SANITIZED_BRANCH_NAME}-${SHORT_GIT_SHA}
+  - eval export CACHE_TAG=${REGISTRY_URL}:cache
+  # The fqdn of the gitlab server is not available in the standard env vars so we cut it out of this URL
+  - eval export GITLAB_HOSTNAME=$(echo $CI_PROJECT_URL | awk -F/ '{print $3}')
+
+
+#########
+# SETUP #
+#########
+setup:
+  stage: setup
+  cache:
+    key: $CI_COMMIT_REF_NAME
+    paths:
+      - node_modules/
+  artifacts:
+    expire_in: 3d
+    paths:
+      - node_modules
+  script:
+    - yarn install --pure-lockfile --cache-folder .yarn-cache
+
+
+#########
+# BUILD #
+#########
+build:
+  stage: test
+  cache:
+    policy: pull
+  script:
+    - gcloud auth configure-docker
+    - docker build
+      --pull
+      --tag $BUILD_IMAGE
+      --cache-from $CACHE_TAG
+      .
+
+    # Push container to GitLab docker registry
+    - docker push $BUILD_IMAGE
+    - docker tag $BUILD_IMAGE $CACHE_TAG
+    - docker push $CACHE_TAG    
+
+##########
+# REVIEW #
+##########
+start-review:
+  stage: review
+  environment:
+    name: review-${SERVICE_NAME}
+    url: https://rev-${SERVICE_NAME}--${CI_COMMIT_REF_SLUG}.${SERVER_HOSTNAME}
+    on_stop: stop-review
+  only:
+    - branches
+  except:
+    - master
+  cache:
+    policy: pull
+  script:
+    - git clone http://gitlab-ci-token:${CI_JOB_TOKEN}@${GITLAB_HOSTNAME}/orbit/infra.git
+    - /bin/bash $(pwd)/infra/k8s/deploy.sh rev-${SERVICE_NAME}--${CI_COMMIT_REF_SLUG} no-database
+
+stop-review:
+  stage: review
+  environment:
+    name: review-${SERVICE_NAME}
+    action: stop
+  when: manual
+  cache:
+    policy: pull
+  script:
+    - git clone http://gitlab-ci-token:${CI_JOB_TOKEN}@${GITLAB_HOSTNAME}/orbit/infra.git
+    - /bin/bash $(pwd)/infra/k8s/purge.sh rev-${SERVICE_NAME}--$CI_COMMIT_REF_SLUG
+  variables:
+    GIT_STRATEGY: none
+  only:
+    - branches
+  except:
+    - master
+
+
+###########
+# STAGING #
+###########
+deploy-staging:
+  stage: staging
+  environment:
+    name: staging
+    url: https://staging-${SERVICE_NAME}.${SERVER_HOSTNAME}
+  only:
+    - master
+  cache:
+    policy: pull
+  script:
+    - git clone http://gitlab-ci-token:${CI_JOB_TOKEN}@${GITLAB_HOSTNAME}/orbit/infra.git
+    - /bin/bash $(pwd)/infra/k8s/deploy.sh staging-${SERVICE_NAME} no-database
+
+
+##############
+# PRODUCTION #
+##############
+deploy-production:
+  stage: production
+  environment:
+    name: production
+    url: https://production-${SERVICE_NAME}.${SERVER_HOSTNAME}
+  cache:
+    policy: pull
+  script:
+    - docker login $CI_REGISTRY -u gitlab-ci-token -p $CI_JOB_TOKEN
+    - git clone http://gitlab-ci-token:${CI_JOB_TOKEN}@${GITLAB_HOSTNAME}/orbit/infra.git
+    - /bin/bash $(pwd)/infra/k8s/deploy.sh production-${SERVICE_NAME} no-database
+  # These two 'onlys' give us AND logic. The commit should both be in master AND be tagged. NB. this is git tagging. not 'gitlab' tagging.
+  only:
+    - master
+  only:
+    - tags
+
