@@ -90,7 +90,7 @@ start-review:
   cache:
     policy: pull
   script:
-    - git clone http://gitlab-ci-token:${CI_JOB_TOKEN}@${GITLAB_HOSTNAME}/orbit/infra.git
+    - git clone http://gitlab-ci-token:${CI_JOB_TOKEN}@${GITLAB_HOSTNAME}/website/infra.git
     - /bin/bash $(pwd)/infra/k8s/deploy.sh rev-${SERVICE_NAME}--${CI_COMMIT_REF_SLUG} no-database
 
 stop-review:
@@ -102,7 +102,7 @@ stop-review:
   cache:
     policy: pull
   script:
-    - git clone http://gitlab-ci-token:${CI_JOB_TOKEN}@${GITLAB_HOSTNAME}/orbit/infra.git
+    - git clone http://gitlab-ci-token:${CI_JOB_TOKEN}@${GITLAB_HOSTNAME}/website/infra.git
     - /bin/bash $(pwd)/infra/k8s/purge.sh rev-${SERVICE_NAME}--$CI_COMMIT_REF_SLUG
   variables:
     GIT_STRATEGY: none
@@ -125,7 +125,7 @@ deploy-staging:
   cache:
     policy: pull
   script:
-    - git clone http://gitlab-ci-token:${CI_JOB_TOKEN}@${GITLAB_HOSTNAME}/orbit/infra.git
+    - git clone http://gitlab-ci-token:${CI_JOB_TOKEN}@${GITLAB_HOSTNAME}/website/infra.git
     - /bin/bash $(pwd)/infra/k8s/deploy.sh staging-${SERVICE_NAME} no-database
 
 
@@ -141,7 +141,7 @@ deploy-production:
     policy: pull
   script:
     - docker login $CI_REGISTRY -u gitlab-ci-token -p $CI_JOB_TOKEN
-    - git clone http://gitlab-ci-token:${CI_JOB_TOKEN}@${GITLAB_HOSTNAME}/orbit/infra.git
+    - git clone http://gitlab-ci-token:${CI_JOB_TOKEN}@${GITLAB_HOSTNAME}/website/infra.git
     - /bin/bash $(pwd)/infra/k8s/deploy.sh production-${SERVICE_NAME} no-database
   # These two 'onlys' give us AND logic. The commit should both be in master AND be tagged. NB. this is git tagging. not 'gitlab' tagging.
   only:
