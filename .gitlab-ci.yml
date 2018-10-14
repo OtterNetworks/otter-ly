@@ -81,7 +81,7 @@ start-review:
   stage: review
   environment:
     name: review-${SERVICE_NAME}
-    url: https://rev-${SERVICE_NAME}--${CI_COMMIT_REF_SLUG}.${SERVER_HOSTNAME}
+    url: https://rev-${SERVICE_NAME}--${CI_COMMIT_REF_SLUG}.${TLD}
     on_stop: stop-review
   only:
     - branches
@@ -119,7 +119,7 @@ deploy-staging:
   stage: staging
   environment:
     name: staging
-    url: https://staging-${SERVICE_NAME}.${SERVER_HOSTNAME}
+    url: https://staging-${SERVICE_NAME}.${TLD}
   only:
     - master
   cache:
@@ -136,7 +136,7 @@ deploy-production:
   stage: production
   environment:
     name: production
-    url: https://production-${SERVICE_NAME}.${SERVER_HOSTNAME}
+    url: https://production-${SERVICE_NAME}.${TLD}
   cache:
     policy: pull
   script:
