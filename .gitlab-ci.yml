@@ -17,7 +17,7 @@ variables:
   # when building the $BUILD_IMAGE.
 
   SERVICE_NAME: otter-ly
-  SERVER_HOSTNAME: otterly.cc
+  TLD: otterly.cc
 
 stages:
   - setup
