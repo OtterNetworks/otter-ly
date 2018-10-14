@@ -16,8 +16,8 @@ variables:
   # The 'latest' image. Used as a base to cache from
   # when building the $BUILD_IMAGE.
 
-  SERVICE_NAME: test-app
-  SERVER_HOSTNAME: borderless-ltd.net
+  SERVICE_NAME: otter-ly
+  SERVER_HOSTNAME: otterly.cc
 
 stages:
   - setup
@@ -27,7 +27,7 @@ stages:
   - production
 
 before_script:
-  - eval export REGISTRY_URL="eu.gcr.io/wise-philosophy-218008/$SERVICE_NAME"
+  - eval export REGISTRY_URL="eu.gcr.io/otters-cc/$SERVICE_NAME"
   - eval export SHORT_GIT_SHA=$(git rev-parse --short HEAD)
   - eval export SANITIZED_BRANCH_NAME=$(echo $CI_COMMIT_REF_NAME | sed -e "s/\//-/g")
   # The image tag of this build
