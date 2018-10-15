@@ -21,3 +21,6 @@ exclude:
   - vendor/cache/
   - vendor/gems/
   - vendor/ruby/
+  - Dockerfile
+  - index-old.md # Remove the file if it's not needed
+  - README.md
