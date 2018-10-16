@@ -102,8 +102,8 @@ stop-review:
   cache:
     policy: pull
   script:
-    - git clone http://gitlab-ci-token:${CI_JOB_TOKEN}@${GITLAB_HOSTNAME}/website/infra.git
-    - /bin/bash { $(pwd)/infra/k8s/purge.sh rev-${SERVICE_NAME}--$CI_COMMIT_REF_SLUG } || { : }
+    - git clone http://gitlab-ci-token:${CI_JOB_TOKEN}@${GITLAB_HOSTNAME}/website/infra.git infra-d
+    - /bin/bash $(pwd)/infra-d/k8s/purge.sh rev-${SERVICE_NAME}--$CI_COMMIT_REF_SLUG 
   variables:
     GIT_STRATEGY: none
   only:
