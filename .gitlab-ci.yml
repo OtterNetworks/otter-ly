@@ -16,7 +16,7 @@ variables:
   # The 'latest' image. Used as a base to cache from
   # when building the $BUILD_IMAGE.
 
-  SERVICE_NAME: oleh-otter-ly
+  SERVICE_NAME: otter-ly
   TLD: otterly.cc
 
 stages:
@@ -91,7 +91,7 @@ start-review:
     policy: pull
   script:
     - git clone http://gitlab-ci-token:${CI_JOB_TOKEN}@${GITLAB_HOSTNAME}/website/infra.git
-    - /bin/bash $(pwd)/infra/k8s/deploy.sh rev-${SERVICE_NAME}--${CI_COMMIT_REF_SLUG} no-database
+    - /bin/bash $(pwd)/infra/k8s/deploy.sh rev-${SERVICE_NAME}--${CI_COMMIT_REF_SLUG}
 
 stop-review:
   stage: review
