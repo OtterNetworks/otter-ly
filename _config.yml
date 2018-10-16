@@ -1,26 +1,25 @@
-title: Your awesome title
-email: your-email@example.com
+title: Otter Networks
+email: info@otternetworks.de
 description: >- # this means to ignore newlines until "baseurl:"
-  Write an awesome description for your new site here. You can edit this
-  line in _config.yml. It will appear in your document head meta (for
-  Google search results) and in your feed.xml site description.
+  Upskill your developers rather than hiring a Devops Engineer
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "" # the base hostname & protocol for your site, e.g. http://example.com
-twitter_username: jekyllrb
-github_username:  jekyll
+url: "https://otter.ly" # the base hostname & protocol for your site, e.g. http://example.com
+linkedin_url: "https://www.linkedin.com/company/otter-networks/"
 
 # Build settings
 markdown: kramdown
-# plugins:
+theme: minima
+plugins:
+  - jekyll-feed
 
-exclude:
-  - Gemfile
-  - Gemfile.lock
-  - node_modules
-  - vendor/bundle/
-  - vendor/cache/
-  - vendor/gems/
-  - vendor/ruby/
-  - Dockerfile
-  - index-old.md # Remove the file if it's not needed
-  - README.md
+# Exclude from processing.
+# The following items will not be processed, by default. Create a custom list
+# to override the default setting.
+# exclude:
+#   - Gemfile
+#   - Gemfile.lock
+#   - node_modules
+#   - vendor/bundle/
+#   - vendor/cache/
+#   - vendor/gems/
+#   - vendor/ruby/
