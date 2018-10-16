@@ -1,8 +1,6 @@
 ---
-# Feel free to add content and custom Front Matter to this file.
-# To modify the layout, see https://jekyllrb.com/docs/themes/#overriding-theme-defaults
-
 layout: page
+permalink: /how-i-learned/
 ---
 
 ## How I learned to stop worrying and love Kubernetes
@@ -20,7 +18,7 @@ I shifted nervously in my seat.
 My response to Philip Paetz, the newly minted CTO of Brickblock, was tinged with an audible sense of doubt. He had just told me he wanted Kubernetes, and I wasn’t ready to give him the enthusiastic agreement he was looking for.
 
 Thinking back on this conversation now, I have to congratulate Paetz on his vision. He’d already deployed Kubernetes on AWS using the KOPS deployment system and needed someone to take it over. Even though I was very much a naysayer, he saw an opportunity to change my mind. He ultimately chose me to build this new company’s infrastructure.
-		
+
 ![otter-2](/img/test-otter-2.jpg)
 
 ### Moving past the fear
