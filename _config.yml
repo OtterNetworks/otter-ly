@@ -8,7 +8,7 @@ linkedin_url: "https://www.linkedin.com/company/otter-networks/"
 
 # Build settings
 markdown: kramdown
-theme: minima
+# theme: minima
 plugins:
   - jekyll-feed
 
