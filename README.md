@@ -4,7 +4,7 @@
 
 ### Posts
 
-Posts files (ex. 2018-10-15-post-file-name.md) should be placed in the `_posts` directory.
+Post files (ex. 2018-10-15-post-file-name.md) should be placed in the `_posts` directory.
 Please use following Frontmatter structure in each post document:
 
 ```
