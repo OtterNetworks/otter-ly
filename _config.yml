@@ -8,7 +8,8 @@ linkedin_url: "https://www.linkedin.com/company/otter-networks/"
 
 # Build settings
 markdown: kramdown
-# plugins:
+plugins:
+  - jekyll-assets
 
 exclude:
   - Gemfile
