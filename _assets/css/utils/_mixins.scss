@@ -1,0 +1,17 @@
+@mixin sm-mobile {
+  @media (max-width: $sm-mobile-max-width) {
+    @content;
+  }
+}
+
+@mixin mobile {
+  @media (max-width: $mobile-max-width) {
+    @content;
+  }
+}
+
+@mixin tablet {
+  @media (max-width: $tablet-max-width) {
+    @content;
+  }
+}

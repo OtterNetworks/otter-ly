@@ -1,0 +1,38 @@
+@mixin flow {
+  &_row {
+    -webkit-flex-flow: row;
+    flex-flow: row;
+  }
+
+  &_row-reverse {
+    -webkit-flex-flow: row-reverse;
+    flex-flow: row-reverse;
+  }
+
+  &_column {
+    -webkit-flex-flow: column;
+    flex-flow: column;
+  }
+}
+
+.flow {
+  @include flow;
+}
+
+@include sm-mobile {
+  .xs-flow {
+    @include flow;
+  }
+}
+
+@include mobile {
+  .sm-flow {
+    @include flow;
+  }
+}
+
+@include tablet {
+  .md-flow {
+    @include flow;
+  }
+}

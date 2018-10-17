@@ -1,0 +1,39 @@
+@mixin justify {
+  &_space-between {
+    justify-content: space-between;
+  }
+
+  &_space-around {
+    justify-content: space-around;
+  }
+
+  &_center {
+    justify-content: center;
+  }
+
+  &_end {
+    justify-content: flex-end;
+  }
+}
+
+.justify {
+  @include justify;
+}
+
+@include tablet {
+  .md-justify {
+    @include justify;
+  }
+}
+
+@include mobile {
+  .sm-justify {
+    @include justify;
+  }
+}
+
+@include sm-mobile {
+  .xs-justify {
+    @include justify;
+  }
+}
