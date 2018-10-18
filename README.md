@@ -16,7 +16,7 @@ permalink: /custom-post-link/
 
 ### Pages
 
-Posts files (ex. page-name.md, page-name.html) should be placed in the `pages` directory.
+Page files (ex. page-name.md, page-name.html) should be placed in the `pages` directory.
 Please use following Frontmatter structure in each post document:
 
 ```

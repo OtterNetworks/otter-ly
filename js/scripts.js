@@ -1,27 +1,27 @@
-jQuery(document).ready(function($){ 
+jQuery(document).ready(function($){
 
 
-/* Function that changes each link in the navigation to its "active" color, when 
+/* Function that changes each link in the navigation to its "active" color, when
    the user scrolls to its corresponding section:
 ================================================================================== */
 
   var sections = $('section')
     , nav = $('header')
     , nav_height = nav.outerHeight();
-   
+
   $(window).on('scroll', function () {
     var cur_pos = $(this).scrollTop();
 
     //console.log(cur_pos);
-   
+
     sections.each(function() {
       var top = $(this).offset().top - nav_height,
           bottom = top + $(this).outerHeight();
-   
+
       if (cur_pos >= top && cur_pos <= bottom) {
         nav.find('a').removeClass('active');
         sections.removeClass('active');
-   
+
         $(this).addClass('active');
         nav.find('a[href="#'+$(this).attr('id')+'"]').addClass('active');
         //console.log("reaching section #"+$(this));
@@ -32,18 +32,37 @@ jQuery(document).ready(function($){
 
 /* Function that triggers the mobile navigation menu:
 ================================================================================== */
+  (function () {
+    var navbarSwitcher = $('.js-navbar-switcher');
+    var navbarLink = $('.js-navbar-link');
+    var navbar = $('#mobileNavbar');
+    var openedClass = 'navbar_opened';
 
- $("#nav-mobile").html($("#nav-main").html());
-  $("#nav-trigger span").click(function(){
-      if ($("nav#nav-mobile ul").hasClass("expanded")) {
-          $("nav#nav-mobile ul.expanded").removeClass("expanded").slideUp(250);
-          $(this).removeClass("open");
+    var navbarOpened = false;
+
+    function closeNavbar() {
+      navbar.removeClass(openedClass);
+    }
+
+    function openNavbar() {
+      navbar.addClass(openedClass);
+    }
+
+    navbarSwitcher.click(function() {
+      navbarOpened = !navbarOpened;
+
+      if (navbarOpened) {
+        openNavbar();
       } else {
-          $("nav#nav-mobile ul").addClass("expanded").slideDown(250);
-          $(this).addClass("open");
+        closeNavbar();
       }
-  });
+    });
 
+    navbarLink.click(function () {
+      navbarOpened = false;
+      closeNavbar();
+    });
+  })();
 
 /* Function for seamless scrolling when navigation links are clicked on:
 ================================================================================== */
@@ -56,8 +75,8 @@ $('a[href*="#"]')
   .click(function(event) {
     // On-page links
     if (
-      location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') 
-      && 
+      location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '')
+      &&
       location.hostname == this.hostname
     ) {
       // Figure out element to scroll to
@@ -91,16 +110,16 @@ $('a[href*="#"]')
 
  $('#someForm').on('submit', function(e) {
     e.preventDefault();
-    
+
     //get the name field value
     var name = $('#name').val();
     //get the name field value
     var email = $('#email').val();
     //get the comments
     var comments = $('#comments').val();
-          
+
     //pretend we don't need validation
-    
+
     //send to formspree
     $.ajax({
       url:'https://formspree.io/xqlqylgm',
@@ -114,13 +133,13 @@ $('a[href*="#"]')
       },
       dataType:"json",
       success:function() {
-        console.log('success'); 
+        console.log('success');
         $('#formBlock').hide();
         $('#thankyouBlock').show();
-      } 
+      }
 
-    });   
-    
+    });
+
   });
 
 
@@ -139,7 +158,7 @@ $('a[href*="#"]')
   //hide or show the "back to top" link
   $(window).scroll(function(){
     ( $(this).scrollTop() > offset ) ? $back_to_top.addClass('cd-is-visible') : $back_to_top.removeClass('cd-is-visible cd-fade-out');
-    if( $(this).scrollTop() > offset_opacity ) { 
+    if( $(this).scrollTop() > offset_opacity ) {
       $back_to_top.addClass('cd-fade-out');
     }
   });
