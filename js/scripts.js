@@ -32,18 +32,37 @@ jQuery(document).ready(function($){
 
 /* Function that triggers the mobile navigation menu:
 ================================================================================== */
+  (function () {
+    var navbarSwitcher = $('.js-navbar-switcher');
+    var navbarLink = $('.js-navbar-link');
+    var navbar = $('#mobileNavbar');
+    var openedClass = 'navbar_opened';
 
-  $("#nav-mobile").html($("#nav-main").html());
-  $("#nav-trigger span").click(function(){
-    if ($("nav#nav-mobile ul").hasClass("expanded")) {
-      $("nav#nav-mobile ul.expanded").removeClass("expanded").slideUp(250);
-      $(this).removeClass("open");
-    } else {
-      $("nav#nav-mobile ul").addClass("expanded").slideDown(250);
-      $(this).addClass("open");
+    var navbarOpened = false;
+
+    function closeNavbar() {
+      navbar.removeClass(openedClass);
     }
-  });
 
+    function openNavbar() {
+      navbar.addClass(openedClass);
+    }
+
+    navbarSwitcher.click(function() {
+      navbarOpened = !navbarOpened;
+
+      if (navbarOpened) {
+        openNavbar();
+      } else {
+        closeNavbar();
+      }
+    });
+
+    navbarLink.click(function () {
+      navbarOpened = false;
+      closeNavbar();
+    });
+  })();
 
 /* Function for seamless scrolling when navigation links are clicked on:
 ================================================================================== */

@@ -1,7 +1,7 @@
 <!-- navigation has to be in a header tag for now for CSS -->
 <header class="header section padding_h">
   <div class="header__content section__content flex flow_row align-items_center justify_space-between">
-    <span class="header__navs-switcher link lg-hidden md-hidden">
+    <span class="header__navs-switcher link lg-hidden md-hidden js-navbar-switcher">
       <i class="fa fa-bars"></i>
     </span>
     <a href="/" class="header__logo-link">
@@ -16,21 +16,21 @@
     <span class="header__placeholder lg-hidden md-hidden"></span>
   </div>
 </header>
-<div class="navbar">
+<div id="mobileNavbar" class="navbar">
   <div class="navbar__content">
     <div class="navbar__header flex align-items_center justify_space-between">
       <a href="/" class="navbar__logo">
         <img src="/img/OtterNetworks_Positive_RGB.svg" class="header__logo-img" alt="Otter Networks logo">
       </a>
-      <span class="navbar__close link">
+      <span class="navbar__close link js-navbar-switcher">
         <i class="fa fa-times"></i>
       </span>
     </div>
     <div class="navbar__links">
-      <a class="navbar__link" href="/#what_we_do">What we do</a>
-      <a class="navbar__link" href="/#technologies">Technologies</a>
-      <a class="navbar__link" href="/#case_study">Case Study</a>
-      <a class="navbar__link" href="/#contact">Contact</a>
+      <a class="navbar__link js-navbar-link" href="/#what_we_do">What we do</a>
+      <a class="navbar__link js-navbar-link" href="/#technologies">Technologies</a>
+      <a class="navbar__link js-navbar-link" href="/#case_study">Case Study</a>
+      <a class="navbar__link js-navbar-link" href="/#contact">Contact</a>
     </div>
   </div>
 </div>
