@@ -1,0 +1,28 @@
+@mixin align-items {
+  &_center {
+    -webkit-align-items: center;
+    align-items: center;
+  }
+}
+
+.align-items {
+  @include align-items;
+}
+
+@include sm-mobile {
+  .xs-align-items {
+    @include align-items;
+  }
+}
+
+@include mobile {
+  .sm-align-items {
+    @include align-items;
+  }
+}
+
+@include tablet {
+  .md-align-items {
+    @include align-items;
+  }
+}

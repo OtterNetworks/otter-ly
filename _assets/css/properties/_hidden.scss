@@ -1,0 +1,27 @@
+.hidden {
+  display: none;
+}
+
+@include sm-mobile {
+  .xs-hidden {
+    display: none !important;
+  }
+}
+
+@include mobile {
+  .sm-hidden {
+    display: none !important;
+  }
+}
+
+@include tablet {
+  .md-hidden {
+    display: none !important;
+  }
+}
+
+@include desktop {
+  .lg-hidden {
+    display: none !important;
+  }
+}

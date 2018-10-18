@@ -1,0 +1,10 @@
+.navigation {
+  &__link {
+    font-weight: bold;
+    margin: 0 0 0 30px;
+
+    &:first-child {
+      margin: 0;
+    }
+  }
+}

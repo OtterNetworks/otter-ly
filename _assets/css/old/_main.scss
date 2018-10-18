@@ -1,29 +1,10 @@
-
 /* GENERAL
 ============================================================ */
-
-body {
-	background-color: #fff;
-	font-family: 'Montserrat', sans-serif;
-	margin: 0;
-	padding: 0;
-	color: #3f3936;
-	text-align: center;
-}
 
 .clearfix:after {
   content: "";
   display: table;
   clear: both;
-}
-
-a {
-	color: #3f3936;
-	text-decoration: none;
-}
-
-a:hover {
-	color: #CF3800;
 }
 
 h1 {
@@ -81,7 +62,7 @@ hr {
 	background: #ddd;
 	font-size: 0;
 	border: 0;
-	width: 100%; 
+	width: 100%;
 	margin: 40px 0;
 }
 
@@ -367,31 +348,6 @@ section#article h3 {
 /* HEADER
 ============================================================ */
 
-header {
-	width:100%;
-	height:10vh;
-	min-height: 63px;
-	margin-top: 0;
-	margin-bottom:0;
-	margin-left:0;
-	margin-right:0;
-	position:fixed;
-	z-index: 100;
-	top: 0;
-}
-
-.header-container {
-	height: 80%;
-	border-bottom: 1px #ddd solid;
-	background:#FFF;
-}
-
-.header-container::after {
-    content: '';
-    display: inline-block;
-    width: 100%;
-}
-
 .header-shadow {
 	height: 30px;
 	width: 100%;
@@ -401,34 +357,6 @@ header {
 	background-size: 		100% auto;
 	background-position: 	top center;
 	background-repeat: 		no-repeat;
-}
-
-ul.navigation {
-	list-style-type: none;
-	padding-left: 0;
-	display: inline-block;
-	width: 60%;
-	text-align: right;
-	vertical-align: middle;
-}
-
-ul.navigation li {
-	display: inline-block;
-	margin-left: 30px;
-}
-
-.navigation a {
-	color: #3f3936;
-	font-weight: bold;
-}
-
-.navigation a:hover,
-.fa.fa-bars:hover {
-	color: #CF3800;
-}
-
-.navigation a.active {
-	color: #CF3800;
 }
 
 a.active {
@@ -451,7 +379,7 @@ a.active {
 /*.logo::before {
     content: '';
     display: inline-block;
-    vertical-align: middle;  
+    vertical-align: middle;
     height: 100%;
 }*/
 

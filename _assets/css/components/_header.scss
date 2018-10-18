@@ -1,0 +1,50 @@
+.header {
+  background-color: $white;
+  border-bottom: 1px solid $grey-200;
+  left: 0;
+  min-width: $page-min-width;
+  position: fixed;
+  right: 0;
+  top: 0;
+  z-index: 1;
+  width: 100%;
+
+  &__content {
+    height: $header-content-height;
+  }
+
+  &__navs-switcher {
+    font-size: 24px;
+  }
+
+  &__logo-link {
+    display: block;
+    width: 200px;
+  }
+
+  &__placeholder {
+    display: inline-block;
+    width: 21px;
+  }
+
+  &:after {
+    background-image: url(/img/shadow.png);
+    background-size: 100% auto;
+    background-position: top center;
+    background-repeat: no-repeat;
+    content: '';
+    display: block;
+    height: 30px;
+    position: absolute;
+    width: 100%;
+    z-index: 10;
+  }
+}
+
+@include mobile {
+  .header {
+    &__logo-link {
+      width: 180px;
+    }
+  }
+}
