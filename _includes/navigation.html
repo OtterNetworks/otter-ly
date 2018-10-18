@@ -1,14 +1,25 @@
 <!-- navigation has to be in a header tag for now for CSS -->
 <header class="header section padding_h">
   <div class="header__content section__content flex flow_row align-items_center justify_space-between">
+    <span class="header__navs-switcher link lg-hidden md-hidden">
+      <i class="fa fa-bars"></i>
+    </span>
     <a href="/" class="header__logo-link">
       <img src="/img/OtterNetworks_Positive_RGB.svg" class="header__logo-img" alt="Otter Networks logo">
     </a>
-    <nav class="navigation">
+    <nav class="navigation sm-hidden">
       <a class="navigation__link" href="/#what_we_do">What we do</a>
       <a class="navigation__link" href="/#technologies">Technologies</a>
       <a class="navigation__link" href="/#case_study">Case Study</a>
       <a class="navigation__link" href="/#contact">Contact</a>
     </nav>
+    <span class="header__placeholder lg-hidden md-hidden"></span>
   </div>
 </header>
+<div class="mobile-navigation">
+  <div class="mobile-navigation__bar">
+    <div class="mobile-navigation__header">
+
+    </div>
+  </div>
+</div>

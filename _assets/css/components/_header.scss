@@ -12,9 +12,18 @@
     height: 65px;
   }
 
+  &__navs-switcher {
+    font-size: 27px;
+  }
+
   &__logo-link {
     display: block;
     width: 200px;
+  }
+
+  &__placeholder {
+    display: inline-block;
+    width: 24px;
   }
 
   &:after {

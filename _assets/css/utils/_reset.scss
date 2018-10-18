@@ -14,3 +14,13 @@ html, body {
 img {
 	max-width: 100%;
 }
+
+a, .link {
+	color: $grey-800;
+	cursor: pointer;
+	text-decoration: none;
+
+  &:hover {
+    color: $red;
+  }
+}
