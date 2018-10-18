@@ -13,7 +13,7 @@
   }
 
   &__navs-switcher {
-    font-size: 27px;
+    font-size: 24px;
   }
 
   &__logo-link {
@@ -21,9 +21,13 @@
     width: 200px;
   }
 
+  &__logo-img {
+    vertical-align: middle;
+  }
+
   &__placeholder {
     display: inline-block;
-    width: 24px;
+    width: 21px;
   }
 
   &:after {
