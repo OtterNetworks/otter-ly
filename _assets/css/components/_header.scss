@@ -2,6 +2,7 @@
   background-color: $white;
   border-bottom: 1px solid $grey-200;
   left: 0;
+  min-width: $page-min-width;
   position: fixed;
   right: 0;
   top: 0;
@@ -9,7 +10,7 @@
   width: 100%;
 
   &__content {
-    height: 65px;
+    height: $header-content-height;
   }
 
   &__navs-switcher {
@@ -19,10 +20,6 @@
   &__logo-link {
     display: block;
     width: 200px;
-  }
-
-  &__logo-img {
-    vertical-align: middle;
   }
 
   &__placeholder {
@@ -41,5 +38,13 @@
     position: absolute;
     width: 100%;
     z-index: 10;
+  }
+}
+
+@include mobile {
+  .header {
+    &__logo-link {
+      width: 180px;
+    }
   }
 }

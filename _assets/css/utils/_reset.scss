@@ -9,6 +9,7 @@ html, body {
   padding: 0;
   color: $grey-800;
   text-align: center;
+	min-width: $page-min-width;
 }
 
 img {
