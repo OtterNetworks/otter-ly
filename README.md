@@ -25,3 +25,20 @@ layout: page
 permalink: /custom-page-link/
 ---
 ```
+
+## CSS
+
+CSS-code is located in `_assets/css` folder. To add css code for a new
+property/component/section create a new file in coresponding `_assets/css/`
+subdirectory and `@import` it in the directory main file `_main.scss`.
+
+`_assets/css` subdirectory structure:
+- `components/` – includes component style files, such as navigation, team card, button.
+- `properties/` – includes property modificator style files, such as padding, margin, width.
+- `sections/` – includes section style files, such as hero, team section, how it works.
+- `utils/` – includes css system styles, mixins, variables.
+
+## JS
+
+JS-code is located in `_assets/js` folder. The folder contains main import file
+`main.js` and components subfolder with script files for each components.
