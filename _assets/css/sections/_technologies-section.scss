@@ -1,0 +1,20 @@
+.technologies-section {
+  background-image: url(/img/Illustrationsandgraphics-02.svg);
+  background-position: left;
+  background-repeat: no-repeat;
+  background-size: contain;
+
+  &__content {
+    max-width: 650px;
+  }
+}
+
+@include mobile {
+  .technologies-section {
+    background-image: none;
+
+    &__content {
+      width: 80%;
+    }
+  }
+}
