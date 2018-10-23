@@ -1,0 +1,40 @@
+.profile-card {
+  &__thumb {
+    border-radius: 100%;
+    margin: 0 auto;
+    height: 200px;
+    overflow: hidden;
+    width: 200px;
+  }
+
+  &__image {
+    height: 200px;
+  }
+
+  &__title {
+    font-size: 18px;
+    margin: 20px 0 0;
+  }
+
+  &__headline {
+    font-size: 14px;
+    font-weight: normal;
+    margin: 10px 0 0;
+  }
+
+  &__headline-title {
+    vertical-align: middle;
+  }
+
+  &__social {
+    font-size: 18px;
+    vertical-align: middle;
+  }
+
+  &__description {
+    font-size: 14px;
+    line-height: 24px;
+    margin: 15px auto 0;
+    max-width: 200px;
+  }
+}

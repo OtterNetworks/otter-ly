@@ -33,7 +33,8 @@ property/component/section create a new file in coresponding `_assets/css/`
 subdirectory and `@import` it in the directory main file `_main.scss`.
 
 `_assets/css` subdirectory structure:
-- `components/` – includes component style files, such as navigation, team card, button.
+- `components/` – includes component style files, such as navigation, button, field.
+- `cards/` - includes card style files, such as team card ...
 - `properties/` – includes property modificator style files, such as padding, margin, width.
 - `sections/` – includes section style files, such as hero, team section, how it works.
 - `utils/` – includes css system styles, mixins, variables.

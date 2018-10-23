@@ -4,4 +4,17 @@
     max-width: $section-content-max-width;
     position: relative;
   }
+
+  &__title {
+    font-size: $section-title-font-size;
+    font-weight: bold;
+  }
+}
+
+@include mobile {
+  .section {
+    &__title {
+      font-size: $sm-section-title-font-size;
+    }
+  }
 }

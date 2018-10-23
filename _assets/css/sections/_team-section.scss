@@ -1,0 +1,18 @@
+.team-section {
+  &__item {
+    padding: 0 20px;
+  }
+}
+
+@include mobile {
+  .team-section {
+    &__item {
+      margin: 0 0 40px;
+      padding: 0;
+
+      &:last-child {
+        margin: 0;
+      }
+    }
+  }
+}

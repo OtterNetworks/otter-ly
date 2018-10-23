@@ -1,0 +1,23 @@
+<section class="team-section section padding_h">
+  <div class="section__content padding_v">
+    <h3 class="section__title">Our team</h3>
+    <div class="flex justify__space-between padding_top_small">
+      {% for memberHash in site.data.team %}
+      {% assign member = memberHash[1] %}
+      <div class="team-section__item width_1-3 sm-width_1-1">
+        <div class="profile-card">
+          <div class="profile-card__thumb">
+            <img src="{{ member.img_url }}" alt="{{ member.name }}">
+          </div>
+          <h4 class="profile-card__title">{{ member.name }}</h4>
+          <h5 class="profile-card__headline">
+            <span class="profile-card__headline-title">{{ member.headline }}</span>&nbsp;&nbsp;
+            <a href="{{ member.linkedin_url }}" target="_blank"><i class="profile-card__social fab fa-linkedin"></i></a>
+          </h5>
+          <p class="profile-card__description">{{ member.bio }}</p>
+        </div>
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+</section>
