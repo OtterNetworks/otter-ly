@@ -1,6 +1,11 @@
 .team-section {
   &__item {
+    margin: 0 0 40px;
     padding: 0 20px;
+
+    &:nth-last-child(-n+3) {
+      margin: 0;
+    }
   }
 }
 
@@ -9,6 +14,10 @@
     &__item {
       margin: 0 0 40px;
       padding: 0;
+
+      &:nth-last-child(-n+3) {
+        margin: 0 0 40px;
+      }
 
       &:last-child {
         margin: 0;

@@ -101,7 +101,6 @@ section {
 }
 
 section#start,
-section#technologies,
 section#team {
 	min-height: 634px;
 }
@@ -182,13 +181,6 @@ section#start {
 /* SECTION 03 -- TECHNOLOGIES
 ============================================================ */
 
-#technologies {
-	height: 100vh;
-	/*background-image: 		url(/img/Illustrationsandgraphics-02.svg),
-							url(/img/Illustrationsandgraphics-01.svg);*/
-	background-image: 		url(/img/Illustrationsandgraphics-02.svg);
-}
-
 #technologies img {
 	width: 100%;
 }
@@ -203,14 +195,6 @@ section#start {
 
 /* SECTION 04 -- case_study
 ============================================================ */
-
-#case_study {
-	height: 100vh;
-	/*background-image: 		url(/img/Illustrationsandgraphics-01.svg);
-	background-size: 		100% auto;
-	background-position: 	top center;*/
-}
-
 #case_study img {
 	width: 15%;
 	margin-bottom: 60px;
