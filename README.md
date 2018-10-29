@@ -11,6 +11,9 @@ Please use following Frontmatter structure in each post document:
 ---
 layout: post
 permalink: /custom-post-link/
+title: "The page title tag and og:title content. If not set title content is taken from _config.yml."
+description: "The page meta description tag and og:description content. If not set description is taken from _config.yml."
+image: "Image url. If not set og:image not generated"
 ---
 ```
 

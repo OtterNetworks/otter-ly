@@ -1,12 +1,15 @@
 <head>
 	<meta charset="utf-8" />
-	<title>Otter Networks</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
-	<meta charset="utf-8" />
-	<meta property='og:title' content='Otter Networks - Devops Delivered'/>
-	<meta property='og:image' content='https://otter.ly/img/open_graph.png'/>
-	<meta property='og:description' content='Upskill your developers rather than hiring a Devops Engineer'/>
-	<meta property='og:url' content='https://otter.ly/' />
+	<title>{{ page.title | default: site.title }}</title>
+	<meta name="description" content="{{ page.description | default: site.description }}">
+	<meta property="og:title" content="{{ page.title | default: site.title }}" />
+	<meta property="og:description" content="{{ page.description | default: site.description }}" />
+	{% if page.image %}
+	<meta property="og:image" content="{{ page.image }}" />
+	{% endif %}
+	<meta property="og:url" content="{{ page.url | absolute_url }}" />
+	<link rel="canonical" href="{{ page.url | absolute_url }}" />
 	<link rel="shortcut icon" href="/favicon.ico?v=1" type="image/x-icon">
 	<link rel="icon" href="/favicon.png" type="image/x-icon">
 	<link href="https://fonts.googleapis.com/css?family=Montserrat:400,400i,700,700i" rel="stylesheet">
