@@ -1,0 +1,25 @@
+google_cloud:
+  url: https://cloud.google.com
+  name: Google Cloud
+  img_url: /img/technologies/google-cloud.svg
+  headline: Google Cloud Platform
+  bio: Google Cloud recently started being very agressive in the market and have been enjoying good gains against Amazon Web Services due to its refined, developer centric offering.
+aws:
+  url: https://aws.amazon.com/
+  name: Amazon Web Services
+  img_url: /img/technologies/aws.svg
+  headline: Google Cloud Platform
+  bio: Amazon Web Services is by far the dominant player in Infrastructure as a Service (IaaS) but their slavish commitment to their orignal design philosophy and architecture means they are rapidly loosing ground to more modern platforms in the hotly contested software development market.
+azure:
+  url: https://azure.microsoft.com
+  name: Microsoft Azure
+  img_url: /img/technologies/azure.svg
+  headline: Microsoft Azure
+  bio: Microsoft tries, but does not understand.
+jenkins:
+  url: https://jenkins.io/
+  name: Jenkins
+  img_url: /img/technologies/jenkins.svg
+  headline: CI/CI Platform
+  bio: Jenkins was forked from the Sun Microsystems 'Hudson' Project when Oracle took over in 2011. Jenkins is a very powerful and capable system but this venerable system enjoys a love-hate relationship with the community.
+
