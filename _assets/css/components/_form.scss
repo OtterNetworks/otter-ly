@@ -1,0 +1,31 @@
+.form {
+  &__row {
+    margin: 0 0 30px;
+  }
+
+  &__column {
+    padding: 0 10px 0 0;
+
+    &:last-child {
+      padding: 0 0 0 10px;
+    }
+  }
+}
+
+@include mobile {
+  .form {
+    &__row {
+      margin: 0 0 20px;
+    }
+
+    &__column {
+      margin: 0 0 20px;
+      padding: 0;
+
+      &:last-child {
+        margin: 0;
+        padding: 0;
+      }
+    }
+  }
+}

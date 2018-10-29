@@ -2,7 +2,7 @@
 ================================================================================== */
 (function ($) {
   $(document).ready(function () {
-    $('#someForm').on('submit', function(e) {
+    $('#contactForm').on('submit', function(e) {
       e.preventDefault();
       var name = $('#name').val(); //get the name field value
       var email = $('#email').val(); //get the name field value

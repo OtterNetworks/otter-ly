@@ -1,0 +1,57 @@
+.hero-section {
+  background-image: url(/img/Illustrationsandgraphics-03.svg);
+  background-position: 75% 50%;
+  background-repeat: no-repeat;
+  min-height: 100vh;
+
+  &__content {
+    max-width: 750px;
+    padding-bottom: 90px;
+    padding-top: 90px + $header-content-height;
+  }
+
+  &__title {
+    margin: 0 0 30px;
+  }
+
+  &__subtitle {
+    font-size: 27px;
+    line-height: 45px;
+    margin: 0 0 30px;
+  }
+
+  &__title,
+  &__subtitle {
+    &:last-child {
+      margin: 0;
+    }
+  }
+}
+
+@include mobile {
+  .hero-section {
+    &__content {
+      padding-bottom: 40px;
+      padding-top: 40px + $header-content-height;
+    }
+
+    &__title {
+      margin: 0 0 20px;
+      text-align: left;
+    }
+
+    &__subtitle {
+      font-size: 16px;
+      line-height: 30px;
+      margin: 0 0 20px;
+      text-align: left;
+    }
+
+    &__title,
+    &__subtitle {
+      &:last-child {
+        margin: 0;
+      }
+    }
+  }
+}

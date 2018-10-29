@@ -7,6 +7,11 @@
 
   &__title {
     font-size: $section-title-font-size;
+    margin: 0 0 40px;
+  }
+
+  &__subtitle {
+    font-size: $section-subtitle-font-size;
     font-weight: bold;
   }
 }
@@ -15,6 +20,11 @@
   .section {
     &__title {
       font-size: $sm-section-title-font-size;
+      margin: 0 0 20px;
+    }
+
+    &__subtitle {
+      font-size: $sm-section-subtitle-font-size;
     }
   }
 }

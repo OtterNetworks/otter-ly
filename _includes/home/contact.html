@@ -1,25 +1,44 @@
-<section id="contact">
-	<div class="section-container">
-		<h1>Get in touch</h1>
-		<p class="contact-blurb">Want to learn more about Otter Networks? Got questions about what we do? Shoot us a message:</p>
+<section id="contact" class="contact-section section padding_h">
+	<div class="contact-section__content section__content padding_v flex flow_column">
+		<h1 class="section__title">Get in touch</h1>
+		<p class="contact-section__text">
+			Want to learn more about Otter Networks? Got questions about what we do?
+			Shoot us a message:
+		</p>
 		<div id="formBlock">
-			<form id="someForm">
-				<div class="name-field">
-					<label for="name">Name:</label><br><input type="text" id="name">
+			<form id="contactForm" class="form">
+				<div class="form__row flex">
+					<div class="form__column field width_1-2 sm-width_1-1">
+						<label for="name" class="field__label">Name:</label>
+						<br />
+						<input type="text" id="name" name="name" class="field__input" />
+					</div>
+					<div class="form__column field width_1-2 sm-width_1-1">
+						<label for="email" class="field__label" >Email:</label>
+						<br />
+						<input type="email" id="email" name="email" class="field__input" />
+					</div>
 				</div>
-				<div class="email-field">
-					<label for="email">Email:</label><br><input type="email" id="email">
+				<div class="form__row field">
+					<label for="comments" class="field__label">Comments:</label>
+					<br/>
+					<textarea id="comments" name="comments" class="field__input field__input_text"></textarea>
 				</div>
-				<label for="comments">Comments:</label> <br/>
-				<textarea id="comments"></textarea><br/>
-				<div class="submit-button"><input type="submit"></div>
+				<div class="form__action flex flow_row-reverse">
+					<button class="button button_dark sm-width_1-1" type="submit">Submit</button>
+				</div>
 			</form>
 		</div>
-		<div id="thankyouBlock" style="display:none">
+		<div id="thankyouBlock" class="flex-item_fill" style="display:none">
 			<p>
 				<i class="fas fa-check"></i> Your message has been successfully sent. We will do our best to contact you as soon as we can.
 			</p>
 		</div>
-		<p class="back-to-top"><a href="#0" class="cd-top">Back to top <i class="fas fa-angle-up"></i></a></p>
+		<div class="contact-section__actions">
+			<a href="#0" class="contact-section__action cd-top">
+				<span>Back to top</span>
+				<i class="contact-section__action-icon fas fa-angle-up"></i>
+			</a>
+		</div>
 	</div>
 </section>
