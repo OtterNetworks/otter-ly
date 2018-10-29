@@ -26,3 +26,9 @@
   -webkit-transition: $transition;
   transition: $transition;
 }
+
+@mixin appearance($appearance) {
+  -webkit-appearance: $appearance;
+  -moz-appearance: $appearance;
+  appearance: $appearance;
+}

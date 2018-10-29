@@ -1,0 +1,37 @@
+.field {
+  text-align: left;
+
+  &__label {
+    display: inline-block;
+    font-size: 18px;
+    margin: 0 0 10px;
+  }
+
+  &__input {
+    border: 1px $grey-800 solid;
+    font-family: $font-primary;
+    font-size: 18px;
+    line-height: 28px;
+    outline-color: $cyan;
+    padding: 10px 5px;
+    width: 100%;
+
+    &_text {
+      min-height: 100px;
+    }
+  }
+}
+
+@include mobile {
+  .field {
+    &__label {
+      font-size: 16px;
+      margin: 0 0 5px;
+    }
+
+    &__input {
+      font-size: 16px;
+      padding: 5px;
+    }
+  }
+}

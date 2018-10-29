@@ -25,3 +25,13 @@ a, .link {
     color: $red;
   }
 }
+
+hr {
+	height: 1px;
+  color: $grey-200;
+  background-color: $grey-200;
+  font-size: 0;
+  border: 0;
+  width: 100%;
+  margin: 40px 0;
+}

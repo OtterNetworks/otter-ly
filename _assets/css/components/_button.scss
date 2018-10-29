@@ -1,0 +1,30 @@
+.button {
+  @include appearance(none);
+
+  border: 0;
+  cursor: pointer;
+  display: inline-block;
+  font-family: $font-primary;
+  font-size: 18px;
+  font-weight: normal;
+  letter-spacing: 1px;
+  outline: none;
+  padding: 15px;
+  text-align: center;
+  text-decoration: none;
+
+  &_dark {
+    background-color: $grey-800;
+    color: $white;
+
+    &:hover {
+      background-color: $red;
+    }
+  }
+}
+
+@include mobile {
+  .button {
+    font-size: 16px;
+  }
+}
