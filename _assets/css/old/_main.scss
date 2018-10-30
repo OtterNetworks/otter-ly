@@ -31,41 +31,6 @@ p {
 	margin-top: 0;
 }
 
-button {
-	font-weight: bold;
-	border: 0;
-	font-family: 'Montserrat', sans-serif;
-	font-size: 16px;
-	padding: 15px 0;
-	width: 250px;
-	cursor: pointer;
-	margin: 0 5px;
-}
-
-button.blue:hover,
-button.gray:hover {
-	 background: #CF3800;
-}
-
-button.blue {
-	background: rgba(108, 255, 255, 1);
-}
-
-button.gray {
-	color: #fff;
-	background: rgba(63, 57, 54, 1);
-}
-
-hr {
-	height: 1px;
-	color: #ddd;
-	background: #ddd;
-	font-size: 0;
-	border: 0;
-	width: 100%;
-	margin: 40px 0;
-}
-
 .desktop {
 	display: block;
 }
@@ -100,7 +65,6 @@ section {
     background-repeat: 		no-repeat;
 }
 
-section#start,
 section#team {
 	min-height: 634px;
 }
@@ -113,70 +77,6 @@ section a {
 	color: #05ABC1;
 	font-weight: bold;
 }
-
-/* SECTION 01 -- START
-============================================================ */
-
-#start {
-	height: 100vh;
-	/*background-image: 		url(/img/Illustrationsandgraphics-03.svg),
-							url(/img/Illustrationsandgraphics-01.svg);*/
-
-	background-image: 		url(/img/Illustrationsandgraphics-03.svg);
-}
-
-section#start {
-	margin-top: 0;
-	background-position: 74% 50%;
-}
-
-#start h1,
-#start h2 {
-	margin-bottom: 30px;
-}
-
-/* SECTION 02 -- WHAT WE DO
-============================================================ */
-
-#what_we_do {
-	height: 2600px;
-	/*background-image: 		url(/img/Illustrationsandgraphics-01.svg);
-	background-size: 		100% auto;
-	background-position: 	top center;*/
-}
-
-#what_we_do img {
-	width: 100%;
-	margin-bottom: 30px;
-}
-
-#what_we_do .how-it-works img {
-	margin-bottom: 10px;
-}
-
-#what_we_do h3 {
-	margin-bottom: 30px;
-}
-
-.one-fourth,
-.two-fourth,
-.three-fourth,
-.four-fourth {
-	width: 23%;
-	display: inline-block;
-	text-align: left;
-	vertical-align: top;
-	font-size: 15px;
-	line-height: 25px;
-	margin-bottom: 40px;
-}
-
-.one-fourth,
-.two-fourth,
-.three-fourth {
-	margin-right: 2%;
-}
-
 
 /* SECTION 03 -- TECHNOLOGIES
 ============================================================ */
@@ -202,104 +102,6 @@ section#start {
 
 #case_study h3 {
 	margin-bottom: 60px;
-}
-
-/* SECTION 05 -- CONTACT
-============================================================ */
-
-#contact {
-	min-height: 850px;
-	height: 100vh;
-	/*background-image: 		url(/img/Illustrationsandgraphics-05.svg),
-							url(/img/Illustrationsandgraphics-01.svg);*/
-	background-image: 		url(/img/hintergrund-kontakt.svg);
-}
-
-section#contact {
-	min-height: 800px;
-}
-
-p.contact-blurb {
-	margin-bottom: 40px;
-}
-
-p.back-to-top {
-	margin-top: 40px;
-}
-
-#contact .fa-angle-up {
-	margin-left: 7px;
-}
-
-#contact .name-field,
-#contact .email-field {
-	width: 48%;
-	display: inline-block;
-}
-
-#contact .name-field {
-	margin-right: 1%;
-}
-
-#contact .email-field {
-	margin-left: 1%;
-}
-
-#contact input[type=text],
-#contact input[type=email] {
-	width: 96%;
-	margin-bottom: 30px;
-	padding: 5px 2%;
-}
-
-#contact textarea {
-	width: 96%;
-	padding: 5px 2%;
-	height: 100px;
-	margin-bottom: 30px;
-}
-
-#contact input[type=text],
-#contact input[type=email],
-#contact textarea {
-	border: 1px #3f3936 solid;
-	margin-top: 10px;
-	outline-color: #00FFFF;
-	font-family: 'Montserrat', sans-serif;
-	font-size: 18px;
-	line-height: 33px;
-	color: #3f3936;
-}
-
-#contact #formBlock {
-	text-align: left;
-	font-size: 18px;
-}
-
-#contact #formBlock .submit-button {
-	text-align: right;
-}
-
-#contact input[type=submit] {
-	font-weight: normal;
-	border: 0;
-	font-family: 'Montserrat', sans-serif;
-	font-size: 18px;
-	padding: 15px;
-	width: auto;
-	cursor: pointer;
-	margin: 0;
-	color: #fff;
-	outline-color: #00FFFF;
-	background: rgba(63, 57, 54, 1);
-}
-
-#contact input[type=submit]:hover {
-	 background: #CF3800;
-}
-
-#contact #formBlock .fas {
-	color: #13BA7A;
 }
 
 /* ARTICLE SECTIONS
@@ -373,51 +175,4 @@ ul.navigation.expanded {
 
 .logo img {
   width: 200px;
-}
-
-
-/* FOOTER
-============================================================ */
-
-.footer {
-	background: #3f3936;
-	color: #fff;
-	margin-bottom: 0;
-	padding: 15vh 0;
-}
-
-.footer p {
-	font-size: 13px;
-	line-height: 27px;
-}
-
-.footer a {
-	color: #00FFFF;
-}
-
-.footer a:hover {
-	color: #CF3800;
-}
-
-.follow-us {
-	margin-bottom: 50px;
-}
-
-p .fa-linkedin {
-	font-size: 40px;
-}
-
-.footer img {
-	width: 320px;
-	margin-bottom: 20px;
-}
-
-p.large-footer-text {
-	font-size: 23px;
-	margin-top: 0;
-	margin-bottom: 50px;
-}
-
-p.copyright {
-	margin-top: 50px;
 }

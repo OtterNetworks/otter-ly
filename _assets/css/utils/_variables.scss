@@ -7,12 +7,18 @@ $page-min-width: 320px;
 $header-content-height: 65px;
 
 $section-content-max-width: 1100px !default;
-$section-title-font-size: 28px !default;
-$sm-section-title-font-size: 22px !default;
+$section-title-font-size: 60px !default;
+$section-subtitle-font-size: 28px !default;
+$sm-section-title-font-size: 35px !default;
+$sm-section-subtitle-font-size: 22px !default;
 
 $white: #fff;
 
 $red: #CF3800;
+$cyan: #00FFFF;
+$blue: #05ABC1;
 
 $grey-200: #ddd;
 $grey-800: #3f3936;
+
+$font-primary: 'Montserrat', sans-serif;

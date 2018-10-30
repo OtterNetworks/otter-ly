@@ -1,25 +1,27 @@
-<footer class="footer">
-	<img src="/img/OtterNetworks_Negative_RGB.svg">
-	<p class="large-footer-text">DevOps, delivered.</p>
-	<p>
-		<a href="{{ site.linkedin_url }}"target="_blank">
-			<i class="fab fa-linkedin"></i>
-			<br />
-			Follow us on LinkedIn
-		</a>
-	</p>
-	<p>
-		<a href="mailto:{{ site.email }}">{{ site.email }}</a>
-	</p>
-	<p>
-		Otter Networks UG<br />
-		Gotenstraße 17<br />
-		10829 Berlin<br />
-		Deutschland
-	</p>
-	<p>
-		Geschäftsführer: Andrew Holway<br />
-		Handelsregister: Berlin Charlottenburg: HRB 166965 B<br />
-		Umsatzsteuer-ID: DE299830182
-	</p>
+<footer class="footer section padding_h">
+	<div class="footer__content section__content">
+		<img src="/img/OtterNetworks_Negative_RGB.svg" class="footer__image">
+		<p class="footer__description">DevOps, delivered.</p>
+		<div>
+			<a href="{{ site.linkedin_url }}" class="footer__social" target="_blank">
+				<i class="footer__social-icon fab fa-linkedin"></i>
+				<br />
+				<span class="footer__social-label">Follow us on LinkedIn</span>
+			</a>
+		</div>
+		<div class="footer__text">
+			<a href="mailto:{{ site.email }}" class="footer__link">{{ site.email }}</a>
+		</div>
+		<p class="footer__text">
+			Otter Networks UG<br />
+			Gotenstraße 17<br />
+			10829 Berlin<br />
+			Deutschland
+		</p>
+		<p class="footer__text">
+			Geschäftsführer: Andrew Holway<br />
+			Handelsregister: Berlin Charlottenburg: HRB 166965 B<br />
+			Umsatzsteuer-ID: DE299830182
+		</p>
+	</div>
 </footer>

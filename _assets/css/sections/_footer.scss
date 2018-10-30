@@ -1,0 +1,69 @@
+.footer {
+	background: $grey-800;
+	color: $white;
+  font-size: 13px;
+
+  &__content {
+    padding: 90px 0;
+  }
+
+  &__image {
+    margin: 0 auto 20px;
+    max-width: 320px;
+  }
+
+  &__description {
+    font-size: 23px;
+    margin-top: 0;
+    margin-bottom: 50px;
+  }
+
+  &__link {
+    color: $cyan;
+
+    &:hover {
+      color: $red;
+    }
+  }
+
+  &__social {
+    color: $cyan;
+    display: inline-block;
+
+    &:hover {
+      color: $red;
+    }
+  }
+
+  &__social-icon {
+    font-size: 40px;
+  }
+
+  &__social-label {
+    display: inline-block;
+    margin: 10px 0 0;
+  }
+
+  &__text {
+    font-size: 13px;
+    line-height: 27px;
+    margin: 20px 0 0;
+  }
+}
+
+@include mobile {
+  .footer {
+    &__content {
+      padding: 60px 0;
+    }
+
+    &__image {
+      max-width: 260px;
+    }
+
+    &__description {
+      font-size: 20px;
+      margin-bottom: 30px;
+    }
+  }
+}
