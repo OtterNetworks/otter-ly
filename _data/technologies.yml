@@ -1,14 +1,32 @@
+kubernetes:
+  url: https://kubernetes.io/
+  name: Kubernetes
+  img_url: /img/technologies/kubernetes.svg
+  headline: Contaniner Orchestration Engine
+  bio: Kubernetes is the preeminant container orchestration engine currently sweeping the IT sector.
 google_cloud:
   url: https://cloud.google.com
   name: Google Cloud
   img_url: /img/technologies/google-cloud.svg
-  headline: Google Cloud Platform
+  headline: A suite of cloud computing services that runs on the same infrastructure that Google uses internally.
   bio: Google Cloud recently started being very agressive in the market and have been enjoying good gains against Amazon Web Services due to its refined, developer centric offering.
+github:
+  url: https://github.com
+  name: Github
+  img_url: /img/technologies/github.svg
+  headline: This is a headline
+  bio: this is a bio
+gitlab:
+  url: https://gitlab.com
+  name: Gitlab
+  img_url: /img/technologies/gitlab.svg
+  headline: This is a headline
+  bio: this is a bio
 aws:
   url: https://aws.amazon.com/
   name: Amazon Web Services
   img_url: /img/technologies/aws.svg
-  headline: Google Cloud Platform
+  headline: Amazon Web Services
   bio: Amazon Web Services is by far the dominant player in Infrastructure as a Service (IaaS) but their slavish commitment to their orignal design philosophy and architecture means they are rapidly loosing ground to more modern platforms in the hotly contested software development market.
 azure:
   url: https://azure.microsoft.com
