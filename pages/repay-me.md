@@ -7,7 +7,7 @@ permalink: /repay-me/
 
 ### **How a collaboration between Otter Networks and Repay.me resulted in production-ready infrastructure and upskilled developers**
 
-[Repay.me]("https://www.repay.me/), a Berlin-based startup developing an exciting new global commerce platform, recently brought in Otter Networks to help find a solution to its ongoing development infrastructure problem.
+[Repay.me](https://www.repay.me/), a Berlin-based startup developing an exciting new global commerce platform, recently brought in Otter Networks to help find a solution to its ongoing development infrastructure problem.
 
 With a major product launch approaching, Philipp – the developer responsible for management of infrastructure resources – was out of his depth trying to automate cloud resources with Ansible. The learning curves were steep, and his team lacked an overall vision. They certainly didn’t need these added challenges ahead of a mission-critical deadline.
 
