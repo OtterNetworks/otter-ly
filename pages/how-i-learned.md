@@ -1,13 +1,15 @@
 ---
 layout: page
 permalink: /how-i-learned/
+title: "Otter Networks"
+description: "How I learned to stop worrying and love Kubernetes"
+image: "https://otter.ly/img/how-i-learned-opengraph.png"
 ---
 
 ## How I learned to stop worrying and love Kubernetes
-
-![otter-1](/img/test-otter-1.jpg)
-
 ### Kubernetes automated and eliminated my job as a Devops Engineer. Here’s why that’s great news for development.
+
+![header](/img/how-i-learned-header.svg)
 
 “Kubernetes?”
 
@@ -18,8 +20,6 @@ I shifted nervously in my seat.
 My response to Philip Paetz, the newly minted CTO of Brickblock, was tinged with an audible sense of doubt. He had just told me he wanted Kubernetes, and I wasn’t ready to give him the enthusiastic agreement he was looking for.
 
 Thinking back on this conversation now, I have to congratulate Paetz on his vision. He’d already deployed Kubernetes on AWS using the KOPS deployment system and needed someone to take it over. Even though I was very much a naysayer, he saw an opportunity to change my mind. He ultimately chose me to build this new company’s infrastructure.
-
-![otter-2](/img/test-otter-2.jpg)
 
 ### Moving past the fear
 
@@ -33,11 +33,9 @@ That’s when things went from painfully confusing to crystal clear in one day. 
 
 Before getting involved with Kubernetes, I didn’t love my work as a “DevOps engineer.” I would usually end up delivering over-engineered solutions to clients, locking them into my services and the cloud provider – neither of which are cheap. It was time for me to step away from the role of glorified System Administrator, and instead take on more interesting projects that bring real value to clients. Kubernetes allowed this to happen.
 
-![otter-3](/img/test-otter-3.jpg)
-
 Since that first delivery at Brickblock, I’ve worked successfully with several other clients on Kubernetes projects. Throughout all of it, I’ve been careful to avoid deployment projects and instead remain on the utilization side of things. Why? Kubernetes is a complicated beast. Maintaining a cluster gets expensive and has limited dividend for most companies. I prefer to work with clients that are able to consume Kubernetes directly from the cloud provider, so that the project doesn’t end up being a distraction from their core business.
 
-
+![Kubernetes Power](/img/kubernetes-power.svg)
 ### The value of Kubernetes is significant and long-term
 
 After my positive experience, I certainly have a new way of explaining Kubernetes to anyone who brings it up:
