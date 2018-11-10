@@ -1,5 +1,31 @@
-.case-study-section {
+.case-studies-section {
   &__content {
-    max-width: 600px;
+    max-width: 1000px;
+  }
+
+  &__item {
+    padding: 0 30px;
+    margin: 0 0 80px;
+
+    &:nth-last-child(-n+2) {
+      margin: 0;
+    }
+  }
+}
+
+@include mobile {
+  .case-studies-section {
+    &__item {
+      margin: 0 0 50px;
+      padding: 0;
+
+      &:nth-last-child(-n+2) {
+        margin: 0 0 50px;
+      }
+
+      &:last-child {
+        margin: 0;
+      }
+    }
   }
 }

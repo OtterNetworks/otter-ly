@@ -1,0 +1,25 @@
+.case-study-card {
+  padding: 0 40px;
+
+  &__thumb {
+    padding: 0 0 30px;
+  }
+
+  &__icon {
+    width: 90px;
+  }
+
+  &__text {
+    margin: 0 0 15px;
+  }
+
+  &__label {
+    margin: 0 0 15px;
+  }
+}
+
+@include mobile {
+  .case-study-card {
+    padding: 0 20px;
+  }
+}
