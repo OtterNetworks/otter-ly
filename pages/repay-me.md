@@ -1,11 +1,11 @@
 ---
-layout: page
+layout: post
 permalink: /repay-me/
 ---
 
-## Case study: Using Kubernetes to reach development milestones
+# Case study: Using Kubernetes to reach development milestones
 
-### **How a collaboration between Otter Networks and Repay.me resulted in production-ready infrastructure and upskilled developers**
+## **How a collaboration between Otter Networks and Repay.me resulted in production-ready infrastructure and upskilled developers**
 
 [Repay.me](https://www.repay.me/), a Berlin-based startup developing an exciting new global commerce platform, recently brought in Otter Networks to help find a solution to its ongoing development infrastructure problem.
 

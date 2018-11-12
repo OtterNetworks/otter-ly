@@ -12,6 +12,30 @@ html, body {
 	min-width: $page-min-width;
 }
 
+h1 {
+	font-size: 60px;
+	font-weight: normal;
+	margin: 0 0 40px 0;
+}
+
+h2 {
+	font-size: 45px;
+	font-weight: normal;
+}
+
+h3 {
+	font-size: 28px;
+	line-height: 45px;
+	font-weight: normal;
+	margin: 0;
+}
+
+p {
+	font-size: 18px;
+	line-height: 33px;
+	margin-top: 0;
+}
+
 img {
 	max-width: 100%;
 }
@@ -24,6 +48,20 @@ a, .link {
   &:hover {
     color: $red;
   }
+}
+
+section {
+	background-position: 50% 50%;
+	background-repeat: no-repeat;
+	background-size: cover;
+	border-bottom: #ddd 1px solid;
+	outline: 0;
+	position: relative;
+
+	a {
+		color: $blue;
+		font-weight: bold;
+	}
 }
 
 hr {
