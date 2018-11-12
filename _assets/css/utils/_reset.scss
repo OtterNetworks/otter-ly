@@ -48,6 +48,10 @@ a, .link {
   &:hover {
     color: $red;
   }
+
+	&.active {
+		color: $red;
+	}
 }
 
 section {
@@ -57,6 +61,14 @@ section {
 	border-bottom: #ddd 1px solid;
 	outline: 0;
 	position: relative;
+
+	p {
+	  margin-bottom: 30px;
+
+		&:last-child {
+		  margin-bottom: 0;
+		}
+	}
 
 	a {
 		color: $blue;
@@ -72,4 +84,41 @@ hr {
   border: 0;
   width: 100%;
   margin: 40px 0;
+}
+
+@include mobile {
+	h1 {
+		font-size: 40px;
+		margin-bottom: 35px;
+	}
+
+	h2 {
+		font-size: 40px;
+	}
+
+	h3 {
+		font-size: 25px;
+		line-height: 40px
+	}
+}
+
+@include sm-mobile {
+	h1 {
+		font-size: 35px;
+		margin: 0 0 20px 0;
+	}
+
+	h2 {
+		font-size: 30px;
+	}
+
+	h3 {
+		font-size: 22px;
+		line-height: 38px;
+	}
+
+	p {
+		font-size: 16px;
+		line-height: 28px;
+	}
 }
