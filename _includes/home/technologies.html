@@ -1,10 +1,9 @@
 <section id="technologies" class="technologies-section section padding_h">
-	<div class="technologies-section__content section__content padding_v">
-		<h3><strong>Work with Otter, without changing a thing.</strong></h3>
-		<div class="flex justify_center align-items_center padding_top">
+	<div class="section__content section__content_wide padding_v">
+		<div class="flex justify_center align-items_center">
 			{% for technologyHash in site.data.technologies %}
 			{% assign technology = technologyHash[1] %}
-			<div class="technologies-section__item width_1-3 sm-width_1-1">
+			<div class="technologies-section__item width_1-8 md-width_1-4 sm-width_1-1">
 				<div class="technology-card">
 					<img src="{{ technology.img_url }}" class="technology-card__thumb" />
 				</div>

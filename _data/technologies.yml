@@ -38,5 +38,11 @@ jenkins:
   url: https://jenkins.io/
   name: Jenkins
   img_url: /img/technologies/jenkins.png
-  headline: CI/CI Platform
+  headline: CI/CD Platform
   bio: Jenkins was forked from the Sun Microsystems 'Hudson' Project when Oracle took over in 2011. Jenkins is a very powerful and capable system but this venerable system enjoys a love-hate relationship with the community.
+codefresh:
+  url: https://codefresh.io/
+  name: Codefresh
+  img_url: /img/technologies/codefresh.png
+  headline: CI/CD platform
+  bio: Codefresh is the first CI/CD platform built for Kubernetes.
