@@ -19,11 +19,26 @@
     text-align: center;
   }
 
+  &__card-wrapper {
+    &::after {
+      background-color: $white;
+      content: '';
+      display: block;
+      position: absolute;
+      height: 100%;
+      left: 18px;
+      top: -15px;
+      width: 100%;
+      z-index: 0;
+    }
+  }
+
   &__card {
     &_border {
-      background-color: $white;
       border: 3px solid $grey-800;
       padding: 20px;
+      position: relative;
+      z-index: 1;
     }
   }
 
