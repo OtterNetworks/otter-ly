@@ -1,27 +1,41 @@
 <footer class="footer section padding_h">
-	<div class="footer__content section__content">
-		<img src="/img/OtterNetworks_Negative_RGB.svg" class="footer__image">
-		<p class="footer__description">DevOps, delivered.</p>
-		<div>
-			<a href="{{ site.linkedin_url }}" class="footer__social" target="_blank">
-				<i class="footer__social-icon fab fa-linkedin"></i>
-				<br />
-				<span class="footer__social-label">Follow us on LinkedIn</span>
-			</a>
+	<div class="section__content padding_v">
+		<div class="flex flow_row sm-flow_column md-flow_column justify_space-between">
+			<div class="width_3-4 md-width_1-1 sm-width_1-1 flex flow_row sm-flow_column">
+				<div class="footer__column width_1-3 sm-width_1-1 padding_v">
+					<h4 class="footer__subtitle">Company</h4>
+					<p class="footer__text">
+						Geschäftsführer: Andrew Holway<br />
+						Handelsregister: Berlin Charlottenburg: HRB 166965 B<br />
+						Umsatzsteuer-ID: DE299830182
+					</p>
+				</div>
+				<div class="footer__column width_1-4 md-width_1-3 sm-width_1-1 padding_v">
+					<h4 class="footer__subtitle">Address</h4>
+					<p class="footer__text">
+						Otter Networks UG<br />
+						Gotenstraße 17<br />
+						10829 Berlin<br />
+						Deutschland
+					</p>
+				</div>
+				<div class="footer__column width_1-3 sm-width_1-1 padding_v">
+					<h4 class="footer__subtitle">Contact</h4>
+					<p class="footer__text">
+						<a href="mailto:{{ site.email }}" class="footer__link">{{ site.email }}</a>
+					</p>
+				</div>
+			</div>
+			<div class="footer__column width_1-5 md-width_1-1 sm-width_1-1 padding_v">
+				<div class="footer__logo">
+					<img src="/img/OtterNetworks_Negative_RGB.svg" class="footer__image">
+				</div>
+				<p class="footer__text">
+					<a href="{{ site.linkedin_url }}" class="footer__social" target="_blank">
+						<span>Follow us on LinkedIn</span>&nbsp;&nbsp;&nbsp;<i class="footer__social-icon fab fa-linkedin"></i>
+					</a>
+				</p>
+			</div>
 		</div>
-		<div class="footer__text">
-			<a href="mailto:{{ site.email }}" class="footer__link">{{ site.email }}</a>
-		</div>
-		<p class="footer__text">
-			Otter Networks UG<br />
-			Gotenstraße 17<br />
-			10829 Berlin<br />
-			Deutschland
-		</p>
-		<p class="footer__text">
-			Geschäftsführer: Andrew Holway<br />
-			Handelsregister: Berlin Charlottenburg: HRB 166965 B<br />
-			Umsatzsteuer-ID: DE299830182
-		</p>
 	</div>
 </footer>

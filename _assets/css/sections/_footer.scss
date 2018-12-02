@@ -3,14 +3,23 @@
 	color: $white;
   font-size: 13px;
 
-  &__content {
-    padding: 90px 0;
-  }
+	&__column {
+		padding: 0 10px;
+	}
 
-  &__image {
-    margin: 0 auto 20px;
-    max-width: 320px;
-  }
+	&__subtitle {
+		color: $grey-200;
+		font-size: 13px;
+		font-weight: 400;
+		margin: 0;
+		text-transform: uppercase;
+	}
+
+	&__text {
+		font-size: 13px;
+		line-height: 27px;
+		margin: 10px 0 0;
+	}
 
   &__description {
     font-size: 23px;
@@ -19,51 +28,37 @@
   }
 
   &__link {
-    color: $cyan;
+    color: $blue;
+		text-decoration: none;
 
-    &:hover {
-      color: $red;
-    }
-  }
+		&:hover {
+			text-decoration: none;
+		}
+	}
 
   &__social {
-    color: $cyan;
+		color: $white;
     display: inline-block;
+		text-decoration: none;
 
-    &:hover {
-      color: $red;
-    }
+		&:hover {
+			text-decoration: none;
+		}
   }
 
-  &__social-icon {
-    font-size: 40px;
-  }
+	&__logo {
+		max-width: 170px;
+	}
 
-  &__social-label {
-    display: inline-block;
-    margin: 10px 0 0;
-  }
-
-  &__text {
-    font-size: 13px;
-    line-height: 27px;
-    margin: 20px 0 0;
-  }
+	&__social-icon {
+		font-size: 18px;
+	}
 }
 
 @include mobile {
   .footer {
-    &__content {
-      padding: 60px 0;
-    }
-
-    &__image {
-      max-width: 260px;
-    }
-
-    &__description {
-      font-size: 20px;
-      margin-bottom: 30px;
-    }
+		&__column {
+			padding: 0;
+		}
   }
 }
