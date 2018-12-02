@@ -1,0 +1,84 @@
+.wu-section {
+  &__wrapper {
+    background-repeat: no-repeat;
+
+    &_1 {
+      background-image: url('/img/backgrounds/why-us-1.svg');
+      background-position: bottom;
+    }
+
+    &_2 {
+      background-image: url('/img/backgrounds/why-us-2.svg');
+      background-position: top;
+      background-size: cover;
+      padding: 20px;
+    }
+  }
+
+  &__header {
+    text-align: center;
+  }
+
+  &__card {
+    &_border {
+      background-color: $white;
+      border: 3px solid $grey-800;
+      padding: 20px;
+    }
+  }
+
+  &__thumb {
+    padding: 20px;
+    text-align: center;
+  }
+
+  &__image {
+    height: 450px;
+  }
+
+  &__caption {
+    padding: 0 40px;
+  }
+
+  &__subtitle-wrapper {
+    display: inline-block;
+    position: relative;
+
+    &::after {
+      background-color: $blue;
+      bottom: 12px;
+      content: '';
+      display: inline-block;
+      left: -7px;
+      position: absolute;
+      right: -7px;
+      top: 0px;
+      z-index: 0;
+    }
+  }
+
+  &__subtitle {
+    font-size: 24px;
+    margin: 0;
+    position: relative;
+    z-index: 1;
+  }
+
+  &__copy {
+    margin: 30px 0 0;
+    font-size: 14px;
+    line-height: 2;
+  }
+}
+
+@include mobile {
+  .wu-section {
+    &__thumb {
+      padding: 0;
+    }
+
+    &__caption {
+      padding: 0;
+    }
+  }
+}

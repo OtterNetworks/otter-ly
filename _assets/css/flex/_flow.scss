@@ -13,6 +13,11 @@
     -webkit-flex-flow: column;
     flex-flow: column;
   }
+
+  &_column-reverse {
+    -webkit-flex-flow: column-reverse;
+    flex-flow: column-reverse;
+  }
 }
 
 .flow {
