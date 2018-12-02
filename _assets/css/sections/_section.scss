@@ -9,14 +9,42 @@
     }
   }
 
+  &__header {
+    text-align: center;
+  }
+
   &__title {
+    border-bottom: 3px solid $grey-800;
+    border-top: 3px solid $grey-800;
+    display: inline-block;
     font-size: $section-title-font-size;
-    margin: 0 0 40px;
+    font-weight: bold;
+    margin: 0;
+    text-transform: uppercase;
+    padding: 3px 0;
   }
 
   &__subtitle {
     font-size: $section-subtitle-font-size;
     font-weight: bold;
+  }
+
+  &__actions {
+    text-align: center;
+  }
+
+  &__action {
+    border-bottom: 2px solid transparent;
+    display: inline-block;
+    font-size: 14px;
+    font-weight: bold;
+    padding: 2px;
+    text-transform: uppercase;
+
+    &:hover {
+      border-bottom: 2px solid $grey-800;
+      text-decoration: none;
+    }
   }
 }
 
@@ -24,7 +52,6 @@
   .section {
     &__title {
       font-size: $sm-section-title-font-size;
-      margin: 0 0 20px;
     }
 
     &__subtitle {

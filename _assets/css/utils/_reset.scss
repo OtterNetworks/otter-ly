@@ -8,23 +8,19 @@ html, body {
   margin: 0;
   padding: 0;
   color: $grey-800;
-  text-align: center;
 	min-width: $page-min-width;
 }
 
 h1 {
-	font-size: 60px;
 	font-weight: normal;
 	margin: 0 0 40px 0;
 }
 
 h2 {
-	font-size: 45px;
 	font-weight: normal;
 }
 
 h3 {
-	font-size: 28px;
 	line-height: 45px;
 	font-weight: normal;
 	margin: 0;
@@ -45,12 +41,12 @@ a, .link {
 	cursor: pointer;
 	text-decoration: none;
 
-  &:hover {
-    color: $red;
-  }
+	&:hover {
+		text-decoration: underline;
+	}
 
 	&.active {
-		color: $red;
+		text-decoration: underline;
 	}
 }
 
@@ -63,11 +59,6 @@ section {
 		&:last-child {
 		  margin-bottom: 0;
 		}
-	}
-
-	a {
-		color: $blue;
-		font-weight: bold;
 	}
 }
 

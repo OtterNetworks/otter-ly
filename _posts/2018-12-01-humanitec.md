@@ -1,6 +1,10 @@
 ---
 layout: post
 permalink: /humanitec/
+date: 2018-12-01 00:00:00
+title: "Otter Networks"
+description: "How I learned to stop worrying and love Kubernetes"
+image: "/img/how-i-learned-opengraph.png"
 ---
 
 # Case study: How Google-specific Kubernetes helped one company validate its development direction

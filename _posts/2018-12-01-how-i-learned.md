@@ -1,9 +1,10 @@
 ---
 layout: post
 permalink: /how-i-learned/
+date: 2018-12-01 00:00:00
 title: "Otter Networks"
 description: "How I learned to stop worrying and love Kubernetes"
-image: "https://otter.ly/img/how-i-learned-opengraph.png"
+image: "/img/how-i-learned-opengraph.png"
 ---
 
 By Andrew Holway - Otter Networks Founder - 2nd November 2018

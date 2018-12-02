@@ -20,7 +20,7 @@
   @include justify;
 }
 
-@include tablet {
+@include only-tablet {
   .md-justify {
     @include justify;
   }

@@ -21,7 +21,7 @@
   }
 }
 
-@include tablet {
+@include only-tablet {
   .md-align-items {
     @include align-items;
   }

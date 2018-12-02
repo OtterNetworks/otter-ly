@@ -31,7 +31,7 @@
   }
 }
 
-@include tablet {
+@include only-tablet {
   .md-flow {
     @include flow;
   }

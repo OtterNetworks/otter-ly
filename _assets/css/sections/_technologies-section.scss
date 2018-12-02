@@ -1,5 +1,6 @@
 .technologies-section {
   background-color: $grey-100;
+  text-align: center;
 
   &__content {
     max-width: 700px;
@@ -10,7 +11,7 @@
   }
 }
 
-@include tablet {
+@include only-tablet {
   .technologies-section {
     &__item {
       &:nth-child(n+5) {
