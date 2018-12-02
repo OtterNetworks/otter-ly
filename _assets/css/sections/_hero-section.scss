@@ -1,29 +1,62 @@
 .hero-section {
-  background-image: url(/img/Illustrationsandgraphics-03.svg);
-  background-position: 75% 50%;
+  background-image: url('/img/backgrounds/hero.svg');
   background-repeat: no-repeat;
-  min-height: 100vh;
+  background-position: top;
+  background-size: contain;
 
   &__content {
-    max-width: 750px;
-    padding-bottom: 90px;
-    padding-top: 90px + $header-content-height;
+    background-image: url('/img/graphics/hero.svg');
+    background-repeat: no-repeat;
+    background-size: 450px;
+    background-position: right 30px center;
+
+    padding-bottom: 130px;
+    padding-top: 130px + $header-content-height;
+  }
+
+  &__title-wrapper {
+    display: inline-block;
+    max-width: 600px;
+    position: relative;
+
+    &::after {
+      background-color: $blue;
+      bottom: 20px;
+      content: '';
+      display: inline-block;
+      left: -7px;
+      position: absolute;
+      right: -7px;
+      top: 0px;
+      z-index: 0;
+    }
   }
 
   &__title {
-    margin: 0 0 30px;
+    display: inline-block;
+    font-size: 42px;
+    font-weight: bold;
+    margin: 0;
+    position: relative;
+    z-index: 1;
   }
 
-  &__subtitle {
-    font-size: 27px;
-    line-height: 45px;
-    margin: 0 0 30px;
+  &__copy {
+    display: inline-block;
+    font-size: 14px;
+    line-height: 1.8;
+    margin: 40px 0 0;
   }
 
-  &__title,
-  &__subtitle {
-    &:last-child {
-      margin: 0;
+  &__actions {
+    margin: 50px 0 0;
+  }
+}
+
+@include desktop {
+  .hero-section {
+    &_desktop {
+
     }
   }
 }
@@ -31,8 +64,8 @@
 @include mobile {
   .hero-section {
     &__content {
-      padding-bottom: 40px;
-      padding-top: 40px + $header-content-height;
+      padding-bottom: 50px;
+      padding-top: 50px + $header-content-height;
     }
 
     &__title {
@@ -45,13 +78,6 @@
       line-height: 30px;
       margin: 0 0 20px;
       text-align: left;
-    }
-
-    &__title,
-    &__subtitle {
-      &:last-child {
-        margin: 0;
-      }
     }
   }
 }

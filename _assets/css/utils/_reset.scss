@@ -11,21 +11,6 @@ html, body {
 	min-width: $page-min-width;
 }
 
-h1 {
-	font-weight: normal;
-	margin: 0 0 40px 0;
-}
-
-h2 {
-	font-weight: normal;
-}
-
-h3 {
-	line-height: 45px;
-	font-weight: normal;
-	margin: 0;
-}
-
 p {
 	font-size: 18px;
 	line-height: 33px;
@@ -43,22 +28,6 @@ a, .link {
 
 	&:hover {
 		text-decoration: underline;
-	}
-
-	&.active {
-		text-decoration: underline;
-	}
-}
-
-section {
-	position: relative;
-
-	p {
-	  margin-bottom: 30px;
-
-		&:last-child {
-		  margin-bottom: 0;
-		}
 	}
 }
 

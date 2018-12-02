@@ -1,10 +1,22 @@
 .navigation {
   &__link {
+    font-size: 12px;
     font-weight: bold;
     margin: 0 0 0 30px;
+    padding: 3px 0;
+    text-transform: uppercase;
 
     &:first-child {
       margin: 0;
+    }
+
+    &:hover {
+      border-bottom: 3px solid $grey-800;
+      text-decoration: none;
+    }
+
+    &.active {
+      border-bottom: 3px solid $grey-800;
     }
   }
 }

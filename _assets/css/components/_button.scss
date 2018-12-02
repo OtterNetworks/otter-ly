@@ -1,17 +1,50 @@
 .button {
   @include appearance(none);
 
-  border: 0;
-  cursor: pointer;
   display: inline-block;
-  font-family: $font-primary;
-  font-size: 18px;
-  font-weight: normal;
-  letter-spacing: 1px;
-  outline: none;
-  padding: 15px;
-  text-align: center;
-  text-decoration: none;
+  position: relative;
+
+  &::before {
+    @include transition(all .3s);
+    background-color: $blue;
+    content: '';
+    bottom: 6px;
+    left: -4px;
+    position: absolute;
+    top: -4px;
+    right: 6px;
+    z-index: 0;
+  }
+
+  &:hover {
+    &::before {
+      bottom: 0;
+      left: 0;
+      top: 0;
+      right: 0;
+    }
+  }
+
+  &__content {
+    background-color: transparent;
+    border: 3px solid $grey-800;
+    box-sizing: content-box;
+    cursor: pointer;
+    display: inline-block;
+    font-size: 10px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    outline: none;
+    padding: 8px 30px;
+    position: relative;
+    text-align: center;
+    text-transform: uppercase;
+    z-index: 1;
+
+    &:hover {
+      text-decoration: none;
+    }
+  }
 
   &_dark {
     background-color: $grey-800;
