@@ -4,7 +4,7 @@
 (function ($) {
   $(document).ready(function () {
     var sections = $('section');
-    var nav = $('header');
+    var nav = $('.js-navbar');
     var nav_height = nav.outerHeight();
 
     $(window).on('scroll', function () {
