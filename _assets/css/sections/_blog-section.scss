@@ -8,7 +8,12 @@
   }
 
   &__item {
+    margin: 70px 0 0;
     padding: 0 60px 0 0;
+
+    &:nth-child(-n+3) {
+      margin: 0;
+    }
   }
 }
 
