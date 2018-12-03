@@ -1,6 +1,7 @@
 .form {
   &__row {
-    margin: 0 0 50px;
+    max-width: 390px;
+    margin: 0 auto 50px;
 
     &:last-child {
       margin: 0;
@@ -16,7 +17,7 @@
   }
 
   &__action {
-    margin: 100px 0 0;
+    margin: 120px 0 0;
   }
 }
 

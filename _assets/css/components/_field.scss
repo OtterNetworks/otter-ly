@@ -8,12 +8,14 @@
   &__input {
     background-color: transparent;
     border: 0;
-    border-bottom: 1px $grey-800 solid;
+    border-bottom: 2px $grey-800 solid;
+    color: $grey-800;
     font-family: $font-primary;
     font-size: 18px;
+    font-weight: bold;
     line-height: 28px;
     outline: none;
-    padding: 10px 5px;
+    padding: 20px 5px;
     text-align: inherit;
     width: 100%;
 

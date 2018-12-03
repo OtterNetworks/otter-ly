@@ -1,6 +1,29 @@
 .contact-section {
   text-align: center;
 
+  &__wrapper {
+    &::after {
+      background-color: $grey-800;
+      bottom: 30px;
+      content: '';
+      display: block;
+      left: 0;
+      position: absolute;
+      right: -30px;
+      top: -30px;
+      z-index: 0;
+    }
+  }
+
+  &__content {
+    background-color: $white;
+    background-image: url('/img/backgrounds/contact.svg');
+    background-repeat: no-repeat;
+    background-size: 100%;
+    position: relative;
+    z-index: 1;
+  }
+
   &__title {
     font-size: 55px;
     margin: 0;
@@ -11,15 +34,16 @@
     }
   }
 
-  &__content {
-    max-width: 600px;
-  }
-
   &__text {
     font-size: 18px;
-    font-weight: bold;
+    line-height: 32px;
     margin: 20px 0 0;
     text-align: center;
+  }
+
+  &__form-wrapper {
+    margin: 0 auto;
+    max-width: 600px;
   }
 
   &__form {
