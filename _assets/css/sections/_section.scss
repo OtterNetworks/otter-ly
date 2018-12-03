@@ -3,10 +3,6 @@
     margin: 0 auto;
     max-width: $section-content-max-width;
     position: relative;
-
-    &_wide {
-      max-width: $section-content-wide-max-width;
-    }
   }
 
   &__header {

@@ -28,18 +28,6 @@
   }
 }
 
-@mixin lg-desktop {
-  @media (min-width: $desktop-max-width + 1) {
-    @content;
-  }
-}
-
-@mixin all-desktop {
-  @media (min-width: $tablet-max-width + 1) {
-    @content;
-  }
-}
-
 @mixin transition($transition) {
   -webkit-transition: $transition;
   transition: $transition;

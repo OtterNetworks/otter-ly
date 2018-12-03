@@ -1,23 +1,4 @@
 .wu-section {
-  background-repeat: no-repeat;
-  background-size: 1800px;
-
-  &_1 {
-    background-image: url('/img/backgrounds/why-us-1.svg');
-    background-position: bottom;
-  }
-
-  &_2 {
-    background-image: url('/img/backgrounds/why-us-2.svg');
-    background-position: top;
-    padding: 20px;
-  }
-
-  &_3 {
-    background-image: url('/img/backgrounds/why-us-3.svg');
-    background-position: top;
-  }
-
   &__header {
     text-align: center;
   }

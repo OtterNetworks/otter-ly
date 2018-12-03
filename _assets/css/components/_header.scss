@@ -23,9 +23,25 @@
     width: 230px;
   }
 
+  &__navs-switcher {
+    display: none;
+  }
+
   &__placeholder {
-    display: inline-block;
+    display: none;
     width: 21px;
+  }
+}
+
+@include tablet {
+  .header {
+    &__navs-switcher {
+      display: inline-block;
+    }
+
+    &__placeholder {
+      display: inline-block;
+    }
   }
 }
 

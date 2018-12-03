@@ -1,17 +1,17 @@
 .hero-section {
-  background-image: url('/img/backgrounds/hero.svg');
-  background-repeat: no-repeat;
-  background-position: top;
-  background-size: 1800px;
-
   &__content {
+    background-image: url('/img/backgrounds/hero.svg');
+    background-repeat: no-repeat;
+    background-position: center -#{$header-content-height};
+  }
+
+  &__thumb-content {
     background-image: url('/img/graphics/hero.svg');
     background-repeat: no-repeat;
-    background-size: 550px;
+    background-size: 33.3333%;
     background-position: right 30px center;
-
-    padding-bottom: 220px;
-    padding-top: 220px;
+    padding-bottom: 250px;
+    padding-top: 250px;
   }
 
   &__title {
@@ -30,7 +30,7 @@
     display: inline-block;
     font-size: 18px;
     line-height: 1.8;
-    margin: 40px 0 0;
+    margin: 40px 50px 0 0;
   }
 
   &__actions {
@@ -38,10 +38,9 @@
   }
 }
 
-@include all-desktop {
+@include desktop {
   .hero-section {
-    &__content {
-    }
+
   }
 }
 

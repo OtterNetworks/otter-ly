@@ -1,7 +1,7 @@
 .padding {
   &_h {
-    padding-left: 30px;
-    padding-right: 30px;
+    padding-left: 90px;
+    padding-right: 90px;
   }
 
   &_v {
@@ -24,6 +24,15 @@
 
   &_bottom {
     padding-bottom: 90px;
+  }
+}
+
+@include tablet {
+  .padding {
+    &_h {
+      padding-left: 50px;
+      padding-right: 50px;
+    }
   }
 }
 
