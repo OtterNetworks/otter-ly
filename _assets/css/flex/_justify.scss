@@ -1,4 +1,8 @@
 @mixin justify {
+  &_start {
+    justify-content: flex-start;
+  }
+
   &_space-between {
     justify-content: space-between;
   }
