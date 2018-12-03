@@ -59,7 +59,8 @@
   .contact-section {
     background-image: url('/img/backgrounds/contact.svg');
     background-repeat: no-repeat;
-    background-size: 100%;
+    background-size: auto 600px;
+    background-position: top center;
 
     &__content {
       background-color: transparent;

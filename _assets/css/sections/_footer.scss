@@ -1,5 +1,5 @@
 .footer {
-	background: $grey-800;
+	background-color: $grey-800;
 	color: $white;
   font-size: 18px;
 
@@ -9,7 +9,6 @@
 
 	&__subtitle {
 		color: $grey-200;
-		font-size: 18px;
 		font-weight: lighter;
 		margin: 0;
 		text-transform: uppercase;
@@ -22,17 +21,12 @@
 		margin: 25px 0 0;
 	}
 
-  &__description {
-    font-size: 23px;
-    margin-top: 0;
-    margin-bottom: 50px;
-  }
-
   &__link {
     color: $blue;
 		text-decoration: none;
 
 		&:hover {
+			opacity: .8;
 			text-decoration: none;
 		}
 	}
@@ -43,6 +37,7 @@
 		text-decoration: none;
 
 		&:hover {
+			opacity: .8;
 			text-decoration: none;
 		}
   }
@@ -58,8 +53,49 @@
 
 @include tablet {
   .footer {
+		font-size: 16px;
+
+		&__navigation {
+			padding: 0 0 60px;
+		}
+
 		&__column {
 			padding: 0;
 		}
+
+		&__subtitle {
+			font-size: 16px;
+		}
+
+		&__text {
+			font-size: 16px;
+		}
   }
+}
+
+@include mobile {
+	.footer {
+		text-align: center;
+
+		&__subtitle {
+			display: none;
+		}
+
+		&__text {
+			margin: 0;
+		}
+
+		&__navigation {
+			padding: 0;
+			order: 2;
+		}
+
+		&__column {
+			margin: 30px 0 0;
+		}
+
+		&__logo-wrapper {
+			margin: 0;
+		}
+	}
 }

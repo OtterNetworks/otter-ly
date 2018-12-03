@@ -1,8 +1,8 @@
-<footer class="footer section padding_h">
+<footer class="footer section padding_h padding_v">
 	<div class="section__content">
 		<div class="flex flow_row md-flow_column justify_space-between">
-			<div class="width_3-4 md-width_1-1 flex flow_row sm-flow_column">
-				<div class="footer__column width_1-3 sm-width_1-1 padding_v">
+			<div class="footer__navigation width_3-4 md-width_1-1 flex flow_row sm-flow_column">
+				<div class="footer__column width_1-3 sm-width_1-1">
 					<h4 class="footer__subtitle">Company</h4>
 					<p class="footer__text">
 						Geschäftsführer: Andrew Holway<br />
@@ -10,7 +10,7 @@
 						Umsatzsteuer-ID: DE299830182
 					</p>
 				</div>
-				<div class="footer__column width_1-4 md-width_1-3 sm-width_1-1 padding_v">
+				<div class="footer__column width_1-4 md-width_1-3 sm-width_1-1">
 					<h4 class="footer__subtitle">Address</h4>
 					<p class="footer__text">
 						Otter Networks UG<br />
@@ -19,22 +19,24 @@
 						Deutschland
 					</p>
 				</div>
-				<div class="footer__column width_1-3 sm-width_1-1 padding_v">
+				<div class="footer__column width_1-3 sm-width_1-1">
 					<h4 class="footer__subtitle">Contact</h4>
 					<p class="footer__text">
 						<a href="mailto:{{ site.email }}" class="footer__link">{{ site.email }}</a>
 					</p>
 				</div>
 			</div>
-			<div class="footer__column width_1-5 md-width_1-1 padding_v">
-				<div class="footer__logo">
-					<img src="/img/logo_negative.svg" class="footer__image">
+			<div class="footer__logo-wrapper footer__column width_2-5 md-width_1-1 flex justify_end sm-justify_center">
+				<div>
+					<div class="footer__logo">
+						<img src="/img/logo_negative.svg" class="footer__image">
+					</div>
+					<p class="footer__text">
+						<a href="{{ site.linkedin_url }}" class="footer__social" target="_blank">
+							<span>Follow us on LinkedIn</span>&nbsp;&nbsp;&nbsp;<i class="footer__social-icon fab fa-linkedin"></i>
+						</a>
+					</p>
 				</div>
-				<p class="footer__text">
-					<a href="{{ site.linkedin_url }}" class="footer__social" target="_blank">
-						<span>Follow us on LinkedIn</span>&nbsp;&nbsp;&nbsp;<i class="footer__social-icon fab fa-linkedin"></i>
-					</a>
-				</p>
 			</div>
 		</div>
 	</div>
