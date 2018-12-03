@@ -2,6 +2,8 @@
   text-align: center;
 
   &__wrapper {
+    position: relative;
+
     &::after {
       background-color: $grey-800;
       bottom: 30px;
