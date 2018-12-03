@@ -1,8 +1,11 @@
 <footer class="footer section padding_h padding_v">
 	<div class="section__content">
 		<div class="flex flow_row md-flow_column justify_space-between">
-			<div class="footer__navigation width_3-4 md-width_1-1 flex flow_row sm-flow_column">
-				<div class="footer__column width_1-3 sm-width_1-1">
+			<div class="footer__navigation width_3-4 md-width_1-1 flex flow_row sm-flow_column-reverse">
+				<div class="footer__column sm-width_1-1 md-hidden lg-hidden">
+					<p class="footer__text">© 2018. Otter Networks UG</p>
+				</div>
+				<div class="footer__column width_1-3 sm-hidden">
 					<h4 class="footer__subtitle">Company</h4>
 					<p class="footer__text">
 						Geschäftsführer: Andrew Holway<br />
@@ -31,11 +34,11 @@
 					<div class="footer__logo">
 						<img src="/img/logo_negative.svg" class="footer__image">
 					</div>
-					<p class="footer__text">
-						<a href="{{ site.linkedin_url }}" class="footer__social" target="_blank">
+					<div class="footer__logo-link">
+						<a href="{{ site.linkedin_url }}" class="footer__social flex flow_row justify_space-between align-items_end width_1-1" target="_blank">
 							<span>Follow us on LinkedIn</span>&nbsp;&nbsp;&nbsp;<i class="footer__social-icon fab fa-linkedin"></i>
 						</a>
-					</p>
+					</div>
 				</div>
 			</div>
 		</div>

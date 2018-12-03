@@ -3,6 +3,11 @@
     -webkit-align-items: center;
     align-items: center;
   }
+
+  &_end {
+    -webkit-align-items: flex-end;
+    align-items: flex-end;
+  }
 }
 
 .align-items {

@@ -4,21 +4,26 @@
   font-size: 18px;
 
 	&__column {
-		padding: 0 10px;
+		padding: 0 15px;
 	}
 
 	&__subtitle {
 		color: $grey-200;
+		font-size: 18px;
 		font-weight: lighter;
 		margin: 0;
 		text-transform: uppercase;
 	}
 
 	&__text {
-		font-size: 18px;
+		font-size: 15px;
 		font-weight: lighter;
 		line-height: 35px;
 		margin: 25px 0 0;
+	}
+
+	&__logo-link {
+		margin: 10px 0 0;
 	}
 
   &__link {
@@ -33,7 +38,8 @@
 
   &__social {
 		color: $white;
-    display: inline-block;
+		font-size: 15px;
+		font-weight: lighter;
 		text-decoration: none;
 
 		&:hover {
@@ -43,7 +49,7 @@
   }
 
 	&__logo {
-		max-width: 230px;
+		max-width: 220px;
 	}
 
 	&__social-icon {
@@ -96,6 +102,16 @@
 
 		&__logo-wrapper {
 			margin: 0;
+			order: 1;
+		}
+
+		&__logo {
+			max-width: 180px;
+			margin: 0 auto;
+		}
+
+		&__contact {
+			order: 1;
 		}
 	}
 }

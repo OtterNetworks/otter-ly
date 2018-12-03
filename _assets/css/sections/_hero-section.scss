@@ -4,6 +4,7 @@
     background-repeat: no-repeat;
     background-position: center -#{$header-content-height};
     background-size: 100%;
+    min-height: 85vh;
   }
 
   &__thumb-content {
