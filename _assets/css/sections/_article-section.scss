@@ -26,6 +26,12 @@
   }
 }
 
+@include tablet {
+  .article-section {
+    padding-top: $md-header-content-height;
+  }
+}
+
 @include mobile {
   .article-section {
     h1 {

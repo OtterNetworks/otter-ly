@@ -3,6 +3,7 @@
     background-image: url('/img/backgrounds/hero.svg');
     background-repeat: no-repeat;
     background-position: center -#{$header-content-height};
+    background-size: 100%;
   }
 
   &__thumb-content {
@@ -40,27 +41,45 @@
 
 @include desktop {
   .hero-section {
+    &__thumb-content {
+      padding-bottom: 200px;
+      padding-top: 200px;
+    }
+  }
+}
 
+@include tablet {
+  .hero-section {
+    text-align: center;
+
+    &__content {
+      background-image: url('/img/backgrounds/hero.svg');
+    }
+
+    &__thumb-content {
+      background-image: url('/img/backgrounds/mobile/hero-1.svg');
+      background-size: auto 100%;
+      background-position: right center;
+      padding-bottom: 120px;
+      padding-top: 120px;
+    }
+
+    &__title {
+      font-size: 32px;
+      line-height: 45px;
+    }
+
+    &__copy {
+      margin: 50px 0 0;
+    }
   }
 }
 
 @include mobile {
   .hero-section {
-    &__content {
-      padding-bottom: 50px;
-      padding-top: 50px;
-    }
-
-    &__title {
-      margin: 0 0 20px;
-      text-align: left;
-    }
-
-    &__subtitle {
-      font-size: 16px;
-      line-height: 30px;
-      margin: 0 0 20px;
-      text-align: left;
+    &__thumb-content {
+      padding-bottom: 60px;
+      padding-top: 60px;
     }
   }
 }

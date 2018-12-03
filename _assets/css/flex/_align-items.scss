@@ -9,8 +9,8 @@
   @include align-items;
 }
 
-@include sm-mobile {
-  .xs-align-items {
+@include tablet {
+  .md-align-items {
     @include align-items;
   }
 }
@@ -21,8 +21,8 @@
   }
 }
 
-@include only-tablet {
-  .md-align-items {
+@include sm-mobile {
+  .xs-align-items {
     @include align-items;
   }
 }

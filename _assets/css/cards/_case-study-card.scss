@@ -31,7 +31,7 @@
   }
 }
 
-@include mobile {
+@include tablet {
   .case-study-card {
     padding: 0 20px;
     text-align: center;
@@ -47,7 +47,11 @@
     }
 
     &__actions {
-      margin: 45px 0 0;
+      margin: 40px 0 0;
+    }
+
+    &__link {
+      font-size: 12px;
     }
   }
 }

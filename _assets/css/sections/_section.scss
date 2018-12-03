@@ -41,10 +41,10 @@
   }
 }
 
-@include mobile {
+@include tablet {
   .section {
-    &__title {
-      font-size: 18px;
+    &__header {
+      text-align: center;
     }
 
     &__subtitle {

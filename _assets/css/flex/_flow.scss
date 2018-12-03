@@ -24,8 +24,8 @@
   @include flow;
 }
 
-@include sm-mobile {
-  .xs-flow {
+@include tablet {
+  .md-flow {
     @include flow;
   }
 }
@@ -36,8 +36,8 @@
   }
 }
 
-@include only-tablet {
-  .md-flow {
+@include sm-mobile {
+  .xs-flow {
     @include flow;
   }
 }

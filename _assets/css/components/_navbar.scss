@@ -46,3 +46,11 @@
     white-space: nowrap;
   }
 }
+
+@include tablet {
+  .navbar {
+    &__header {
+      height: $md-header-content-height + 1;
+    }
+  }
+}

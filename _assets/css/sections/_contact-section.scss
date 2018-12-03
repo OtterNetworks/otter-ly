@@ -55,14 +55,36 @@
   }
 }
 
-@include mobile {
+@include tablet {
   .contact-section {
+    background-image: url('/img/backgrounds/contact.svg');
+    background-repeat: no-repeat;
+    background-size: 100%;
+
+    &__content {
+      background-color: transparent;
+      background-image: none;
+    }
+
+    &__title {
+      font-size: 32px;
+    }
+
     &__text {
-      margin: 0 0 20px;
+      font-size: 16px;
+      line-height: 27px;
+      margin: 20px 0 0;
     }
 
     &__action {
       font-size: 16px;
+      margin: 80px 0 0;
+    }
+
+    &__wrapper {
+      &::after {
+        display: none;
+      }
     }
   }
 }

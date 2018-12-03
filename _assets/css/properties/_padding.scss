@@ -29,9 +29,22 @@
 
 @include tablet {
   .padding {
+    &_v {
+      padding-bottom: 60px;
+      padding-top: 60px;
+    }
+
     &_h {
       padding-left: 50px;
       padding-right: 50px;
+    }
+
+    &_top {
+      padding-top: 60px;
+    }
+
+    &_bottom {
+      padding-bottom: 60px;
     }
   }
 }

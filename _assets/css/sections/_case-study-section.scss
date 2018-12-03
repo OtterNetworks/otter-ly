@@ -6,6 +6,10 @@
     position: relative;
   }
 
+  &__quote {
+    width: 45px;
+  }
+
   &__items {
     margin: 0 auto;
     max-width: 740px;
@@ -34,9 +38,14 @@
   }
 }
 
-@include mobile {
+@include tablet {
   .case-study-section {
+    &__quote {
+      width: 35px;
+    }
+
     &__sliders {
+      margin: 25px auto 0;
       text-align: center;
     }
   }

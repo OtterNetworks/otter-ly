@@ -35,6 +35,10 @@
 
 @include tablet {
   .header {
+    &__content {
+      height: $md-header-content-height;
+    }
+
     &__navs-switcher {
       display: inline-block;
     }
