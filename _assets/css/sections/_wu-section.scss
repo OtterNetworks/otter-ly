@@ -1,11 +1,7 @@
 .wu-section {
-  &__header {
-    text-align: center;
-  }
-
   &__card-wrapper {
     &::after {
-      background-color: $white;
+      background-color: $grey-800;
       content: '';
       display: block;
       position: absolute;
@@ -18,21 +14,23 @@
   }
 
   &__card {
+    background-color: $white;
+    padding: 20px;
+
     &_border {
-      border: 3px solid $grey-800;
-      padding: 20px;
+      border: 4px solid $grey-800;
       position: relative;
       z-index: 1;
+      padding: 150px 90px;
     }
   }
 
   &__thumb {
-    padding: 20px;
     text-align: center;
   }
 
   &__image {
-    height: 450px;
+    width: 350px;
   }
 
   &__caption-content {
