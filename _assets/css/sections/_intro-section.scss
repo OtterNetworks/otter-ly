@@ -1,0 +1,32 @@
+.intro-section {
+  background-color: $grey-100;
+
+  &__caption {
+    font-size: 24px;
+    font-weight: bold;
+    margin: 0;
+    text-transform: uppercase;
+  }
+
+  &__title {
+    font-size: 55px;
+    margin: 40px 0 0;
+
+    span {
+      background-image: linear-gradient(to bottom, $blue 60%, transparent 35%);
+    }
+  }
+}
+
+@include tablet {
+  .intro-section  {
+    &__caption {
+      font-size: 21px;
+    }
+
+    &__title {
+      font-size: 35px;
+      margin: 30px 0 0;
+    }
+  }
+}

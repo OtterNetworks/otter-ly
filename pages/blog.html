@@ -1,0 +1,29 @@
+---
+layout: default
+permalink: /blog/
+---
+<section class="intro-section section padding_v padding_h">
+  <div class="section__content">
+    <span class="intro-section__caption">Blog</span>
+    <h1 class="intro-section__title">
+      <span>Insights and stories</span>
+    </h1>
+  </div>
+</section>
+<section class="padding_v padding_h">
+  <div class="blog-section__items flex justify_center">
+    {% for post in site.posts %}
+    <div class="blog-section__item width_1-3 sm-width_1-1">
+      <div class="blog-card">
+        <a class="blog-card__thumb" href="{{ post.url }}">
+          <img src="{{ post.image }}" class="blog-card__image" alt="{{ post.title }}">
+        </a>
+        <h4 class="blog-card__title">
+          <a href="{{ post.url }}" class="blog-card__title-link">{{ post.title }}</a>
+        </h4>
+        <p class="blog-card__copy">{{ post.description }}</p>
+      </div>
+    </div>
+    {% endfor %}
+  </div>
+</section>
