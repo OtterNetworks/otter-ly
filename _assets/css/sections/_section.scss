@@ -22,11 +22,12 @@
   }
 
   &__actions {
-    text-align: center;
+    text-align: right;
   }
 
   &__action {
-    border-bottom: 2px solid transparent;
+    @include transition(all .3s);
+    border-bottom: 3px solid transparent;
     display: inline-block;
     font-size: 14px;
     font-weight: bold;
@@ -34,7 +35,7 @@
     text-transform: uppercase;
 
     &:hover {
-      border-bottom: 2px solid $grey-800;
+      border-bottom: 3px solid $grey-800;
       text-decoration: none;
     }
   }
@@ -48,6 +49,10 @@
 
     &__subtitle {
       font-size: 21px;
+    }
+
+    &__actions {
+      text-align: center;
     }
   }
 }
