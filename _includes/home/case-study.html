@@ -1,7 +1,7 @@
 <section id="case_study" class="case-study-section section padding_h padding_v_small">
 	<div class="case-study-section__content section__content">
 		<div class="case-study-section__wrapper padding_v_small">
-			<div class="case-study-section__items">
+			<div id="caseStudySlideshow" class="case-study-section__items">
 				{% for case_study_hash in site.data.case_studies %}
 				{% assign case_study = case_study_hash[1] %}
 				<div class="case-study-section__item">
@@ -17,7 +17,7 @@
 				{% endfor %}
 			</div>
 			<div class="case-study-section__sliders">
-				{% for case_study_hash in site.data.case_studies %}<span class="case-study-section__slider"></span>{% endfor %}
+				{% for case_study_hash in site.data.case_studies %}<span class="case-study-section__slider js-case-study-control"></span>{% endfor %}
 			</div>
 		</div>
 	</div>
