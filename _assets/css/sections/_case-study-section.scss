@@ -7,13 +7,13 @@
 
     &::after {
       background-color: $white;
-      bottom: 24px;
       content: '';
       display: block;
+      height: 100%;
       left: 25px;
       position: absolute;
-      right: -25px;
       top: -20px;
+      width: 100%;
       z-index: 0;
     }
   }

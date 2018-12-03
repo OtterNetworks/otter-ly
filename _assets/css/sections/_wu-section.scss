@@ -29,8 +29,8 @@
       display: block;
       position: absolute;
       height: 100%;
-      left: 18px;
-      top: -15px;
+      left: 30px;
+      top: -30px;
       width: 100%;
       z-index: 0;
     }
@@ -54,37 +54,25 @@
     height: 450px;
   }
 
-  &__caption {
-    padding: 0 40px;
-  }
-
-  &__subtitle-wrapper {
-    display: inline-block;
-    position: relative;
-
-    &::after {
-      background-color: $blue;
-      bottom: 12px;
-      content: '';
-      display: inline-block;
-      left: -7px;
-      position: absolute;
-      right: -7px;
-      top: 0px;
-      z-index: 0;
-    }
+  &__caption-content {
+    margin: 0 auto;
+    max-width: 600px;
   }
 
   &__subtitle {
-    font-size: 24px;
+    font-size: 32px;
     margin: 0;
     position: relative;
     z-index: 1;
+
+    span {
+      background-image: linear-gradient(to bottom, $blue 60%, transparent 35%);
+    }
   }
 
   &__copy {
     margin: 30px 0 0;
-    font-size: 14px;
+    font-size: 18px;
     line-height: 2;
   }
 }

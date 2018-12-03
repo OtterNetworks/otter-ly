@@ -17,7 +17,7 @@
     border-bottom: 4px solid $grey-800;
     border-top: 4px solid $grey-800;
     display: inline-block;
-    font-size: $section-title-font-size;
+    font-size: 24px;
     font-weight: bold;
     margin: 0;
     text-transform: uppercase;
@@ -25,7 +25,7 @@
   }
 
   &__subtitle {
-    font-size: $section-subtitle-font-size;
+    font-size: 27px;
     font-weight: bold;
   }
 
@@ -51,11 +51,11 @@
 @include mobile {
   .section {
     &__title {
-      font-size: $sm-section-title-font-size;
+      font-size: 18px;
     }
 
     &__subtitle {
-      font-size: $sm-section-subtitle-font-size;
+      font-size: 21px;
     }
   }
 }
