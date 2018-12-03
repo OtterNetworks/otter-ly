@@ -1,41 +1,47 @@
 .article-section {
   border-bottom: 0;
-  padding-top: $header-content-height;
   text-align: left;
 
   &__content {
-    max-width: 700px;
-  }
-
-  img {
-  	width: 100%;
-  	margin-bottom: 30px;
+    max-width: 860px;
   }
 
   h1 {
-    font-size: $article-title-fontsize;
-    font-weight: $article-title-fontweight;
+    font-size: 45px;
+    font-weight: 700;
     margin: 0 0 20px;
   }
 
   h2 {
-    font-size: $article-subtitle-fontsize;
-  	font-weight: $article-subtitle-fontweight;
-    line-height: $article-subtitle-lineheight;
-    margin: 0 0 20px;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 35px;
+    margin: 0;
   }
-}
 
-@include tablet {
-  .article-section {
-    padding-top: $md-header-content-height;
+  h3 {
+    font-size: 25px;
+    margin: 0 0 50px;
+  }
+
+  p {
+    margin: 0 0 50px;
+
+    &:last-child {
+      margin: 0;
+    }
+  }
+
+  img {
+    width: 100%;
+    margin: 70px 0;
   }
 }
 
 @include mobile {
   .article-section {
     h1 {
-      font-size: $sm-article-title-fontsize;
+      font-size: 40px;
     }
   }
 }
@@ -43,12 +49,16 @@
 @include sm-mobile {
   .article-section {
     h1 {
-      font-size: $xs-article-title-fontsize;
+      font-size: 27px;
     }
 
     h2 {
-      font-size: $xs-article-subtitle-fontsize;
-      line-height: $xs-article-subtitle-lineheight;
+      font-size: 21px;
+      line-height: 32px;
+    }
+
+    h3 {
+      font-size: 18px;
     }
 
     p {

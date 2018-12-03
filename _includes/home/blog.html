@@ -9,12 +9,12 @@
       <div class="blog-section__item width_1-3 sm-width_1-1">
         <div class="blog-card">
           <a class="blog-card__thumb" href="{{ post.url }}">
-            <img src="{{ post.image }}" class="blog-card__image" alt="{{ post.title }}">
+            <img src="{{ post.blog_image }}" class="blog-card__image" alt="{{ post.blog_title }}">
           </a>
           <h4 class="blog-card__title">
-            <a href="{{ post.url }}" class="blog-card__title-link">{{ post.title }}</a>
+            <a href="{{ post.url }}" class="blog-card__title-link">{{ post.blog_title }}</a>
           </h4>
-          <p class="blog-card__copy">{{ post.description }}</p>
+          <p class="blog-card__copy">{{ post.blog_description }}</p>
         </div>
       </div>
       {% endif %}

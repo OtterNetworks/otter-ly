@@ -2,16 +2,18 @@
 layout: post
 permalink: /humanitec/
 date: 2018-12-02 00:00:00
-title: "Case study: Humanitec"
-description: >-
+blog_title: "Case study: Humanitec"
+blog_description: >-
   How Kubernetes helped one company validate its development direction.
-image: "/img/posts/humanitec.svg"
+blog_image: "/img/posts/humanitec.svg"
+title: "Case study: How Google-specific Kubernetes helped one company validate its development direction"
+description: >-
+  How Kubernetes helped one company validate its development direction
 featured: true
 ---
-
-# Case study: How Google-specific Kubernetes helped one company validate its development direction
-
-## **How Kubernetes helped one company validate its development direction**
+<div>
+<img src="/img/posts/humanitec/humanitec.svg" alt="Case study: Humanitec" />
+</div>
 
 Berlin-based [Humanitec](https://humanitec.com/), wanted to explore Kubernetes on Google. With the Otter Networks design sprint as a compass, the enterprise software company began charting a new path.
 

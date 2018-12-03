@@ -2,20 +2,21 @@
 layout: post
 permalink: /how-i-learned/
 date: 2018-12-01 00:00:00
-title: "How I Learned Kubernetes"
-description: >-
+blog_title: "How I Learned Kubernetes"
+blog_description: >-
   Kubernetes automated and eliminated my job as a DevOps Engineer. Here's why
   that's great news for development.
-image: "/img/posts/how-i-learned.svg"
+blog_image: "/img/posts/how-i-learned.svg"
+headline: "By Andrew Holway - Otter Networks Founder - 2nd November 2018"
+title: "How I learned to stop worrying and love Kubernetes"
+description: >-
+  Kubernetes automated and eliminated my job as a Devops Engineer. Here’s why
+  that’s great news for development.
 featured: true
 ---
-
-By Andrew Holway - Otter Networks Founder - 2nd November 2018
-
-# How I learned to stop worrying and love Kubernetes
-## Kubernetes automated and eliminated my job as a Devops Engineer. Here’s why that’s great news for development.
-
-![header](/img/how-i-learned-header.svg)
+<div>
+<img src="/img/posts/how-i-learned/kubernetes1.svg" alt="How I Learned Kubernetes?" />
+</div>
 
 “Kubernetes?”
 
@@ -41,7 +42,10 @@ Before getting involved with Kubernetes, I didn’t love my work as a “DevOps 
 
 Since that first delivery at Brickblock, I’ve worked successfully with several other clients on Kubernetes projects. Throughout all of it, I’ve been careful to avoid deployment projects and instead remain on the utilization side of things. Why? Kubernetes is a complicated beast. Maintaining a cluster gets expensive and has limited dividend for most companies. I prefer to work with clients that are able to consume Kubernetes directly from the cloud provider, so that the project doesn’t end up being a distraction from their core business.
 
-![Kubernetes Power](/img/kubernetes-power.svg)
+<div style="text-align: center;">
+  <img src="/img/posts/how-i-learned/kubernetes2.svg" style="max-width: 300px;" alt="The DevOps game changer" />
+</div>
+
 ### The value of Kubernetes is significant and long-term
 
 After my positive experience, I certainly have a new way of explaining Kubernetes to anyone who brings it up:
