@@ -2,7 +2,7 @@
   background-image: url('/img/backgrounds/hero.svg');
   background-repeat: no-repeat;
   background-position: top;
-  background-size: contain;
+  background-size: 1800px;
 
   &__content {
     background-image: url('/img/graphics/hero.svg');
@@ -10,8 +10,8 @@
     background-size: 550px;
     background-position: right 30px center;
 
-    padding-bottom: 200px;
-    padding-top: 200px + $header-content-height;
+    padding-bottom: 220px;
+    padding-top: 220px;
   }
 
   &__title {
@@ -49,7 +49,7 @@
   .hero-section {
     &__content {
       padding-bottom: 50px;
-      padding-top: 50px + $header-content-height;
+      padding-top: 50px;
     }
 
     &__title {

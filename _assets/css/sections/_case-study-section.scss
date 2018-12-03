@@ -3,25 +3,30 @@
 
   &__content {
     max-width: 990px;
+    position: relative;
+
+    &::after {
+      background-color: $white;
+      bottom: 24px;
+      content: '';
+      display: block;
+      left: 25px;
+      position: absolute;
+      right: -25px;
+      top: -20px;
+      z-index: 0;
+    }
   }
 
   &__wrapper {
     border: 4px dotted $grey-800;
+    position: relative;
+    z-index: 1;
   }
 
   &__items {
     margin: 0 auto;
     max-width: 740px;
-    position: relative;
-
-    &::after {
-      background-color: $white;
-      bottom: 20px;
-      left: 20px;
-      position: absolute;
-      right: 20px;
-      top: -20px;
-    }
   }
 
   &__item {
