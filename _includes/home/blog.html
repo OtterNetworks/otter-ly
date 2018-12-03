@@ -5,6 +5,7 @@
     </div>
     <div class="flex justify_center">
       {% for post in site.posts %}
+      {% if post.featured %}
       <div class="blog-section__item width_1-3 sm-width_1-1">
         <div class="blog-card">
           <a class="blog-card__thumb" href="{{ post.url }}">
@@ -16,6 +17,7 @@
           <p class="blog-card__copy">{{ post.description }}</p>
         </div>
       </div>
+      {% endif %}
       {% endfor %}
     </div>
     {% comment %}

@@ -2,9 +2,12 @@
 layout: post
 permalink: /how-i-learned/
 date: 2018-12-01 00:00:00
-title: "Otter Networks"
-description: "How I learned to stop worrying and love Kubernetes"
-image: "/img/how-i-learned-opengraph.png"
+title: "How I Learned Kubernetes"
+description: >-
+  Kubernetes automated and eliminated my job as a DevOps Engineer. Here's why
+  that's great news for development.
+image: "/img/posts/how-i-learned.svg"
+featured: true
 ---
 
 By Andrew Holway - Otter Networks Founder - 2nd November 2018
