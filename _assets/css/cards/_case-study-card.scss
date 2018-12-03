@@ -11,14 +11,22 @@
 
   &__text {
     font-size: 18px;
-    font-weight: bold;
-    margin: 0 0 30px;
+    line-height: 34px;
+    margin: 0;
   }
 
   &__label {
     font-size: 18px;
     font-weight: bold;
-    margin: 0 0 30px;
+    line-height: 34px;
+  }
+
+  &__actions {
+    margin: 45px 0 0;
+  }
+
+  &__link {
+    font-size: 14px;
     text-transform: uppercase;
   }
 }
@@ -26,5 +34,20 @@
 @include mobile {
   .case-study-card {
     padding: 0 20px;
+    text-align: center;
+
+    &__text {
+      font-size: 16px;
+      margin: 20px 0 0;
+    }
+
+    &__label {
+      font-size: 16px;
+      margin: 30px 0 0;
+    }
+
+    &__actions {
+      margin: 45px 0 0;
+    }
   }
 }

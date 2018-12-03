@@ -4,24 +4,6 @@
   &__content {
     max-width: 990px;
     position: relative;
-
-    &::after {
-      background-color: $white;
-      content: '';
-      display: block;
-      height: 100%;
-      left: 25px;
-      position: absolute;
-      top: -20px;
-      width: 100%;
-      z-index: 0;
-    }
-  }
-
-  &__wrapper {
-    border: 4px dotted $grey-800;
-    position: relative;
-    z-index: 1;
   }
 
   &__items {
@@ -31,8 +13,10 @@
 
   &__sliders {
     line-height: 8px;
-    margin: 30px 0 0;
-    text-align: center;
+    margin: 30px auto 0;
+    max-width: 740px;
+    padding: 0 75px;
+    text-align: right;
   }
 
   &__slider {
@@ -46,6 +30,14 @@
 
     &_active {
       background-color: $grey-800;
+    }
+  }
+}
+
+@include mobile {
+  .case-study-section {
+    &__sliders {
+      text-align: center;
     }
   }
 }
