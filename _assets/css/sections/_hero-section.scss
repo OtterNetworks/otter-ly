@@ -7,43 +7,29 @@
   &__content {
     background-image: url('/img/graphics/hero.svg');
     background-repeat: no-repeat;
-    background-size: 450px;
+    background-size: 550px;
     background-position: right 30px center;
 
-    padding-bottom: 130px;
-    padding-top: 130px + $header-content-height;
-  }
-
-  &__title-wrapper {
-    display: inline-block;
-    max-width: 580px;
-    position: relative;
-
-    &::after {
-      background-color: $blue;
-      bottom: 20px;
-      content: '';
-      display: inline-block;
-      left: -7px;
-      position: absolute;
-      right: -7px;
-      top: 0px;
-      z-index: 0;
-    }
+    padding-bottom: 200px;
+    padding-top: 200px + $header-content-height;
   }
 
   &__title {
-    display: inline-block;
-    font-size: 42px;
+    font-size: 54px;
     font-weight: bold;
     margin: 0;
     position: relative;
     z-index: 1;
+
+    span {
+      background-image: linear-gradient(to bottom, $blue 60%, transparent 35%);
+      background-size: 95%;
+    }
   }
 
   &__copy {
     display: inline-block;
-    font-size: 14px;
+    font-size: 18px;
     line-height: 1.8;
     margin: 40px 0 0;
   }
@@ -53,10 +39,9 @@
   }
 }
 
-@include desktop {
+@include all-desktop {
   .hero-section {
-    &_desktop {
-
+    &__content {
     }
   }
 }

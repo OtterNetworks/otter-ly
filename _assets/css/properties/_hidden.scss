@@ -20,7 +20,7 @@
   }
 }
 
-@include desktop {
+@include all-desktop {
   .lg-hidden {
     display: none !important;
   }

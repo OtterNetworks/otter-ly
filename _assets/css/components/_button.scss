@@ -31,11 +31,11 @@
     box-sizing: content-box;
     cursor: pointer;
     display: inline-block;
-    font-size: 10px;
+    font-size: 14px;
     font-weight: bold;
     letter-spacing: 1px;
     outline: none;
-    padding: 8px 30px;
+    padding: 10px 45px;
     position: relative;
     text-align: center;
     text-transform: uppercase;
@@ -53,11 +53,5 @@
     &:hover {
       background-color: $red;
     }
-  }
-}
-
-@include mobile {
-  .button {
-    font-size: 16px;
   }
 }

@@ -1,22 +1,42 @@
 .navigation {
   &__link {
-    font-size: 12px;
+    box-sizing: border-box;
+    display: inline-block;
+    font-size: 16px;
     font-weight: bold;
+    line-height: 34px;
     margin: 0 0 0 30px;
-    padding: 3px 0;
+    padding: 0 5px;
     text-transform: uppercase;
+
+    &_highlight {
+      background-image: linear-gradient(to bottom, $blue 45%, transparent 45%);
+    }
 
     &:first-child {
       margin: 0;
     }
 
     &:hover {
-      border-bottom: 3px solid $grey-800;
       text-decoration: none;
+
+      span {
+        border-bottom: 4px solid $grey-800;
+      }
     }
 
     &.active {
-      border-bottom: 3px solid $grey-800;
+      span {
+        border-bottom: 4px solid $grey-800;
+      }
+    }
+
+    span {
+      @include transition(all .3s);
+
+      border-bottom: 4px solid $white;
+      display: inline-block;
+      line-height: 26px;
     }
   }
 }

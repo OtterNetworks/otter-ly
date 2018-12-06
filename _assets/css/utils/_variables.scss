@@ -1,13 +1,14 @@
 $sm-mobile-max-width: 479px !default;
 $mobile-max-width: 767px !default;
 $tablet-max-width: 991px !default;
+$desktop-max-width: 1440px !default;
 
 $page-min-width: 320px;
 
-$header-content-height: 75px;
+$header-content-height: 100px;
 
-$section-content-max-width: 1100px !default;
-$section-content-wide-max-width: 1400px !default;
+$section-content-max-width: 1400px !default;
+$section-content-wide-max-width: 1600px !default;
 $section-title-font-size: 18px !default;
 $section-subtitle-font-size: 27px !default;
 $sm-section-title-font-size: 16px !default;
