@@ -1,5 +1,5 @@
 .case-study-card {
-  padding: 0 40px;
+  padding: 0 75px;
 
   &__thumb {
     padding: 0 0 30px;
@@ -10,11 +10,16 @@
   }
 
   &__text {
-    margin: 0 0 15px;
+    font-size: 18px;
+    font-weight: bold;
+    margin: 0 0 30px;
   }
 
   &__label {
-    margin: 0 0 15px;
+    font-size: 18px;
+    font-weight: bold;
+    margin: 0 0 30px;
+    text-transform: uppercase;
   }
 }
 
