@@ -4,11 +4,11 @@
   $(document).ready(function () {
     $('#contactForm').on('submit', function(e) {
       e.preventDefault();
-      var name = $('#name').val(); //get the name field value
+      var firstName = $('#name').val(); //get the first name field value
+      var lastName = $('#lastName').val(); //get the last name field value
       var email = $('#email').val(); //get the name field value
-      var comments = $('#comments').val(); //get the comments
 
-      //pretend we don't need validation
+      var name = firstName + " " + lastName;
 
       //send to formspree
       $.ajax({
@@ -17,9 +17,8 @@
         data:{
           name:name,
           _replyto:email,
-           email:email,
-          comments:comments,
-          _subject:'Otter Networks form submission',
+          email:email,
+          _subject:'Otter Networks form submission'
         },
         dataType:"json",
         success:function() {

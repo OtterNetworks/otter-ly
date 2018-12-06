@@ -1,6 +1,4 @@
 .field {
-  text-align: left;
-
   &__label {
     display: inline-block;
     font-size: 18px;
@@ -8,12 +6,15 @@
   }
 
   &__input {
-    border: 1px $grey-800 solid;
+    background-color: transparent;
+    border: 0;
+    border-bottom: 1px $grey-800 solid;
     font-family: $font-primary;
     font-size: 18px;
     line-height: 28px;
-    outline-color: $blue;
+    outline: none;
     padding: 10px 5px;
+    text-align: inherit;
     width: 100%;
 
     &_text {
