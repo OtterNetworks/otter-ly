@@ -5,28 +5,33 @@
   }
 
   &_v {
-    padding-bottom: 60px;
-    padding-top: 60px;
+    padding-bottom: 90px;
+    padding-top: 90px;
+
+    &_small {
+      padding-bottom: 50px;
+      padding-top: 50px;
+    }
   }
 
   &_top {
-    padding-top: 60px;
+    padding-top: 90px;
 
     &_small {
-      padding-top: 40px;
+      padding-top: 50px;
     }
   }
 
   &_bottom {
-    padding-bottom: 60px;
+    padding-bottom: 90px;
   }
 }
 
 @include mobile {
   .padding {
     &_v {
-      padding-bottom: 40px;
-      padding-top: 40px;
+      padding-bottom: 50px;
+      padding-top: 50px;
     }
 
     &_h {
@@ -35,11 +40,11 @@
     }
 
     &_top {
-      padding-top: 40px;
+      padding-top: 50px;
     }
 
     &_bottom {
-      padding-bottom: 40px;
+      padding-bottom: 50px;
     }
   }
 }

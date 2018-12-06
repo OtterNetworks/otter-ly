@@ -1,7 +1,8 @@
 .footer {
 	background: $grey-800;
 	color: $white;
-  font-size: 13px;
+  font-size: 18px;
+	padding: 50px 0;
 
 	&__column {
 		padding: 0 10px;
@@ -9,16 +10,17 @@
 
 	&__subtitle {
 		color: $grey-200;
-		font-size: 13px;
-		font-weight: 400;
+		font-size: 18px;
+		font-weight: lighter;
 		margin: 0;
 		text-transform: uppercase;
 	}
 
 	&__text {
-		font-size: 13px;
-		line-height: 27px;
-		margin: 10px 0 0;
+		font-size: 18px;
+		font-weight: lighter;
+		line-height: 35px;
+		margin: 25px 0 0;
 	}
 
   &__description {
@@ -47,11 +49,11 @@
   }
 
 	&__logo {
-		max-width: 170px;
+		max-width: 230px;
 	}
 
 	&__social-icon {
-		font-size: 18px;
+		font-size: 30px;
 	}
 }
 
