@@ -1,20 +1,24 @@
-<section id="case_study" class="case-studies-section section padding_h">
-	<div class="case-studies-section__content section__content padding_v">
-		<h3><strong>What they say</strong></h3>
-		<div class="flex padding_top">
+<section id="case_study" class="case-study-section section padding_h padding_v_small">
+	<div class="case-study-section__content section__content">
+		<div id="caseStudySlideshow" class="case-study-section__items">
 			{% for case_study_hash in site.data.case_studies %}
 			{% assign case_study = case_study_hash[1] %}
-			<div class="case-studies-section__item width_1-2 sm-width_1-1">
+			<div class="case-study-section__item">
+				<div class="case-study-section__quote">
+					<img src="/img/graphics/quote.png" class="case-study-section__quote" />
+				</div>
 				<div class="case-study-card">
-					<div class="case-study-card__thumb">
-						<img src="/img/quotes.svg" class="case-study-card__icon" />
-					</div>
 					<p class="case-study-card__text">{{ case_study.text }}</p>
 					<p class="case-study-card__label"><strong>{{ case_study.name }}</strong></p>
-					<a href="{{ case_study.url }}" class="case-study-card__link">Case study</a>
+					<div class="case-study-card__actions">
+						<a href="{{ case_study.url }}" class="case-study-card__link">Read Case Study</a>
+					</div>
 				</div>
 			</div>
 			{% endfor %}
+		</div>
+		<div class="case-study-section__sliders">
+			{% for case_study_hash in site.data.case_studies %}<span class="case-study-section__slider js-case-study-control"></span>{% endfor %}
 		</div>
 	</div>
 </section>

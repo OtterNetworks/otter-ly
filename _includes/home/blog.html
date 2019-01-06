@@ -1,0 +1,27 @@
+<section id="blog" class="blog-section section padding_h padding_v">
+  <div class="blog-section__content section__content">
+    <div class="section__header padding_bottom">
+      <h1 class="section__title">From our blog</h1>
+    </div>
+    <div class="blog-section__items flex justify_center">
+      {% for post in site.posts %}
+      {% if post.featured %}
+      <div class="blog-section__item width_1-3 sm-width_1-1">
+        <div class="blog-card">
+          <a class="blog-card__thumb" href="{{ post.url }}">
+            <img src="{{ post.blog_image }}" class="blog-card__image" alt="{{ post.blog_title }}">
+          </a>
+          <h4 class="blog-card__title">
+            <a href="{{ post.url }}" class="blog-card__title-link">{{ post.blog_title }}</a>
+          </h4>
+          <p class="blog-card__copy">{{ post.blog_description }}</p>
+        </div>
+      </div>
+      {% endif %}
+      {% endfor %}
+    </div>
+    <div class="section__actions padding_top">
+      <a href="/blog/" class="section__action">Read all</a>
+    </div>
+  </div>
+</section>

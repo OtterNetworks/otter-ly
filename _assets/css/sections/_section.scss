@@ -6,25 +6,53 @@
   }
 
   &__title {
-    font-size: $section-title-font-size;
-    margin: 0 0 40px;
+    background-color: $grey-800;
+    color: $white;
+    display: inline-block;
+    font-size: 16px;
+    font-weight: bold;
+    margin: 0;
+    text-transform: uppercase;
+    padding: 9px 26px;
   }
 
   &__subtitle {
-    font-size: $section-subtitle-font-size;
+    font-size: 27px;
     font-weight: bold;
+  }
+
+  &__actions {
+    text-align: right;
+  }
+
+  &__action {
+    @include transition(all .3s);
+    border-bottom: 3px solid transparent;
+    display: inline-block;
+    font-size: 14px;
+    font-weight: bold;
+    padding: 2px;
+    text-transform: uppercase;
+
+    &:hover {
+      border-bottom: 3px solid $grey-800;
+      text-decoration: none;
+    }
   }
 }
 
-@include mobile {
+@include tablet {
   .section {
-    &__title {
-      font-size: $sm-section-title-font-size;
-      margin: 0 0 20px;
+    &__header {
+      text-align: center;
     }
 
     &__subtitle {
-      font-size: $sm-section-subtitle-font-size;
+      font-size: 21px;
+    }
+
+    &__actions {
+      text-align: center;
     }
   }
 }

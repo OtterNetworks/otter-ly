@@ -8,8 +8,13 @@ html, body {
   margin: 0;
   padding: 0;
   color: $grey-800;
-  text-align: center;
 	min-width: $page-min-width;
+}
+
+p {
+	font-size: 18px;
+	line-height: 33px;
+	margin-top: 0;
 }
 
 img {
@@ -21,9 +26,9 @@ a, .link {
 	cursor: pointer;
 	text-decoration: none;
 
-  &:hover {
-    color: $red;
-  }
+	&:hover {
+		text-decoration: underline;
+	}
 }
 
 hr {
@@ -34,4 +39,41 @@ hr {
   border: 0;
   width: 100%;
   margin: 40px 0;
+}
+
+@include mobile {
+	h1 {
+		font-size: 40px;
+		margin-bottom: 35px;
+	}
+
+	h2 {
+		font-size: 40px;
+	}
+
+	h3 {
+		font-size: 25px;
+		line-height: 40px
+	}
+}
+
+@include sm-mobile {
+	h1 {
+		font-size: 35px;
+		margin: 0 0 20px 0;
+	}
+
+	h2 {
+		font-size: 30px;
+	}
+
+	h3 {
+		font-size: 22px;
+		line-height: 38px;
+	}
+
+	p {
+		font-size: 16px;
+		line-height: 28px;
+	}
 }

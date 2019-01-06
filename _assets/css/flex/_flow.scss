@@ -13,14 +13,19 @@
     -webkit-flex-flow: column;
     flex-flow: column;
   }
+
+  &_column-reverse {
+    -webkit-flex-flow: column-reverse;
+    flex-flow: column-reverse;
+  }
 }
 
 .flow {
   @include flow;
 }
 
-@include sm-mobile {
-  .xs-flow {
+@include tablet {
+  .md-flow {
     @include flow;
   }
 }
@@ -31,8 +36,8 @@
   }
 }
 
-@include tablet {
-  .md-flow {
+@include sm-mobile {
+  .xs-flow {
     @include flow;
   }
 }

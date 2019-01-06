@@ -1,0 +1,13 @@
+.page {
+  &__content {
+    padding: $header-content-height 0 0;
+  }
+}
+
+@include tablet {
+  .page {
+    &__content {
+      padding: $md-header-content-height 0 0;
+    }
+  }
+}

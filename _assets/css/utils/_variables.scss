@@ -1,24 +1,28 @@
 $sm-mobile-max-width: 479px !default;
 $mobile-max-width: 767px !default;
-$tablet-max-width: 991px !default;
+$tablet-max-width: 1024px !default;
+$desktop-max-width: 1440px !default;
 
 $page-min-width: 320px;
 
-$header-content-height: 65px;
+$header-content-height: 100px;
+$md-header-content-height: 75px;
 
-$section-content-max-width: 1100px !default;
-$section-title-font-size: 60px !default;
-$section-subtitle-font-size: 28px !default;
-$sm-section-title-font-size: 35px !default;
-$sm-section-subtitle-font-size: 22px !default;
+$section-content-max-width: 1440px !default;
+$section-content-wide-max-width: 1600px !default;
+
+$xs-article-title-fontsize: 27px !default;
+$xs-article-subtitle-fontsize: 21px !default;
+$xs-article-subtitle-lineheight: 32px !default;
 
 $white: #fff;
 
 $red: #CF3800;
-$cyan: #00FFFF;
-$blue: #05ABC1;
+$blue: #86FED4;
 
-$grey-200: #ddd;
-$grey-800: #3f3936;
+$grey-100: #F5F5F5;
+$grey-200: #DDD;
+$grey-500: #9B9B9B;
+$grey-800: #3F3936;
 
 $font-primary: 'Montserrat', sans-serif;

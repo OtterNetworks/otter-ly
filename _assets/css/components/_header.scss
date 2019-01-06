@@ -1,12 +1,13 @@
 .header {
   background-color: $white;
   border-bottom: 1px solid $grey-200;
+  box-shadow: 0 3px 5px $grey-200;
   left: 0;
   min-width: $page-min-width;
   position: fixed;
   right: 0;
   top: 0;
-  z-index: 1;
+  z-index: 2;
   width: 100%;
 
   &__content {
@@ -19,25 +20,32 @@
 
   &__logo-link {
     display: block;
-    width: 200px;
+    width: 230px;
+  }
+
+  &__navs-switcher {
+    display: none;
   }
 
   &__placeholder {
-    display: inline-block;
+    display: none;
     width: 21px;
   }
+}
 
-  &:after {
-    background-image: url(/img/shadow.png);
-    background-size: 100% auto;
-    background-position: top center;
-    background-repeat: no-repeat;
-    content: '';
-    display: block;
-    height: 30px;
-    position: absolute;
-    width: 100%;
-    z-index: 10;
+@include tablet {
+  .header {
+    &__content {
+      height: $md-header-content-height;
+    }
+
+    &__navs-switcher {
+      display: inline-block;
+    }
+
+    &__placeholder {
+      display: inline-block;
+    }
   }
 }
 

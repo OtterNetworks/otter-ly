@@ -1,6 +1,11 @@
 .form {
   &__row {
-    margin: 0 0 30px;
+    max-width: 390px;
+    margin: 0 auto 50px;
+
+    &:last-child {
+      margin: 0;
+    }
   }
 
   &__column {
@@ -9,6 +14,10 @@
     &:last-child {
       padding: 0 0 0 10px;
     }
+  }
+
+  &__action {
+    margin: 120px 0 0;
   }
 }
 

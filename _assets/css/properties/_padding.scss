@@ -1,32 +1,59 @@
 .padding {
   &_h {
-    padding-left: 30px;
-    padding-right: 30px;
+    padding-left: 90px;
+    padding-right: 90px;
   }
 
   &_v {
-    padding-bottom: 60px;
-    padding-top: 60px;
+    padding-bottom: 120px;
+    padding-top: 120px;
+
+    &_small {
+      padding-bottom: 50px;
+      padding-top: 50px;
+    }
   }
 
   &_top {
-    padding-top: 60px;
+    padding-top: 120px;
 
     &_small {
-      padding-top: 40px;
+      padding-top: 50px;
     }
   }
 
   &_bottom {
-    padding-bottom: 60px;
+    padding-bottom: 120px;
+  }
+}
+
+@include tablet {
+  .padding {
+    &_v {
+      padding-bottom: 60px;
+      padding-top: 60px;
+    }
+
+    &_h {
+      padding-left: 50px;
+      padding-right: 50px;
+    }
+
+    &_top {
+      padding-top: 60px;
+    }
+
+    &_bottom {
+      padding-bottom: 60px;
+    }
   }
 }
 
 @include mobile {
   .padding {
     &_v {
-      padding-bottom: 40px;
-      padding-top: 40px;
+      padding-bottom: 50px;
+      padding-top: 50px;
     }
 
     &_h {
@@ -35,11 +62,11 @@
     }
 
     &_top {
-      padding-top: 40px;
+      padding-top: 50px;
     }
 
     &_bottom {
-      padding-bottom: 40px;
+      padding-bottom: 50px;
     }
   }
 }

@@ -1,57 +1,86 @@
 .hero-section {
-  background-image: url(/img/Illustrationsandgraphics-03.svg);
-  background-position: 75% 50%;
-  background-repeat: no-repeat;
-  min-height: 100vh;
-
   &__content {
-    max-width: 750px;
-    padding-bottom: 90px;
-    padding-top: 90px + $header-content-height;
+    background-image: url('/img/backgrounds/hero.svg');
+    background-repeat: no-repeat;
+    background-position: center -#{$header-content-height};
+    background-size: 100%;
+    min-height: 85vh;
+  }
+
+  &__thumb-content {
+    background-image: url('/img/graphics/hero.svg');
+    background-repeat: no-repeat;
+    background-size: 33.3333%;
+    background-position: right 30px center;
+    padding-bottom: 250px;
+    padding-top: 250px;
   }
 
   &__title {
-    margin: 0 0 30px;
+    font-size: 54px;
+    font-weight: bold;
+    margin: 0;
+    position: relative;
+    z-index: 1;
+
+    span {
+      background-image: linear-gradient(to bottom, $blue 60%, transparent 35%);
+    }
   }
 
-  &__subtitle {
-    font-size: 27px;
-    line-height: 45px;
-    margin: 0 0 30px;
+  &__copy {
+    display: inline-block;
+    font-size: 18px;
+    line-height: 1.8;
+    margin: 40px 50px 0 0;
   }
 
-  &__title,
-  &__subtitle {
-    &:last-child {
-      margin: 0;
+  &__actions {
+    margin: 50px 0 0;
+  }
+}
+
+@include desktop {
+  .hero-section {
+    &__thumb-content {
+      padding-bottom: 200px;
+      padding-top: 200px;
+    }
+  }
+}
+
+@include tablet {
+  .hero-section {
+    text-align: center;
+
+    &__content {
+      background-image: url('/img/backgrounds/hero.svg');
+    }
+
+    &__thumb-content {
+      background-image: url('/img/backgrounds/mobile/hero-1.svg');
+      background-size: auto 100%;
+      background-position: right center;
+      padding-bottom: 120px;
+      padding-top: 120px;
+    }
+
+    &__title {
+      font-size: 32px;
+      line-height: 45px;
+    }
+
+    &__copy {
+      margin: 50px 0 0;
     }
   }
 }
 
 @include mobile {
   .hero-section {
-    &__content {
-      padding-bottom: 40px;
-      padding-top: 40px + $header-content-height;
-    }
-
-    &__title {
-      margin: 0 0 20px;
-      text-align: left;
-    }
-
-    &__subtitle {
-      font-size: 16px;
-      line-height: 30px;
-      margin: 0 0 20px;
-      text-align: left;
-    }
-
-    &__title,
-    &__subtitle {
-      &:last-child {
-        margin: 0;
-      }
+    &__thumb-content {
+      padding-bottom: 60px;
+      padding-top: 60px;
     }
   }
 }

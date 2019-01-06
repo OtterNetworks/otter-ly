@@ -1,6 +1,16 @@
 .technology-card {
+  padding: 0 20px;
+
   &__thumb {
+    max-height: 80px;
     margin: 0 auto;
-    max-width: 200px;
+  }
+}
+
+@include mobile {
+  .technology-card {
+    &__thumb {
+      max-width: 200px;
+    }
   }
 }

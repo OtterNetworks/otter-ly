@@ -14,7 +14,7 @@
   }
 }
 
-@include tablet {
+@include only-tablet {
   .md-hidden {
     display: none !important;
   }
