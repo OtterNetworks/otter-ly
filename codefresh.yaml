@@ -2,21 +2,6 @@
 version: '1.0'
 steps:
  
-  # Report status and review app URL back to Github.
-  NotifyGitHubPREnvCreating:
-    title: Set Pull Request Environment pending
-    image: cloudposse/github-status-updater
-    environment:
-      - GITHUB_ACTION=update_state
-      - GITHUB_TOKEN=${{GITHUB_TOKEN}}
-      - GITHUB_OWNER=${{CF_REPO_OWNER}}
-      - GITHUB_REPO=${{CF_REPO_NAME}}
-      - GITHUB_REF=${{CF_REVISION}}
-      - GITHUB_CONTEXT=Pull Request Environment
-      - GITHUB_STATE=success
-      - GITHUB_DESCRIPTION=Creating Pull Request Environment
-      - GITHUB_TARGET_URL=http://${{HOST}}
- 
   # Set up some environment variables. These could be stored as secret vars in codefresh.
   SetVars:
     description: Freestyle step..
@@ -91,3 +76,18 @@ steps:
     cluster: ${{K8S_CLUSTER}}
     namespace: ${{NAMESPACE}}
     file_path: ./k8s/ingress.yaml
+
+  # Report status and review app URL back to Github.
+  NotifyGitHubPREnvCreating:
+    title: Set Pull Request Environment pending
+    image: cloudposse/github-status-updater
+    environment:
+      - GITHUB_ACTION=update_state
+      - GITHUB_TOKEN=${{GITHUB_TOKEN}}
+      - GITHUB_OWNER=${{CF_REPO_OWNER}}
+      - GITHUB_REPO=${{CF_REPO_NAME}}
+      - GITHUB_REF=${{CF_REVISION}}
+      - GITHUB_CONTEXT=Pull Request Environment
+      - GITHUB_STATE=success
+      - GITHUB_DESCRIPTION=Creating Pull Request Environment
+      - GITHUB_TARGET_URL=http://${{HOST}}
