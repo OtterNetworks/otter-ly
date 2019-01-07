@@ -1,0 +1,24 @@
+# https://github.com/kubernetes/ingress-gce/blob/master/docs/annotations.md
+apiVersion: v1
+kind: List
+items:
+- apiVersion: extensions/v1beta1
+  kind: Ingress
+  metadata:
+    name: staging-ingress
+    annotations:
+      kubernetes.io/ingress.class: "nginx"
+  spec:
+#    tls:
+#    - hosts:
+#      - $HOSTNAME
+#      secretName: wildcard-brickblock-cloud-io
+    rules:
+    - host: {{HOST}}
+      http:
+        paths:
+        - backend:
+            serviceName: {{CF_REPO_NAME}}
+            servicePort: 80
+          path: /
+

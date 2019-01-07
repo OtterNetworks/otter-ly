@@ -1,0 +1,54 @@
+---
+apiVersion: extensions/v1beta1
+kind: Deployment
+metadata:
+  name: {{CF_REPO_NAME}}
+  labels:
+    app: {{CF_REPO_NAME}}
+spec:
+  replicas: 1
+  revisionHistoryLimit: 5
+  template:
+    metadata:
+      name: {{CF_REPO_NAME}}
+      labels:
+        app: {{CF_REPO_NAME}}
+        tier: web
+    spec:
+#      affinity:
+        # This makes sure that we have one pod running per node.
+#        podAntiAffinity:
+#          requiredDuringSchedulingIgnoredDuringExecution:
+#          - labelSelector:
+#              matchExpressions:
+#              - key: app
+#                operator: In
+#                values:
+#                - $SERVICE_NAME
+#            topologyKey: kubernetes.io/hostname
+#      imagePullSecrets:
+#      - name: image-pull-secret
+      containers:
+        - name: {{CF_REPO_NAME}}
+          # image: gcr.io/{{GOOGLE_PROJECT}}/{{CF_REPO_NAME}}:{{CF_SHORT_REVISION}}
+          image: {{BUILD_IMAGE}}
+          imagePullPolicy: Always
+          envFrom:
+          - configMapRef:
+              name: environment-variables
+          ports:
+          - name: web
+            containerPort: 8080
+          livenessProbe:
+            httpGet:
+              path: /
+              port: 8080
+            initialDelaySeconds: 15
+            timeoutSeconds: 15
+          readinessProbe:
+            httpGet:
+              path: /
+              port: 8080
+            initialDelaySeconds: 5
+            timeoutSeconds: 3
+

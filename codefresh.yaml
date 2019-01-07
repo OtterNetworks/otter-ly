@@ -1,0 +1,93 @@
+
+version: '1.0'
+steps:
+ 
+  # Set up some environment variables. These could be stored as secret vars in codefresh.
+  SetVars:
+    description: Freestyle step..
+    title: Free styling
+    image: alpine:latest
+    commands:
+      - cf_export BUILD_IMAGE="gcr.io/$GOOGLE_PROJECT/${{CF_REPO_NAME}}:${{CF_SHORT_REVISION}}"
+      - cf_export HOST="${{CF_BRANCH_TAG_NORMALIZED}}.${{CF_REPO_NAME}}.$TLD"
+      - cf_export NAMESPACE="${{CF_BRANCH_TAG_NORMALIZED}}-${{CF_REPO_NAME}}"
+  
+  # It's often very useful to see what vars are available in the build environment
+  SeeThemVars:
+    description: Freestyle step..
+    title: Free stylin them var
+    image: alpine:latest
+    commands:
+      - env
+  
+  BuildingDockerImage:
+    title: Building Docker Image
+    type: build
+    image_name: '${{CF_REPO_NAME}}'
+    working_directory: ./
+    tag: '${{CF_SHORT_REVISION}}'
+    dockerfile: Dockerfile
+     
+  PushToGCR:
+    type: push
+    title: Pushing Docker image to GCR
+    candidate: '${{BuildingDockerImage}}'
+    tag: '${{CF_SHORT_REVISION}}'
+    image_name: '${{CF_REPO_NAME}}'
+    registry: gcr-io
+    fail_fast: false
+
+  RunningNamespaceScript:
+    title: Running Namespace
+    type: deploy
+    kind: kubernetes
+    cluster: ${{K8S_CLUSTER}}
+    namespace: ${{NAMESPACE}}
+    file_path: ./k8s/namespace.yaml
+
+  RunningConfigmapScript:
+    title: Running Configmap
+    type: deploy
+    kind: kubernetes
+    cluster: ${{K8S_CLUSTER}}
+    namespace: ${{NAMESPACE}}
+    file_path: ./k8s/configmap.yaml
+
+  RunningDeployScript:
+    title: Running Deployment
+    type: deploy
+    kind: kubernetes
+    cluster: ${{K8S_CLUSTER}}
+    namespace: ${{NAMESPACE}}
+    file_path: ./k8s/deployment.yaml
+
+  RunningServiceScript:
+    title: Running Service
+    type: deploy
+    kind: kubernetes
+    cluster: ${{K8S_CLUSTER}}
+    namespace: ${{NAMESPACE}}
+    file_path: ./k8s/service.yaml
+          
+  RunningIngressScript:
+    title: Running Ingress
+    type: deploy
+    kind: kubernetes
+    cluster: ${{K8S_CLUSTER}}
+    namespace: ${{NAMESPACE}}
+    file_path: ./k8s/ingress.yaml
+
+  # Report status and review app URL back to Github.
+  NotifyGitHubPREnvCreating:
+    title: Set Pull Request Environment pending
+    image: cloudposse/github-status-updater
+    environment:
+      - GITHUB_ACTION=update_state
+      - GITHUB_TOKEN=${{GITHUB_TOKEN}}
+      - GITHUB_OWNER=${{CF_REPO_OWNER}}
+      - GITHUB_REPO=${{CF_REPO_NAME}}
+      - GITHUB_REF=${{CF_REVISION}}
+      - GITHUB_CONTEXT=Pull Request Environment
+      - GITHUB_STATE=success
+      - GITHUB_DESCRIPTION=Creating Pull Request Environment
+      - GITHUB_TARGET_URL=http://${{HOST}}
