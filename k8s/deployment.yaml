@@ -41,13 +41,13 @@ spec:
             containerPort: 8080
           livenessProbe:
             httpGet:
-              path: /healthz
+              path: /
               port: 8080
             initialDelaySeconds: 15
             timeoutSeconds: 15
           readinessProbe:
             httpGet:
-              path: /healthz
+              path: /
               port: 8080
             initialDelaySeconds: 5
             timeoutSeconds: 3
