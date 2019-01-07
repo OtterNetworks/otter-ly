@@ -1,0 +1,9 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: environment-variables
+data:
+  THIS_SERVICE: "{{CF_REPO_NAME}}"
+  UPSTREAM_SERVICE: "{{UPSTREAM_SERVICE}}"
+  UPSTREAM_PORT: "{{UPSTREAM_PORT}}"
+  BRANCH: "{{CF_BRANCH_TAG_NORMALIZED}}"

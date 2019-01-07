@@ -1,0 +1,18 @@
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: {{CF_REPO_NAME}}
+  labels:
+    app: {{CF_REPO_NAME}}
+spec:
+  type: NodePort
+  ports:
+  - name: http
+    port: 80
+    protocol: TCP
+    targetPort: 8080
+  selector:
+    app: {{CF_REPO_NAME}}
+    tier: web
+
