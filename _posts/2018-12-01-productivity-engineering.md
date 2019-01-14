@@ -5,7 +5,8 @@ date: 2018-12-01 00:00:00
 blog_title: "Why Developers Should Embrace Productivity Engineering"
 blog_description: >-
   It’s come time to face the facts: we’re living in a post-DevOps engineer world. 
-blog_image: "/img/posts/how-i-learned.svg"
+blog_image: "/img/posts/productivity/Blog_Productivity.svg"
+open_graph_image: "/img/posts/productivity/OG_Productivity.svg"
 headline: "By Andrew Holway - Otter Networks Founder - 2nd November 2018"
 title: "Why Developers Should Embrace Productivity Engineering"
 description: >-
@@ -13,7 +14,7 @@ description: >-
 featured: true
 ---
 <div>
-<img src="/img/posts/how-i-learned/kubernetes1.svg" alt="How I Learned Kubernetes?" />
+<img src="/img/posts/productivity/Article_Productivity.svg" alt="Productivity Engineering" />
 </div>
 
 It’s come time to face the facts: we’re living in a post-DevOps engineer world. As the software industry continues to evolve at a rapid pace, so too do the tools and services available to developers. Ultimately, these changes have created a shift in the ideal structure of a development team and the way its members consume technology. 
@@ -45,7 +46,7 @@ What if Productivity Engineering was a community practice shared amongst all dev
 
 
 <div style="text-align: center;">
-  <img src="/img/posts/how-i-learned/kubernetes2.svg" style="max-width: 300px;" alt="The DevOps game changer" />
+  <img src="/img/posts/productivity/Article_Productivity2.svg" style="max-width: 300px;" alt="Developer-driven culture" />
 </div>
 
 ### A developer’s first step towards full ownership
