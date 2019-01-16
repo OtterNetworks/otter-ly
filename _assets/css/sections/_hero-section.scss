@@ -85,6 +85,10 @@
 
 @include mobile {
   .hero-section {
+    background-image: url('/img/backgrounds/mobile/hero.svg');
+    background-size: 100% auto;
+    background-position: center top;
+
     &__thumb-content {
       background-size: 70px auto;
       padding-bottom: 60px;

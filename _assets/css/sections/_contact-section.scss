@@ -91,3 +91,10 @@
     }
   }
 }
+
+@include mobile {
+  .contact-section {
+    background-image: url('/img/backgrounds/mobile/contact.svg');
+    background-size: auto 100%;
+  }
+}
