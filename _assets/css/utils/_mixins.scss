@@ -23,7 +23,19 @@
 }
 
 @mixin desktop {
-  @media (min-width: $tablet-max-width + 1) {
+  @media (max-width: $desktop-max-width) {
+    @content;
+  }
+}
+
+@mixin only-desktop {
+  @media (min-width: $tablet-max-width + 1) and (max-width: $desktop-max-width) {
+    @content;
+  }
+}
+
+@mixin hd-desktop {
+  @media (max-width: $desktop-max-width) {
     @content;
   }
 }

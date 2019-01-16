@@ -5,6 +5,10 @@
 
 	&__column {
 		padding: 0 15px;
+
+		&_copyright {
+			display: none;
+		}
 	}
 
 	&__subtitle {
@@ -98,6 +102,10 @@
 
 		&__column {
 			margin: 30px 0 0;
+
+			&_copyright {
+				display: block;
+			}
 		}
 
 		&__logo-wrapper {
