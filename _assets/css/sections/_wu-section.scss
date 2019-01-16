@@ -1,6 +1,11 @@
 .wu-section {
   background-repeat: no-repeat;
 
+  &_2 {
+    padding-bottom: 120px;
+    padding-top: 120px;
+  }
+
   &__card-wrapper {
     &::after {
       background-color: $grey-800;
@@ -60,6 +65,11 @@
 
 @include tablet {
   .wu-section {
+    &_2 {
+      padding-bottom: 60px;
+      padding-top: 60px;
+    }
+
     &__card-wrapper {
       &::after {
         display: none;
@@ -104,8 +114,19 @@
       background-image: url('/img/backgrounds/mobile/hero.svg');
     }
 
+    &_2 {
+      padding-bottom: 20px;
+      padding-top: 20px;
+    }
+
     &_3 {
-      background-image: url('/img/backgrounds/mobile/why-us.svg');
+      background-image: url('/img/backgrounds/mobile/why-us-2.svg');
+    }
+
+    &__content_1 {
+      background-image: url('/img/backgrounds/mobile/why-us-1.svg');
+      background-position: bottom;
+      background-repeat: no-repeat;
     }
   }
 }
