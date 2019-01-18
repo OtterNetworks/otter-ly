@@ -9,7 +9,7 @@ blog_image: "/img/posts/humanitec.svg"
 title: "Case study: How Google-specific Kubernetes helped one company validate its development direction"
 description: >-
   How Kubernetes helped one company validate its development direction
-image: ""
+image: "https://otter.ly/img/og.png"
 featured: true
 ---
 <div>

@@ -12,7 +12,7 @@ title: "How I learned to stop worrying and love Kubernetes"
 description: >-
   Kubernetes automated and eliminated my job as a Devops Engineer. Here’s why
   that’s great news for development.
-image: ""
+image: "https://otter.ly/img/og.png"
 featured: true
 ---
 <div>
