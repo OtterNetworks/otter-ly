@@ -7,7 +7,7 @@
     <a href="/" class="header__logo-link">
       <img src="/img/logo.svg" class="header__logo-img" alt="Otter Networks logo">
     </a>
-    <nav class="navigation sm-hidden md-hidden">
+    <nav class="navigation sm-hidden md-hidden js-navbar">
       <a class="navigation__link" href="/#case_study">
         <span>Case Study</span>
       </a>
@@ -24,21 +24,34 @@
     <span class="header__placeholder"></span>
   </div>
 </header>
-<div id="mobileNavbar" class="navbar">
+<div id="mobileNavbar" class="navbar js-navbar">
   <div class="navbar__content">
-    <div class="navbar__header flex flow_row align-items_center justify_space-between">
-      <a href="/" class="navbar__logo">
-        <img src="/img/logo.svg" class="header__logo-img" alt="Otter Networks logo">
-      </a>
+    <div class="navbar__header flex flow_row align-items_center justify_center">
       <span class="navbar__close link js-navbar-switcher">
         <i class="fa fa-times"></i>
       </span>
     </div>
     <div class="navbar__links">
-      <a class="navbar__link js-navbar-link" href="/#why_us">What we do</a>
-      <a class="navbar__link js-navbar-link" href="/#technologies">Technologies</a>
-      <a class="navbar__link js-navbar-link" href="/#case_study">Case Study</a>
-      <a class="navbar__link js-navbar-link" href="/#contact">Inquire</a>
+      <div class="navbar__item">
+        <a class="navbar__link js-navbar-link" href="/#case_study">
+          <span>Case Study</span>
+        </a>
+      </div>
+      <div class="navbar__item">
+        <a class="navbar__link js-navbar-link" href="/#why_us">
+          <span>What we do</span>
+        </a>
+      </div>
+      <div class="navbar__item">
+        <a class="navbar__link js-navbar-link" href="/#blog">
+          <span>Blog</span>
+        </a>
+      </div>
+      <div class="navbar__item">
+        <a class="navbar__link navbar__link_highlight js-navbar-link" href="/#contact">
+          <span>Contact us</span>
+        </a>
+      </div>
     </div>
   </div>
 </div>

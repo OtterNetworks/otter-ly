@@ -11,9 +11,17 @@ Please use following Frontmatter structure in each post document:
 ---
 layout: post
 permalink: /custom-post-link/
+date: 2018-12-01 00:00:00
+blog_title: "Blog card title"
+blog_description: >-
+  Blog card description
+blog_image: "/img/posts/how-i-learned.svg"
+headline: "By Author - Author headline - 2nd November 2018"
 title: "The page title tag and og:title content. If not set title content is taken from _config.yml."
-description: "The page meta description tag and og:description content. If not set description is taken from _config.yml."
-image: "Image url. If not set og:image not generated"
+description: >-
+  The page meta description tag and og:description content. If not set
+  description is taken from _config.yml.
+featured: true
 ---
 ```
 
