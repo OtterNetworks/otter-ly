@@ -4,7 +4,6 @@
     background-repeat: no-repeat;
     background-position: center -#{$header-content-height};
     background-size: 100%;
-    min-height: 85vh;
   }
 
   &__thumb-content {
@@ -12,6 +11,7 @@
     background-repeat: no-repeat;
     background-size: 33.3333%;
     background-position: right 30px center;
+    min-height: 85vh;
     padding-bottom: 250px;
     padding-top: 250px;
   }
@@ -51,18 +51,25 @@
 
 @include tablet {
   .hero-section {
+    background-image: url('/img/backgrounds/hero.svg');
+    background-repeat: no-repeat;
+    background-position: center -250px;
+    background-size: auto 100%;
+    position: relative;
     text-align: center;
 
     &__content {
-      background-image: url('/img/backgrounds/hero.svg');
+      background-image: url('/img/backgrounds/mobile/hero-1.svg');
+      background-position: right center;
+      background-repeat: no-repeat;
+      background-size: auto 100%;
     }
 
     &__thumb-content {
-      background-image: url('/img/backgrounds/mobile/hero-1.svg');
-      background-size: auto 100%;
-      background-position: right center;
-      padding-bottom: 120px;
-      padding-top: 120px;
+      background-image: url('/img/backgrounds/mobile/hero-2.svg');
+      background-size: 12% auto;
+      background-repeat: no-repeat;
+      background-position: 20px 20px;
     }
 
     &__title {
@@ -78,9 +85,24 @@
 
 @include mobile {
   .hero-section {
+    background-image: url('/img/backgrounds/mobile/hero.svg');
+    background-size: 100% auto;
+    background-position: center top;
+
     &__thumb-content {
+      background-size: 70px auto;
       padding-bottom: 60px;
       padding-top: 60px;
+    }
+
+    &__title {
+      margin: 0 auto;
+      max-width: 210px;
+    }
+
+    &__copy {
+      font-size: 15px;
+      margin: 20px 0 0;
     }
   }
 }

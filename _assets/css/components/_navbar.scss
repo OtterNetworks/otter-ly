@@ -1,31 +1,27 @@
 .navbar {
-  @include transition(all .25s);
+  @include transition(opacity .25s);
 
   background-color: $white;
   border-right: 1px solid $grey-200;
   bottom: 0;
   left: 0;
-  max-width: 0;
+  max-height: 0;
   opacity: 0;
   overflow: hidden;
   position: fixed;
+  text-align: center;
   top: 0;
-  width: 80%;
+  right: 0;
   z-index: 2;
 
   &_opened {
-    max-width: 300px;
     opacity: 1;
+    max-height: 100vh;
   }
 
   &__header {
-    border-bottom: 1px solid $grey-200;
     height: $header-content-height + 1;
     margin: 0 20px;
-  }
-
-  &__logo {
-    width: 140px;
   }
 
   &__close {
@@ -36,14 +32,29 @@
     padding: 15px 0;
   }
 
+  &__item {
+    margin: 30px 0 0;
+  }
+
   &__link {
-    border-bottom: 1px solid $grey-200;
-    display: block;
+    box-sizing: border-box;
+    display: inline-block;
+    font-size: 16px;
     font-weight: bold;
-    margin: 0 20px;
-    padding: 15px 0;
-    text-align: left;
-    white-space: nowrap;
+    line-height: 34px;
+    padding: 0 5px;
+    text-transform: uppercase;
+    text-decoration: none !important;
+
+    &_highlight {
+      background-image: linear-gradient(to bottom, $blue 45%, transparent 45%);
+    }
+
+    &.active {
+      span {
+        border-bottom: 4px solid $grey-800;
+      }
+    }
   }
 }
 
