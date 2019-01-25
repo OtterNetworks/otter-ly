@@ -13,7 +13,7 @@ description: >-
 featured: true
 ---
 <div>
-<img src="/img/posts/how-i-learned/kubernetes1.svg" alt="How I Learned Kubernetes?" />
+<img src="/img/posts/mathias/Article_Mathias.svg" alt="Investing in the Future of Development" />
 </div>
 
 It’s Friday afternoon, and Mathias Kutzner is still delivering tough tech truths to me over the phone during our conversation. I had called him to discuss the in-depth reasons why he chose to invest in our Otter Networks team and product. Really, I just wanted to pick the brain of a prolific technical founder.
@@ -45,10 +45,6 @@ Another challenge is that nobody really wants to take care of the system adminis
 
 Simple answer, yes. That’s basically what I’m envisioning. Maybe taking one step back to my background: I went back to university ten years ago to do my phD, but instead I founded an e-learning teleteaching startup within the university. That’s how I got in touch with e-learning, and I find it very interesting. I still think there’s a model that can be done to train developers. There’s a lot of material out there, but it’s mostly learning a new language or framework. Learning a completely new concept, like replacing DevOps and teaching developers to do this part of work as well – this is something that I haven’t seen so far. 
 
-
-<div style="text-align: center;">
-  <img src="/img/posts/how-i-learned/kubernetes2.svg" style="max-width: 300px;" alt="The DevOps game changer" />
-</div>
 
 ### How does Otter Networks fit into your vision for the future of development?
 
