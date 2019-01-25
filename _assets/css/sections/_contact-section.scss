@@ -2,9 +2,11 @@
   text-align: center;
 
   &__wrapper {
+    position: relative;
+
     &::after {
       background-color: $grey-800;
-      bottom: 30px;
+      bottom: 120px;
       content: '';
       display: block;
       left: 0;
@@ -87,5 +89,12 @@
         display: none;
       }
     }
+  }
+}
+
+@include mobile {
+  .contact-section {
+    background-image: url('/img/backgrounds/mobile/contact.svg');
+    background-size: 100% auto;
   }
 }
