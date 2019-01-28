@@ -4,7 +4,7 @@ permalink: /mathias-kutzner-interview
 date: 2018-12-01 00:00:00
 blog_title: "Investing in the Future of Development: The Role of Automation and Education"
 blog_description: >-
-  Our angel, Mathias Kutzner, explained his investment in Otter Networks.
+  Our angel, Mathias Kutzner, explaines his investment in Otter Networks.
 blog_image: "/img/posts/mathias/Blog_Mathias.svg"
 image: "/img/posts/mathias/OG_Mathias.png"
 headline: "By Andrew Holway - Otter Networks Founder - 2nd November 2018"
