@@ -4,13 +4,13 @@ permalink: /mathias-kutzner-interview
 date: 2018-12-01 00:00:00
 blog_title: "Investing in the Future of Development: The Role of Automation and Education"
 blog_description: >-
-  CTO, serial entrepreneur and investor Mathias Kutzner has founded between 25 and 30 startups, but he gave up his entrepreneurial role 2 years ago to support growing companies with a focus on automation. Here’s why he believes in the perfect storm of algorithms and training to push development forward.  
+  Our angel, Mathias Kutzner, explained his investment in Otter Networks.  
 blog_image: "/img/posts/mathias/Blog_Mathias.svg"
 image: "/img/posts/mathias/OG_Mathias.png"
 headline: "By Andrew Holway - Otter Networks Founder - 2nd November 2018"
 title: "Investing in the Future of Development: The Role of Automation and Education"
 description: >-
-  CTO, serial entrepreneur and investor Mathias Kutzner has founded between 25 and 30 startups, but he gave up his entrepreneurial role 2 years ago to support growing companies with a focus on automation. Here’s why he believes in the perfect storm of algorithms and training to push development forward. 
+  Our angel, Mathias Kutzner, explained his investment in Otter Networks.  
 featured: true
 ---
 <div>
