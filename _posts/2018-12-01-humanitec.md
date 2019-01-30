@@ -1,7 +1,7 @@
 ---
 layout: post
 permalink: /humanitec/
-date: 2018-12-02 00:00:00
+date: 2018-12-01 00:00:00
 blog_title: "Case study: Humanitec"
 blog_description: >-
   How Kubernetes helped one company validate its development direction.

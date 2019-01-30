@@ -6,7 +6,7 @@ blog_title: "Why Developers Should Embrace Productivity Engineering"
 blog_description: >-
   It’s come time to face the facts: we’re living in a post-DevOps engineer world. 
 blog_image: "/img/posts/productivity/Blog_Productivity.svg"
-open_graph_image: "/img/posts/productivity/OG_Productivity.svg"
+image: "/img/posts/productivity/OG_Productivity.png"
 headline: "By Andrew Holway - Otter Networks Founder - 2nd November 2018"
 title: "Why Developers Should Embrace Productivity Engineering"
 description: >-
