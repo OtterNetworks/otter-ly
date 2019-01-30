@@ -1,6 +1,6 @@
 ---
 layout: post
-permalink: /mathias-kutzner-interview
+permalink: /mathias-kutzner-interview/
 date: 2018-12-01 00:00:00
 blog_title: "Investing in the Future of Development: The Role of Automation and Education"
 blog_description: >-
