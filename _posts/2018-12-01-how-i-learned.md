@@ -13,7 +13,6 @@ description: >-
   Kubernetes automated and eliminated my job as a Devops Engineer. Here’s why
   that’s great news for development.
 image: "/img/og.png"
-featured: true
 ---
 <div>
 <img src="/img/posts/how-i-learned/kubernetes1.svg" alt="How I Learned Kubernetes?" />
