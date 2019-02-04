@@ -3,7 +3,9 @@ layout: default
 ---
 <section class="article-section section padding_h">
 	<div class="article-section__content section__content padding_v">
-		<p>By Andrew Holway - Otter Networks Founder - 2nd November 2018</p>
+		{% if page.headline %}
+		<p>{{ page.headline }}</p>
+		{% endif %}
 		<h1>{{ page.title }}</h1>
 		<h2>{{ page.description }}</h2>
 		{{ content }}
