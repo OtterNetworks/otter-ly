@@ -23,16 +23,16 @@ Developers are now able to control and manage infrastructure using a combination
 
 Otter Networks, whose first-ever DevOps skill sprints utilize pair programming methods to teach developers as they build flexible infrastructure, is partnering with Codefresh – the first Kubernetes-powered CI/CD platform for container delivery. The result is the first major step in a shift towards maximum autonomy and delivery capabilities for development teams. 
 
-The two companies will host a joint webinar to discuss what’s next in the post-DevOps world. If you’re a CTO, engineer, project manager of CEO who is interested in learning about the empowered future of development teams and technologies, join in on February 7th, 2019 at 4:30 pm CET, 7:30 am PT.
+The two companies will host a joint webinar to discuss what’s next in the post-DevOps world. If you’re a CTO, engineer, project manager or CEO who is interested in learning about the empowered future of development teams and technologies, join in on February 7th, 2019 at 4:30 pm CET, 7:30 am PT.
 
 Topics to be covered include:
 
-Why DevOps engineers have been made redundant 
-The rise of directly consumable cloud services and infrastructure
-Otter Networks skill sprint methodology for developers 
-An introduction to Productivity Engineering, and how it’s used to help reduce cognitive load as developers take on more responsibilities
-Codefresh as a deployment toolkit for developers
-General deployment strategies on the horizon for 2019 and beyond
+ - Why DevOps engineers have been made redundant 
+ - The rise of directly consumable cloud services and infrastructure
+ - Otter Networks skill sprint methodology for developers 
+ - An introduction to Productivity Engineering, and how it’s used to help reduce cognitive load as developers take on more responsibilities
+ - Codefresh as a deployment toolkit for developers
+ - General deployment strategies on the horizon for 2019 and beyond
 
 Sharing their experience and breadth of knowledge will be Otter Networks founder and engineer, Andrew Holway, and Codefresh co-founder and VP Marketing Dan Garfield. 
 
