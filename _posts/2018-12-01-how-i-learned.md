@@ -2,7 +2,7 @@
 layout: post
 permalink: /how-i-learned/
 date: 2018-12-01 00:00:00
-blog_title: "How I Learned Kubernetes"
+blog_title: "How I Learned to Love Kubernetes"
 blog_description: >-
   Kubernetes automated and eliminated my job as a DevOps Engineer. Here's why
   that's great news for development.
