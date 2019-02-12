@@ -29,4 +29,4 @@ Andrew Holway, CEO and Founder of Otter Networks, commented on the partnership, 
 
 Education and automated tools are two of the most important components of creating efficient development teams. Codefresh and Otter Networks are helping to initiate the new wave of efficient deployment.
 
-For more information or to request a demo, drop a line to info@otternetworks.de. 
+For more information or to request a demo, drop a line to <a href="mailto:info@otternetworks.de">info@otternetworks.de</a>. 
