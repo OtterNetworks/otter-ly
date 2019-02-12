@@ -57,7 +57,6 @@ steps:
     title: Running Deployment
     type: deploy
     kind: kubernetes
-    timeout: '320'
     cluster: ${{K8S_CLUSTER}}
     namespace: ${{NAMESPACE}}
     file_path: ./k8s/deployment.yaml

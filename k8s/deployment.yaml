@@ -43,12 +43,12 @@ spec:
             httpGet:
               path: /
               port: 8080
-            initialDelaySeconds: 10
-            timeoutSeconds: 360
+            initialDelaySeconds: 5
+            timeoutSeconds: 3
           readinessProbe:
             httpGet:
               path: /
               port: 8080
-            initialDelaySeconds: 10
-            timeoutSeconds: 360
+            initialDelaySeconds: 5
+            timeoutSeconds: 3
 
