@@ -1,6 +1,6 @@
 ---
 layout: post
-permalink: /codefresh-partnership-webinar/
+permalink: /codefresh-partnership/
 date: 2019-02-01 00:00:00
 blog_title: "Welcoming the Post-DevOps Era: Codefresh and Otter Networks Announce Partnership"
 blog_description: >-
