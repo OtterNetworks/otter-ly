@@ -3,6 +3,8 @@ WORKDIR /site
 
 COPY . /site
 
+RUN bundle install
+
 EXPOSE 8080
 
 ENTRYPOINT [ "docker-entrypoint.sh" ]
