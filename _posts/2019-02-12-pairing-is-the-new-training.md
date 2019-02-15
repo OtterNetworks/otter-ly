@@ -5,7 +5,8 @@ date: 2019-02-12 00:00:00
 blog_title: "Pairing is the New Training"
 blog_description: >-
    Training is letting us down and it’s time for a new approach. Here's why development teams need to rethink traditional methods of knowledge sharing.
-blog_image: "/img/posts/how-i-learned.svg"
+blog_image: "/img/posts/pairing/Article_pairing.png"
+image: "/img/posts/pairing/Article_pairing.png"
 headline: "By Andrew Holway - Otter Networks Founder - 12th February 2019"
 title: "Pairing is the New Training: Why Development Teams Need to Rethink Traditional Methods of Knowledge Sharing"
 description: >-
@@ -13,7 +14,7 @@ description: >-
 featured: true
 ---
 <div>
-<img src="/img/posts/how-i-learned/kubernetes1.svg" alt="How I Learned Kubernetes?" />
+<img src="/img/posts/pairing/Article_pairing.png" alt="Pairing vs. Training" />
 </div>
 
 Research suggests that we [retain just 30% of what we see and hear](https://www.psychotactics.com/art-retain-learning/) in a lecture or demonstration. In contrast, we remember a whopping 90% of what we learn when we use knowledge immediately or teach it to someone else. 
@@ -36,7 +37,7 @@ If we do something ourselves instead of just hear about it, we’re able to make
 Without active repetition of learnings, we tend to forget half of newly learned knowledge in a matter of days. 
 
 <div style="text-align: center;">
-  <img src="/img/posts/how-i-learned/kubernetes2.svg" style="max-width: 300px;" alt="The DevOps game changer" />
+  <img src="/img/posts/pairing/Article_pairing2.svg" alt="Forgetting Curve" />
 </div>
 
 By its very nature, training perpetuates this barrier to knowledge retention. It doesn’t allow for learning by doing, nor repetition of information. Simply put: it doesn’t allow for the acquisition of tacit knowledge. 
@@ -58,7 +59,7 @@ Pairing is the value-driven educational approach that modern development teams n
 The repetition associated with this approach transforms the Forgetting Curve into something wholly different.
 
 <div style="text-align: center;">
-  <img src="/img/posts/how-i-learned/kubernetes2.svg" style="max-width: 300px;" alt="The DevOps game changer" />
+  <img src=/img/posts/pairing/Article_pairing2.svg" alt="Overcoming the Forgetting Curve" />
 </div>
 
 Let’s look at an example. At Otter Networks, we work closely with CTOs and engineers who are looking to transform their company’s infrastructure and deploy faster. Our approach to making this happen for them is achieved in a one-week Skills Sprint, during which we pair with developers while they build a flexible CI/CD infrastructure using Kubernetes. Not only is the team left with valuable knowledge about how to manage brand new infrastructure – but they enjoy true ownership of it because they’ve built it themselves. 
