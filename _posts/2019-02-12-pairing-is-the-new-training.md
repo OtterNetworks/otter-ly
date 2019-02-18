@@ -59,7 +59,7 @@ Pairing is the value-driven educational approach that modern development teams n
 The repetition associated with this approach transforms the Forgetting Curve into something wholly different.
 
 <div style="text-align: center;">
-  <img src=/img/posts/pairing/Article_pairing3.svg" alt="Overcoming Forgetting Curve" />
+  <img src="/img/posts/pairing/Article_pairing3.svg" alt="Overcoming Forgetting Curve" />
 </div>
 
 Let’s look at an example. At Otter Networks, we work closely with CTOs and engineers who are looking to transform their company’s infrastructure and deploy faster. Our approach to making this happen for them is achieved in a one-week Skills Sprint, during which we pair with developers while they build a flexible CI/CD infrastructure using Kubernetes. Not only is the team left with valuable knowledge about how to manage brand new infrastructure – but they enjoy true ownership of it because they’ve built it themselves. 
