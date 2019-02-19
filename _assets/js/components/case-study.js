@@ -14,6 +14,12 @@
           var slideshow = this;
 
           $(sliders[this.currentSlide]).addClass(sliderActiveSelector);
+
+          sliders.on('click', function (event) {
+            event.preventDefault();
+
+            slideshow.goTo(sliders.index(this));
+          });
         },
         onChange: function () {
           sliders.removeClass(sliderActiveSelector);
