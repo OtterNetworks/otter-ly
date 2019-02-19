@@ -12,6 +12,10 @@
     padding: 0 0 30px;
   }
 
+  &__image {
+    max-width: 100px;
+  }
+
   &__icon {
     width: 90px;
   }
@@ -24,8 +28,9 @@
   }
 
   &__details {
-    display: block;
     margin: 0;
+    text-align: left;
+    width: 100%;
   }
 
   &__name {
@@ -42,6 +47,10 @@
     line-height: 34px;
   }
 
+  &__image {
+    vertical-align: top;
+  }
+
   &__actions {
     margin: 45px 0 0;
   }
@@ -54,12 +63,10 @@
 
 @include tablet {
   .case-study-card {
-    padding: 0 20px;
-    text-align: center;
+    padding: 40px 20px;
 
     &__text {
       font-size: 16px;
-      margin: 20px 0 0;
     }
 
     &__label {

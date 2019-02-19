@@ -13,11 +13,8 @@
     padding: 0 40px;
   }
 
-  &__sliders {
-    line-height: 8px;
+  &__actions {
     margin: 60px auto 0;
-    max-width: 740px;
-    padding: 0 75px;
     text-align: center;
   }
 
@@ -39,6 +36,26 @@
       display: none;
     }
   }
+
+  &__control-wrapper {
+    &_mobile {
+      display: none;
+    }
+  }
+
+  &__control {
+    border: 2px solid $grey-200;
+    border-radius: 100%;
+    box-sizing: border-box;
+    color: $grey-800;
+    cursor: pointer;
+    height: 48px;
+    width: 48px;
+    display: block;
+    font-size: 18px;
+    line-height: 44px;
+    text-align: center;
+  }
 }
 
 @include tablet {
@@ -58,6 +75,18 @@
 
       &:last-child {
         display: inline-block;
+      }
+    }
+
+    &__item {
+      padding: 0;
+    }
+
+    &__control-wrapper {
+      display: none;
+
+      &_mobile {
+        display: block;
       }
     }
   }
