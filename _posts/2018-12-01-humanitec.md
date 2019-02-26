@@ -10,6 +10,7 @@ title: "Case study: How Google-specific Kubernetes helped one company validate i
 description: >-
   How Kubernetes helped one company validate its development direction
 image: "/img/og.png"
+featured: true
 ---
 <div>
 <img src="/img/posts/humanitec/humanitec.svg" alt="Case study: Humanitec" />
