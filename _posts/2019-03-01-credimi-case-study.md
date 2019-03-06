@@ -8,7 +8,7 @@ blog_description: >-
 blog_image: "/img/posts/pairing/Blog_pairing.png"
 image: "/img/posts/pairing/OG_pairing.png"
 headline: "By Andrew Holway - Otter Networks Founder - 12th February 2019"
-title: "Case Study: Skill Sprints for Continuous Delivery and Total Pipeline Ownership"
+title: "Case Study: FinTech Startup Credimi Smashes DevOps with Otter Networks and Codefresh"
 description: >-
   The collaboration between Credimi and Otter Networks resulted in new infrastructure and best practices using Kubernetes and Codefresh. Because it’s not just about building – it’s about owning.
 featured: true
@@ -39,11 +39,11 @@ That’s the very idea behind DevOps skill sprint methodology. Not only do devel
 
 The skill sprint kept Credimi engineers in high gear for a full week, allowing them to migrate 10 of their most tightly coupled services into a continuous delivery pipeline. Through a pairing approach and exchange of tacit knowledge – or knowledge that is learned through repetition and quality social interaction – the team gained a firm grasp on how to build and operate their new infrastructure. 
 
-In the week immediately following the sprint, Credimi engineers migrated an additional 5-7 services. This completed the most critical part of their migration, while simultaneously putting to practice the knowledge obtained in the sprint and combating the Forgetting Curve.
+In the week immediately following the sprint, Credimi engineers migrated an additional 5-7 services. This completed the most critical part of their migration, while simultaneously putting to practice the knowledge obtained in the sprint and combating the [Forgetting Curve](https://www.growthengineering.co.uk/what-is-the-forgetting-curve/).
 
 ### An approach with longevity in mind
 
-Credimi now has the largest chunk of their tasks behind them. The critical migration has been completed, and the team possesses the knowledge to finish the smaller service migrations on their own time. 
+Credimi now has the largest chunk of their tasks behind them. The critical migration has been completed, and the team possesses the knowledge to finish the smaller service migrations on their own time. After the skill sprint, Credimi was able to resolve its “manual DevOps” bottleneck, create clean microservice architecture and avoid any dependencies on expensive services.
 
 “I’d never heard anyone speaking openly about tacit knowledge and knowledge transfer in engineering teams,” Porcu said. “We’re now considering doing similar sprints internally, with the most experienced and specialized developers sharing their knowledge in a way that’s sustainable and valuable. We feel as though we’ve invested in our staff without resorting to outside consultants.”
 
