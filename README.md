@@ -54,3 +54,33 @@ subdirectory and `@import` it in the directory main file `_main.scss`.
 
 JS-code is located in `_assets/js` folder. The folder contains main import file
 `main.js` and components subfolder with script files for each components.
+
+
+# making and installing SSL certs
+This bit is manual because the various toolings that exist to automate 
+this are immature and annoying.
+
+## install certbot!
+`pip install certbot`
+
+# Production
+
+## Get new cert
+`sudo certbot -d *.otter.ly,otter.ly --manual --preferred-challenges dns certonly`
+
+## Delete the existing cert from K8s
+`kubectl delete secret dovu-app -n dovu-app-production`
+
+## Install the cert
+`sudo kubectl create secret tls dovu-app --key /etc/letsencrypt/live/dovu.app/privkey.pem --cert /etc/letsencrypt/live/dovu.app/fullchain.pem -n dovu-app-production`
+
+# Staging
+
+## Get new cert
+`sudo certbot -d *.otterly.cc,otterly.cc --manual --preferred-challenges dns certonly`
+
+## Delete the existing cert from K8s
+`kubectl delete secret dovu-app`
+
+## Install the cert
+`sudo kubectl create secret tls dovu-ninja --key /etc/letsencrypt/live/dovu.ninja/privkey.pem --cert /etc/letsencrypt/live/dovu.ninja/fullchain.pem`
