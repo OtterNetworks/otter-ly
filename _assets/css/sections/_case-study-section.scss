@@ -2,29 +2,27 @@
   background-color: $grey-100;
 
   &__content {
-    max-width: 990px;
     position: relative;
-  }
-
-  &__quote {
-    width: 45px;
   }
 
   &__items {
     margin: 0 auto;
-    max-width: 740px;
+  }
+
+  &__item {
+    padding: 0 40px;
   }
 
   &__sliders {
     line-height: 8px;
-    margin: 30px auto 0;
+    margin: 60px auto 0;
     max-width: 740px;
     padding: 0 75px;
-    text-align: right;
+    text-align: center;
   }
 
   &__slider {
-    background-color: $grey-500;
+    background-color: $grey-800;
     border-radius: 100%;
     cursor: pointer;
     display: inline-block;
@@ -34,7 +32,11 @@
     width: 10px;
 
     &_active {
-      background-color: $grey-800;
+      background-color: $blue;
+    }
+
+    &:last-child {
+      display: none;
     }
   }
 }
@@ -47,13 +49,16 @@
 
     &__sliders {
       margin: 25px auto 0;
-      text-align: center;
     }
 
     &__slider {
       height: 8px;
       margin: 0 5px;
       width: 8px;
+
+      &:last-child {
+        display: inline-block;
+      }
     }
   }
 }

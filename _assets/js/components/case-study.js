@@ -1,30 +1,49 @@
 (function () {
   var initSlider = function () {
     var slideshowSelector = '#caseStudySlideshow';
-    var slidersSelector = '.js-case-study-control';
-    var sliderActiveSelector = 'case-study-section__slider_active';
+    var sliderDotSelector = '.js-case-study-dot';
+    var sliderPrevSelector = '.js-case-study-control-prev';
+    var sliderNextSelector = '.js-case-study-control-next';
+    var sliderDotActiveSelector = 'case-study-section__slider_active';
 
     var slideshow = $(slideshowSelector);
-    var sliders = $(slidersSelector);
+    var sliderDots = $(sliderDotSelector);
+    var sliderPrev = $(sliderPrevSelector);
+    var sliderNext = $(sliderNextSelector);
 
     if (!!slideshow.length) {
-      new Siema({
+      var isDesktop = window.matchMedia("(min-width: 1025px)").matches;
+      var perPage = isDesktop ? 2 : 1;
+
+      var siemaSlider = new Siema({
         selector: slideshowSelector,
+        perPage: perPage,
+        flex: {
+          alignItems: 'center'
+        },
         onInit: function () {
           var slideshow = this;
 
-          $(sliders[this.currentSlide]).addClass(sliderActiveSelector);
+          $(sliderDots[this.currentSlide]).addClass(sliderDotActiveSelector);
 
-          sliders.on('click', function (event) {
+          sliderDots.on('click', function (event) {
             event.preventDefault();
 
-            slideshow.goTo(sliders.index(this));
+            slideshow.goTo(sliderDots.index(this));
           });
         },
         onChange: function () {
-          sliders.removeClass(sliderActiveSelector);
-          $(sliders[this.currentSlide]).addClass(sliderActiveSelector);
+          sliderDots.removeClass(sliderDotActiveSelector);
+          $(sliderDots[this.currentSlide]).addClass(sliderDotActiveSelector);
         }
+      });
+
+      sliderPrev.on('click', function () {
+        siemaSlider.prev();
+      });
+
+      sliderNext.on('click', function () {
+        siemaSlider.next();
       });
     }
   }
