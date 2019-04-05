@@ -9,8 +9,8 @@
     padding-top: 120px;
 
     &_small {
-      padding-bottom: 50px;
-      padding-top: 50px;
+      padding-bottom: 60px;
+      padding-top: 60px;
     }
   }
 
@@ -18,12 +18,16 @@
     padding-top: 120px;
 
     &_small {
-      padding-top: 50px;
+      padding-top: 60px;
     }
   }
 
   &_bottom {
     padding-bottom: 120px;
+
+    &_small {
+      padding-bottom: 60px;
+    }
   }
 }
 

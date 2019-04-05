@@ -1,17 +1,17 @@
-repay-me:
-  url: /repay-me/
-  name: Sascha Jonas,  CEO/CTO @REPAYME
-  img_url: /img/technologies/repay-me.svg
-  text: >-
-    The Otter Networks skill sprint was a huge success for us at a critical time. I would
-    encourage teams struggling with limiting, complicated infrastructure to
-    collaborate with Otter Networks in finding more efficient, long-term
-    development solutions.
 humanitec:
   url: /humanitec/
-  name: Greg Lind, CTO @Humanitec
-  img_url: /img/technologies/humanitec.svg
+  name: Greg Lind
+  headline: CTO @Humanitec
+  img_url: /img/case_studies/greg-lind.png
   text: >-
-    It was impressive how quickly things got moving with Otter. Overall, we were
-    really happy with that process.  It’s likely that we’d reengage with Otter
-    Networks in the future.
+    "It was impressive how quickly things got moving with Otter. Overall, we
+    were really happy with that process."
+repay-me:
+  url: /repay-me/
+  name: Sascha Jonas
+  headline: CEO/CTO @REPAYME
+  img_url: /img/case_studies/sascha-jonas.png
+  text: >-
+    "Otter Networks provided us with a quick, clear path to a frictionless
+    infrastructure. We’re very happy with the skills our developers learned in
+    the process."
