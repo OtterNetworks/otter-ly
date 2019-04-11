@@ -1,8 +1,19 @@
 .case-study-card {
-  padding: 0 75px;
+  background-color: $white;
+  border: 4px solid $grey-800;
+  display: block;
+  padding: 40px 60px;
+
+  &:hover {
+    text-decoration: none;
+  }
 
   &__thumb {
     padding: 0 0 30px;
+  }
+
+  &__image {
+    max-width: 100px;
   }
 
   &__icon {
@@ -11,14 +22,33 @@
 
   &__text {
     font-size: 18px;
-    line-height: 34px;
+    font-weight: bold;
+    line-height: 1.6;
     margin: 0;
+  }
+
+  &__details {
+    margin: 0;
+    text-align: left;
+    width: 100%;
+  }
+
+  &__name {
+    display: block;
+  }
+
+  &__headline {
+    display: block;
   }
 
   &__label {
     font-size: 18px;
     font-weight: bold;
     line-height: 34px;
+  }
+
+  &__image {
+    vertical-align: top;
   }
 
   &__actions {
@@ -33,12 +63,10 @@
 
 @include tablet {
   .case-study-card {
-    padding: 0 20px;
-    text-align: center;
+    padding: 40px 20px;
 
     &__text {
       font-size: 16px;
-      margin: 20px 0 0;
     }
 
     &__label {

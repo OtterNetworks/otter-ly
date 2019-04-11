@@ -1,24 +1,55 @@
-<section id="case_study" class="case-study-section section padding_h padding_v_small">
-	<div class="case-study-section__content section__content">
-		<div id="caseStudySlideshow" class="case-study-section__items">
-			{% for case_study_hash in site.data.case_studies %}
-			{% assign case_study = case_study_hash[1] %}
-			<div class="case-study-section__item">
-				<div class="case-study-section__quote">
-					<img src="/img/graphics/quote.png" class="case-study-section__quote" />
-				</div>
-				<div class="case-study-card">
-					<p class="case-study-card__text">{{ case_study.text }}</p>
-					<p class="case-study-card__label"><strong>{{ case_study.name }}</strong></p>
-					<div class="case-study-card__actions">
-						<a href="{{ case_study.url }}" class="case-study-card__link">Read Case Study</a>
-					</div>
+<section id="case_study" class="case-study-section section padding_v">
+	<div class="case-study-section__content section__content padding_h">
+		<div class="section__header padding_bottom_small">
+			<h1 class="section__title">Case studies</h1>
+		</div>
+		<div class="flex align-items_center flow_row">
+			<div class="case-study-section__control-wrapper js-case-study-control-prev">
+				<div class="case-study-section__control">
+					<i class="fas fa-angle-left"></i>
 				</div>
 			</div>
-			{% endfor %}
+			<div id="caseStudySlideshow" class="case-study-section__items">
+				{%- for case_study_hash in site.data.case_studies -%}
+				{%- assign case_study = case_study_hash[1] -%}
+				<div class="case-study-section__item">
+					<a class="case-study-card" href="{{ case_study.url }}">
+						<p class="case-study-card__text">{{ case_study.text }}</p>
+						<p class="case-study-card__details flex flow_row align-items_end">
+							<span class="case-study-card__details-copy flex-item_fill">
+								<span class="case-study-card__name">- {{ case_study.name }},</span>
+								<span class="case-study-card__headline">{{ case_study.headline }}</span>
+							</span>
+							<span>
+								<img src="{{ case_study.img_url }}" class="case-study-card__image" alt="{{ case_study.name }}">
+							</span>
+						</p>
+					</a>
+				</div>
+				{%- endfor -%}
+			</div>
+			<div class="case-study-section__control-wrapper js-case-study-control-next">
+				<div class="case-study-section__control ">
+					<i class="fas fa-angle-right"></i>
+				</div>
+			</div>
 		</div>
-		<div class="case-study-section__sliders">
-			{% for case_study_hash in site.data.case_studies %}<span class="case-study-section__slider js-case-study-control"></span>{% endfor %}
+		<div class="case-study-section__actions flex flow_row justify_space-between align-items_center">
+			<div class="case-study-section__control-wrapper_mobile js-case-study-control-prev">
+				<div class="case-study-section__control ">
+					<i class="fas fa-angle-left"></i>
+				</div>
+			</div>
+			<div class="flex-item_fill js-case-study-dots">
+				{%- for case_study_hash in site.data.case_studies -%}
+				<span class="case-study-section__slider js-case-study-dot"></span>
+				{%- endfor -%}
+			</div>
+			<div class="case-study-section__control-wrapper_mobile js-case-study-control-next">
+				<div class="case-study-section__control ">
+					<i class="fas fa-angle-right"></i>
+				</div>
+			</div>
 		</div>
 	</div>
 </section>
