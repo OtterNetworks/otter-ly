@@ -20,9 +20,12 @@ featured: true
 ### The problem
 ## Adopting new technology on tech teams is essential, but doing so remains risky, unsystematic and unpredictable.
 
-In today’s rapidly evolving technical landscape, teams need a better method for technology adoption – one that creates immediate business value, empowers developers and controls/minimizes associated complications or risks. A lack of viable solution prevents otherwise innovative or capable companies from reaching their true value potential.
+In today’s rapidly evolving technical landscape, teams need a better method for technology adoption – one that creates immediate business value, empowers developers and controls/minimizes associated complications or risks. A lack of viable solution prevents otherwise innovative or capable companies from reaching their true value potential. Teams tend to choose from several routes for technology adoption – all of which tend to have a low return on investment and lengthy time to MVP, among other downsides. Teams might:
 
-Teams tend to choose from several routes for technology adoption – all of which tend to have a low return on investment and lengthy time to MVP, among other downsides. Teams might: a) tackle the problem alone and hit insurmountable hurdles, b) hire new employees at a high cost, while forgetting about potential in existing staff, c) hire consultants who lock them into costly support services and bar them from ownership of both information and infrastructure, or d) undergo expensive supplementary skills training, after which they fail to retain newly acquired knowledge.
+  - Tackle the problem alone and hit insurmountable hurdles
+  - Hire new employees at a high cost, while forgetting about potential in existing staff 
+  - Hire consultants who lock them into costly support services and bar them from ownership of both information and infrastructure
+  - undergo expensive supplementary skills training, after which they fail to retain newly acquired knowledge.
 
 ### Why training fails
 ## Teams don’t retain new skills if they can’t own and effectively apply them post-training.
@@ -38,6 +41,11 @@ The very nature of traditional training ignores this essential foundation of tac
 
 A Skill Sprint is a one-week, cost-effective orchestrated learning experience for development teams that bridges the skills ownership gap. It typically consists of three participants: two engineers from an organization’s development team who assume the roles of ‘Driver’ and ‘Navigator’, plus a subject matter expert called a ‘Captain.’ The Captain provides specific best practices and pattern guidance while the Navigator and Drivers code and build.
  
-Skill Sprints are uniquely formulated to address a team’s specific and immediate issue (e.g. infrastructure complexity), maximize existing skills of team members and drive business value by reducing technical debt. They focus on high quality social interactions to facilitate 1) tacit knowledge sharing and 2) ownership of this newly acquired knowledge, skills and any associated artifacts. They are, ultimately, a process for change that helps to manage technical risks and nurtures individuals who become agents for transformation. The end result of a Skill Sprint is an effective springboard for business evolution through the adoption of new technologies, and the team’s full ownership over both skills and infrastructure.
+Skill Sprints are uniquely formulated to address a team’s specific and immediate issue (e.g. infrastructure complexity), maximize existing skills of team members and drive business value by reducing technical debt. They focus on high quality social interactions to facilitate 
+
+  - Tacit knowledge sharing 
+  - ownership of this newly acquired knowledge, skills and any associated artifacts. 
+
+They are, ultimately, a process for change that helps to manage technical risks and nurtures individuals who become agents for transformation. The end result of a Skill Sprint is an effective springboard for business evolution through the adoption of new technologies, and the team’s full ownership over both skills and infrastructure.
 
 
