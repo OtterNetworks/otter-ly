@@ -14,9 +14,9 @@ description: >-
   that’s great news for development.
 image: "/img/og.png"
 ---
-<div>
-<img src="/img/posts/how-i-learned/kubernetes1.svg" alt="How I Learned Kubernetes?" />
-</div>
+<figure>
+  <img src="/img/posts/how-i-learned/kubernetes1.svg" alt="How I Learned Kubernetes?" />
+</figure>
 
 “Kubernetes?”
 

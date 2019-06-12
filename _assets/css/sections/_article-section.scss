@@ -1,4 +1,5 @@
 .article-section {
+  font-size: 18px;
   border-bottom: 0;
   text-align: left;
 
@@ -9,32 +10,37 @@
   h1 {
     font-size: 45px;
     font-weight: 700;
-    margin: 0 0 20px;
+
+    &:not(:first-child) {
+      margin: 50px 0 0;
+    }
+
+    & + h2 {
+      margin: 20px 0 0;
+    }
   }
 
   h2 {
     font-size: 24px;
     font-weight: 400;
     line-height: 35px;
-    margin: 0;
+    margin: 50px 0 0;
   }
 
   h3 {
     font-size: 25px;
-    margin: 0 0 50px;
+    margin: 50px 0 0;
+  }
+
+  figure {
+    margin: 70px 0;;
+    width: 100%;
   }
 
   p {
-    margin: 0 0 50px;
-
-    &:last-child {
-      margin: 0;
+    &:not(:first-child) {
+      margin: 50px 0 0;
     }
-  }
-
-  img {
-    width: 100%;
-    margin: 70px 0;
   }
 
   a {
@@ -46,10 +52,22 @@
       margin: -1px -3px;
     }
   }
+
+  ul {
+    margin: 50px 0 0;
+  }
+
+  li {
+    &:not(:first-child) {
+      margin-top: 30px;
+    }
+  }
 }
 
 @include mobile {
   .article-section {
+    font-size: 14px;
+
     h1 {
       font-size: 40px;
     }
@@ -60,23 +78,42 @@
   .article-section {
     h1 {
       font-size: 27px;
+
+      &:not(:first-child) {
+        margin: 30px 0 0;
+      }
     }
 
     h2 {
       font-size: 21px;
       line-height: 32px;
+      margin: 30px 0 0;
     }
 
     h3 {
       font-size: 18px;
+      margin: 30px 0 0;
     }
 
     p {
       font-size: 14px;
-      margin: 0 0 30px;
+
+      &:not(:first-child) {
+        margin: 30px 0 0;
+      }
     }
 
-    img {
+    ul {
+      margin: 30px 0 0;
+    }
+
+    li {
+      &:not(:first-child) {
+        margin-top: 20px;
+      }
+    }
+
+    figure {
       margin: 40px 0;
     }
   }

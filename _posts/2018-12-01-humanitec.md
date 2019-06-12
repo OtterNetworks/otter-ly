@@ -12,9 +12,9 @@ description: >-
 image: "/img/og.png"
 featured: true
 ---
-<div>
-<img src="/img/posts/humanitec/humanitec.svg" alt="Case study: Humanitec" />
-</div>
+<figure>
+  <img src="/img/posts/humanitec/humanitec.svg" alt="Case study: Humanitec" />
+</figure>
 
 Berlin-based [Humanitec](https://humanitec.com/), wanted to explore Kubernetes on Google. With the Otter Networks design sprint as a compass, the enterprise software company began charting a new path.
 
