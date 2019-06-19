@@ -17,10 +17,10 @@
 						<p class="case-study-card__text">{{ case_study.text }}</p>
 						<p class="case-study-card__details flex flow_row align-items_end">
 							<span class="case-study-card__details-copy flex-item_fill">
-								<span class="case-study-card__name">- {{ case_study.name }},</span>
+								<span class="case-study-card__name"><span>- {{ case_study.name }}</span>,</span>
 								<span class="case-study-card__headline">{{ case_study.headline }}</span>
 							</span>
-							<span>
+							<span class="case-study-card__thumb">
 								<img src="{{ case_study.img_url }}" class="case-study-card__image" alt="{{ case_study.name }}">
 							</span>
 						</p>

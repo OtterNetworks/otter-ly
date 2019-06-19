@@ -8,14 +8,6 @@
     text-decoration: none;
   }
 
-  &__thumb {
-    padding: 0 0 30px;
-  }
-
-  &__image {
-    max-width: 100px;
-  }
-
   &__icon {
     width: 90px;
   }
@@ -35,6 +27,10 @@
 
   &__name {
     display: block;
+
+    span {
+      background-image: linear-gradient(to bottom, $blue 60%, transparent 35%);
+    }
   }
 
   &__headline {
@@ -45,6 +41,14 @@
     font-size: 18px;
     font-weight: bold;
     line-height: 34px;
+  }
+
+  &__thumb {
+    border-radius: 100%;
+    box-shadow: 5px -5px 0 $blue;
+    display: inline-block;
+    max-width: 100px;
+    overflow: hidden;
   }
 
   &__image {

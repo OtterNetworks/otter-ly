@@ -7,6 +7,6 @@ RUN bundle install
 
 EXPOSE 8080
 
-ENTRYPOINT [ "docker-entrypoint.sh" ]
+ENTRYPOINT []
 
 CMD [ "bundle", "exec", "jekyll", "serve", "--force_polling", "-H", "0.0.0.0", "-P", "8080" ]

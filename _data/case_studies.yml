@@ -1,3 +1,11 @@
+credimi:
+  url: /credimi/
+  name: Edmondo Porcu
+  headline: CTO @Credimi
+  img_url: /img/case_studies/edmondo-porcu.jpeg
+  text: >-
+    "Our engineers worked with Otter Networks CEO and Sprint Leader, Andrew, who could guide their strategy and discuss it. 
+    They were able to valiate what they thought they should be doing,”
 humanitec:
   url: /humanitec/
   name: Greg Lind
@@ -9,7 +17,7 @@ humanitec:
 repay-me:
   url: /repay-me/
   name: Sascha Jonas
-  headline: CEO/CTO @REPAYME
+  headline: CEO/CTO @Repay.Me
   img_url: /img/case_studies/sascha-jonas.png
   text: >-
     "Otter Networks provided us with a quick, clear path to a frictionless
