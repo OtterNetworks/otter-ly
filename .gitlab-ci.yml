@@ -65,8 +65,8 @@ start-review:
   cache:
     policy: pull
   script:
-    - cat k8s/deployment.yml | envsubst
-    - cat k8s/deployment.yml | envsubst | kubectl apply -n $KUBE_NAMESPACE -f -
+    - cat k8s/deployment.yaml | envsubst
+    - cat k8s/deployment.yaml | envsubst | kubectl apply -n $KUBE_NAMESPACE -f -
 
 stop-review:
   stage: deploy
@@ -99,8 +99,8 @@ deploy-staging:
   cache:
     policy: pull
   script:
-    - cat k8s/deployment.yml | envsubst
-    - cat k8s/deployment.yml | envsubst | kubectl apply -n $KUBE_NAMESPACE -f -
+    - cat k8s/deployment.yaml | envsubst
+    - cat k8s/deployment.yaml | envsubst | kubectl apply -n $KUBE_NAMESPACE -f -
 
 
 ##############
@@ -114,8 +114,8 @@ deploy-production:
   cache:
     policy: pull
   script:
-    - cat k8s/deployment.yml | envsubst
-    - cat k8s/deployment.yml | envsubst | kubectl apply -n $KUBE_NAMESPACE -f -
+    - cat k8s/deployment.yaml | envsubst
+    - cat k8s/deployment.yaml | envsubst | kubectl apply -n $KUBE_NAMESPACE -f -
   # These two 'onlys' give us AND logic. The commit should both be in master AND be tagged. NB. this is git tagging. not 'gitlab' tagging.
   only:
     - master
