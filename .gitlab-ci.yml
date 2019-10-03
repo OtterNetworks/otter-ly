@@ -99,6 +99,7 @@ deploy-staging:
   cache:
     policy: pull
   script:
+    - env
     - cat k8s/deployment.yaml | envsubst
     - cat k8s/deployment.yaml | envsubst | kubectl apply -n $KUBE_NAMESPACE -f -
 
