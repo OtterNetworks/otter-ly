@@ -2,17 +2,17 @@
 apiVersion: extensions/v1beta1
 kind: Deployment
 metadata:
-  name: {{CF_REPO_NAME}}
+  name: ${CI_PROJECT_NAME}
   labels:
-    app: {{CF_REPO_NAME}}
+    app: ${CI_PROJECT_NAME}
 spec:
   replicas: 1
   revisionHistoryLimit: 5
   template:
     metadata:
-      name: {{CF_REPO_NAME}}
+      name: ${CI_PROJECT_NAME}
       labels:
-        app: {{CF_REPO_NAME}}
+        app: ${CI_PROJECT_NAME}
         tier: web
     spec:
 #      affinity:
@@ -29,9 +29,9 @@ spec:
 #      imagePullSecrets:
 #      - name: image-pull-secret
       containers:
-        - name: {{CF_REPO_NAME}}
+        - name: ${CI_PROJECT_NAME}
           # image: gcr.io/{{GOOGLE_PROJECT}}/{{CF_REPO_NAME}}:{{CF_SHORT_REVISION}}
-          image: {{BUILD_IMAGE}}
+          image: ${BUILD_IMAGE}}
           imagePullPolicy: Always
           envFrom:
           - configMapRef:
