@@ -26,7 +26,7 @@ before_script:
   - eval export CACHE_TAG=${REGISTRY_URL}:cache
   # The fqdn of the gitlab server is not available in the standard env vars so we cut it out of this URL
   - eval export GITLAB_HOSTNAME=$(echo $CI_PROJECT_URL | awk -F/ '{print $3}')
-
+  - eval export KUBECONFIG=~/.kube/$SHORT_GIT_SHA
 
 #########
 # BUILD #
@@ -100,6 +100,7 @@ deploy-staging:
     policy: pull
   script:
     - env
+    - echo KUBECONFIG_B64 | base64 -d > $KUBECONFIG
     - cat k8s/deployment.yaml | envsubst
     - cat k8s/deployment.yaml | envsubst | kubectl apply -n $KUBE_NAMESPACE -f -
 
