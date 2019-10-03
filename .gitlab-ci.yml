@@ -65,7 +65,8 @@ start-review:
   cache:
     policy: pull
   script:
-    - cat $dir/yml/deployment.yml | envsubst | kubectl apply -n $KUBE_NAMESPACE -f -
+    - cat k8s/deployment.yml | envsubst
+    - cat k8s/deployment.yml | envsubst | kubectl apply -n $KUBE_NAMESPACE -f -
 
 stop-review:
   stage: deploy
@@ -76,7 +77,7 @@ stop-review:
   cache:
     policy: pull
   script:
-    - cat $dir/yml/deployment.yml | envsubst | kubectl apply -n $KUBE_NAMESPACE -f -
+    - kubectl delete namespace $KUBE_NAMESPACE
   variables:
     GIT_STRATEGY: none
   only:
@@ -98,8 +99,8 @@ deploy-staging:
   cache:
     policy: pull
   script:
-    - git clone http://gitlab-ci-token:${CI_JOB_TOKEN}@${GITLAB_HOSTNAME}/website/infra.git
-    - /bin/bash $(pwd)/infra/k8s/deploy.sh staging-${SERVICE_NAME} no-database
+    - cat k8s/deployment.yml | envsubst
+    - cat k8s/deployment.yml | envsubst | kubectl apply -n $KUBE_NAMESPACE -f -
 
 
 ##############
@@ -113,9 +114,8 @@ deploy-production:
   cache:
     policy: pull
   script:
-    - docker login $CI_REGISTRY -u gitlab-ci-token -p $CI_JOB_TOKEN
-    - git clone http://gitlab-ci-token:${CI_JOB_TOKEN}@${GITLAB_HOSTNAME}/website/infra.git
-    - /bin/bash $(pwd)/infra/k8s/deploy.sh production-${SERVICE_NAME} no-database
+    - cat k8s/deployment.yml | envsubst
+    - cat k8s/deployment.yml | envsubst | kubectl apply -n $KUBE_NAMESPACE -f -
   # These two 'onlys' give us AND logic. The commit should both be in master AND be tagged. NB. this is git tagging. not 'gitlab' tagging.
   only:
     - master
